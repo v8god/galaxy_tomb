@@ -1,0 +1,144 @@
+// PHASE 2 - Advanced Star System with Glowing Trails and Drag Interaction
+import * as THREE from './java_script/three.module.js';
+import { OrbitControls } from './java_script/OrbitControls.js';
+import { EffectComposer } from './java_script/EffectComposer.js';
+import { RenderPass } from './java_script/RenderPass.js';
+import { UnrealBloomPass } from './java_script/UnrealBloomPass.js';
+import { DragControls } from './java_script/DragControls.js';
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
+camera.position.set(0, 3, 5);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+// Grid Sphere (Black Hole Metaphor)
+const gridSphere = new THREE.LineSegments(
+  new THREE.WireframeGeometry(new THREE.SphereGeometry(2, 32, 32)),
+  new THREE.LineBasicMaterial({ color: 0x00ffff })
+);
+scene.add(gridSphere);
+
+// STAR SETUP
+const starCount = 1000;
+const stars = [];
+const trails = [];
+const starGroup = new THREE.Group();
+
+const starMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const starGeometry = new THREE.SphereGeometry(0.4, 12, 12); // ⭕️ Round star shape
+
+const directions = [], angles = [], radii = [], velocities = [];
+
+for (let i = 0; i < starCount; i++) {
+  const angle = Math.random() * 2 * Math.PI;
+  const radius = 70 + Math.random() * 30;
+  const x = radius * Math.cos(angle);
+  const z = radius * Math.sin(angle);
+  const y = (Math.random() - 0.5) * 3;
+
+  const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
+  mesh.position.set(x, y, z);
+
+  directions.push(Math.random() < 0.5 ? 1 : -1);
+  angles.push(angle);
+  radii.push(radius);
+  velocities.push(0.2);
+
+  const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
+  const trailGeo = new THREE.BufferGeometry().setFromPoints([
+    mesh.position.clone(),
+    mesh.position.clone().add(new THREE.Vector3(-0.1, 0, -0.1))
+  ]);
+  const trail = new THREE.Line(trailGeo, trailMat);
+
+  starGroup.add(mesh);
+  scene.add(trail);
+
+  stars.push(mesh);
+  trails.push(trail);
+}
+
+scene.add(starGroup);
+
+// BLOOM
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+composer.addPass(new UnrealBloomPass(
+  new THREE.Vector2(window.innerWidth, window.innerHeight),
+  1.5, 0.4, 0.85
+));
+
+// DRAGGING
+const dragControls = new DragControls(stars, camera, renderer.domElement);
+dragControls.addEventListener('dragstart', e => controls.enabled = false);
+dragControls.addEventListener('dragend', e => controls.enabled = true);
+
+// ROTATION + TRAIL LOGIC
+let isRotating = true;
+document.getElementById("toggleRotation").onclick = () => {
+  isRotating = !isRotating;
+  document.getElementById("toggleRotation").innerText = isRotating ? "Pause Rotation" : "Resume Rotation";
+};
+
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  if (isRotating) {
+    gridSphere.rotation.y += 0.002;
+    const delta = clock.getDelta();
+
+    for (let i = 0; i < stars.length; i++) {
+      const star = stars[i];
+
+      if (!star.userData.dragging) {
+        angles[i] += delta * velocities[i] * directions[i];
+        const x = radii[i] * Math.cos(angles[i]);
+        const z = radii[i] * Math.sin(angles[i]);
+        star.position.x = x;
+        star.position.z = z;
+      }
+
+      // Update Trail
+      const positions = [
+        star.position.clone(),
+        star.position.clone().add(new THREE.Vector3(-0.8 * Math.cos(angles[i]), 0, -0.8 * Math.sin(angles[i])))
+      ];
+      trails[i].geometry.setFromPoints(positions);
+
+      // REPULSION WHILE DRAGGING
+      if (star.userData.dragging) {
+        for (let j = 0; j < stars.length; j++) {
+          if (i !== j) {
+            const other = stars[j];
+            const dist = star.position.distanceTo(other.position);
+            if (dist < 3) {
+              const repulse = other.position.clone().sub(star.position).normalize().multiplyScalar(0.1);
+              other.position.add(repulse);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  controls.update();
+  composer.render();
+}
+
+animate();
+
+// Resize
+window.addEventListener("resize", () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  composer.setSize(window.innerWidth, window.innerHeight);
+});
