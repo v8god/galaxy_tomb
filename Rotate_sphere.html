@@ -84,7 +84,7 @@
     for (let i = 0; i < starCount; i++) {
       const arm = i % spiralArms;
       const angle = (i / starCount) * Math.PI * 6 + (arm * (2 * Math.PI / spiralArms));
-      const radius = coreRadius + Math.random() * 20;
+      const radius = coreRadius + Math.random() * 40;
       const x = radius * Math.cos(angle + radius * spiralTwist * 0.01);
       const z = radius * Math.sin(angle + radius * spiralTwist * 0.01);
       const y = (Math.random() - 0.5) * 2;
