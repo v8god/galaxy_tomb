@@ -44,7 +44,7 @@
     import { EffectComposer } from './java_script/EffectComposer.js';
     import { RenderPass } from './java_script/RenderPass.js';
     import { UnrealBloomPass } from './java_script/UnrealBloomPass.js';
-    import { DragControls } from './java_script/DragControls.js'; // 🟡 Drag support
+    import { DragControls } from './java_script/DragControls.js';
     
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -57,116 +57,117 @@
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     
-    // Sphere core (like galactic center)
     const geometry = new THREE.SphereGeometry(2, 32, 32);
     const wireframe = new THREE.WireframeGeometry(geometry);
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff });
     const sphere = new THREE.LineSegments(wireframe, lineMaterial);
     scene.add(sphere);
     
-    // === STAR SETUP ===
     const starCount = 1000;
     const stars = [];
     const trails = [];
-    const starMeshes = [];
-    const directions = [];
-    const velocities = [];
-    const angles = [];
-    const radii = [];
+    const starGroup = new THREE.Group();
+    const trailGroup = new THREE.Group();
+    scene.add(starGroup);
+    scene.add(trailGroup);
     
-    const starMaterial = new THREE.MeshBasicMaterial({
-      color: 0xffffff,
-      transparent: true,
-      opacity: 1.0,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false
-    });
-    const starGeometry = new THREE.SphereGeometry(0.4, 12, 12);
-    
-    const spiralArms = 4;
+    const spiralArms = 3;
     const spiralTwist = 0.5;
     const spread = 10;
     const coreRadius = 30;
     
+    const angles = [];
+    const radii = [];
+    const directions = [];
+    const velocities = [];
+    
+    const starGeometry = new THREE.SphereGeometry(0.4, 16, 16);
+    const dragStars = [];
+    
     for (let i = 0; i < starCount; i++) {
       const arm = i % spiralArms;
-      const baseAngle = (i / starCount) * Math.PI * 6 + (arm * (2 * Math.PI / spiralArms));
+      const angle = (i / starCount) * Math.PI * 6 + (arm * (2 * Math.PI / spiralArms));
       const radius = coreRadius + Math.random() * 50;
+      const x = radius * Math.cos(angle + radius * spiralTwist * 0.01);
+      const z = radius * Math.sin(angle + radius * spiralTwist * 0.01);
+      const y = (Math.random() - 0.5) * 4;
     
-      const twist = baseAngle + radius * spiralTwist * 0.01;
-      const x = radius * Math.cos(twist) + (Math.random() - 0.5) * spread;
-      const z = radius * Math.sin(twist) + (Math.random() - 0.5) * spread;
-      const y = (Math.random() - 0.5) * 3;
+      const color = new THREE.Color(0xffffff);
+      const material = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 1, blending: THREE.AdditiveBlending });
+      const star = new THREE.Mesh(starGeometry, material);
+      star.position.set(x, y, z);
+      starGroup.add(star);
+      dragStars.push(star);
     
-      const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
-      mesh.position.set(x, y, z);
-      scene.add(mesh);
-    
-      // Trail setup
       const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
-      const trailGeo = new THREE.BufferGeometry().setFromPoints([
-        new THREE.Vector3(x, y, z),
-        new THREE.Vector3(x, y, z)
-      ]);
+      const trailGeo = new THREE.BufferGeometry().setFromPoints([star.position.clone(), star.position.clone()]);
       const trail = new THREE.Line(trailGeo, trailMat);
-      scene.add(trail);
+      trailGroup.add(trail);
     
-      stars.push(mesh);
-      starMeshes.push(mesh);
+      stars.push(star);
       trails.push(trail);
-      directions.push(Math.random() < 0.5 ? 1 : -1);
+    
       angles.push(Math.atan2(z, x));
       radii.push(Math.sqrt(x * x + z * z));
+      directions.push(Math.random() < 0.5 ? 1 : -1);
       velocities.push(0.2);
     }
     
-    // === BLOOM ===
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
-    const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(window.innerWidth, window.innerHeight),
-      1.5,
-      0.4,
-      0.85
-    );
+    const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
     composer.addPass(bloomPass);
     
-    // === DRAG CONTROLS ===
-    const dragControls = new DragControls(starMeshes, camera, renderer.domElement);
-    dragControls.addEventListener('dragstart', () => controls.enabled = false);
-    dragControls.addEventListener('dragend', () => controls.enabled = true);
-    
-    // === UI ===
     let isRotating = true;
     document.getElementById("toggleRotation").onclick = () => {
       isRotating = !isRotating;
       document.getElementById("toggleRotation").innerText = isRotating ? "Pause Rotation" : "Resume Rotation";
     };
     
-    // === ANIMATION ===
+    const dragControls = new DragControls(dragStars, camera, renderer.domElement);
+    dragControls.addEventListener('dragstart', () => controls.enabled = false);
+    dragControls.addEventListener('dragend', () => controls.enabled = true);
+    
+    dragControls.addEventListener('drag', function (event) {
+      const star = event.object;
+      const index = dragStars.indexOf(star);
+      const trail = trails[index];
+      const points = [
+        star.position.clone(),
+        star.position.clone().multiplyScalar(0.95)
+      ];
+      trail.geometry.setFromPoints(points);
+    });
+    
     const clock = new THREE.Clock();
+    
     function animate() {
       requestAnimationFrame(animate);
+      const delta = clock.getDelta();
     
       if (isRotating) {
         sphere.rotation.y += 0.01;
     
-        const delta = clock.getDelta();
-        for (let i = 0; i < starCount; i++) {
+        for (let i = 0; i < stars.length; i++) {
+          const star = stars[i];
           angles[i] += delta * velocities[i] * directions[i];
           const r = radii[i];
-          const y = stars[i].position.y;
           const x = r * Math.cos(angles[i]);
           const z = r * Math.sin(angles[i]);
+          const y = star.position.y;
     
-          stars[i].position.set(x, y, z);
+          star.position.set(x, y, z);
     
-          // Update trails
           const trail = trails[i];
-          trail.geometry.setFromPoints([
-            new THREE.Vector3(x, y, z),
-            new THREE.Vector3(x * 0.95, y, z * 0.95)
-          ]);
+          const points = [
+            star.position.clone(),
+            star.position.clone().multiplyScalar(0.95)
+          ];
+          trail.geometry.setFromPoints(points);
+        }
+      } else {
+        for (let i = 0; i < trails.length; i++) {
+          trails[i].geometry.setFromPoints([]);
         }
       }
     
