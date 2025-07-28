@@ -65,16 +65,13 @@
     
     const starCount = 1000;
     const stars = [];
-    const trails = [];
     const starGroup = new THREE.Group();
-    const trailGroup = new THREE.Group();
     scene.add(starGroup);
-    scene.add(trailGroup);
     
     const spiralArms = 3;
     const spiralTwist = 0.5;
-    const spread = 10;
-    const coreRadius = 30;
+    const spread = 5;
+    const coreRadius = 10;
     
     const angles = [];
     const radii = [];
@@ -87,10 +84,10 @@
     for (let i = 0; i < starCount; i++) {
       const arm = i % spiralArms;
       const angle = (i / starCount) * Math.PI * 6 + (arm * (2 * Math.PI / spiralArms));
-      const radius = coreRadius + Math.random() * 50;
+      const radius = coreRadius + Math.random() * 20;
       const x = radius * Math.cos(angle + radius * spiralTwist * 0.01);
       const z = radius * Math.sin(angle + radius * spiralTwist * 0.01);
-      const y = (Math.random() - 0.5) * 4;
+      const y = (Math.random() - 0.5) * 2;
     
       const color = new THREE.Color(0xffffff);
       const material = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 1, blending: THREE.AdditiveBlending });
@@ -99,14 +96,7 @@
       starGroup.add(star);
       dragStars.push(star);
     
-      const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
-      const trailGeo = new THREE.BufferGeometry().setFromPoints([star.position.clone(), star.position.clone()]);
-      const trail = new THREE.Line(trailGeo, trailMat);
-      trailGroup.add(trail);
-    
       stars.push(star);
-      trails.push(trail);
-    
       angles.push(Math.atan2(z, x));
       radii.push(Math.sqrt(x * x + z * z));
       directions.push(Math.random() < 0.5 ? 1 : -1);
@@ -128,17 +118,6 @@
     dragControls.addEventListener('dragstart', () => controls.enabled = false);
     dragControls.addEventListener('dragend', () => controls.enabled = true);
     
-    dragControls.addEventListener('drag', function (event) {
-      const star = event.object;
-      const index = dragStars.indexOf(star);
-      const trail = trails[index];
-      const points = [
-        star.position.clone(),
-        star.position.clone().multiplyScalar(0.95)
-      ];
-      trail.geometry.setFromPoints(points);
-    });
-    
     const clock = new THREE.Clock();
     
     function animate() {
@@ -157,17 +136,6 @@
           const y = star.position.y;
     
           star.position.set(x, y, z);
-    
-          const trail = trails[i];
-          const points = [
-            star.position.clone(),
-            star.position.clone().multiplyScalar(0.95)
-          ];
-          trail.geometry.setFromPoints(points);
-        }
-      } else {
-        for (let i = 0; i < trails.length; i++) {
-          trails[i].geometry.setFromPoints([]);
         }
       }
     
