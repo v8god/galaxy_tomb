@@ -242,7 +242,20 @@
         const positions = starGeometry.attributes.position.array;
 
         for (let i = 0; i < starCount; i++) {
+          const star = starMeshes[i];
           angles[i] += delta * speed * starDirections[i];
+
+          for (let j = 0; j < starCount; j++) {
+            if (i === j) continue;
+            const other = starMeshes[j];
+            const dist = star.position.distanceTo(other.position);
+            if (dist < 0.8) {
+              const dir = new THREE.Vector3().subVectors(star.position, other.position).normalize();
+              star.position.addScaledVector(dir, 0.1);
+              const xRep = star.position.x;
+              const zRep = star.position.z;
+              angles[i] = Math.atan2(zRep, xRep);
+          }
 
           const i3 = i * 3;
           const y = positions[i3 + 1];
