@@ -123,17 +123,18 @@
     function animate() {
       requestAnimationFrame(animate);
       const delta = clock.getDelta();
+      const speed = 0.2;
     
       if (isRotating) {
         sphere.rotation.y += 0.01;
     
-        for (let i = 0; i < stars.length; i++) {
+        /*for (let i = 0; i < stars.length; i++) {
           const star = stars[i];
           angles[i] += delta * velocities[i] * directions[i];
-        
-        /*const delta = clock.getDelta();
+        */
+/*        const delta = clock.getDelta();
         const speed = 0.2;
-
+*/
         for (let i = 0; i < starCount; i++) {
           const star = starMeshes[i];
           angles[i] += delta * speed * directions[i];
@@ -150,7 +151,7 @@
               const zRep = star.position.z;
               angles[i] = Math.atan2(zRep, xRep);
             }
-          }*/
+          }
           const r = radii[i];
           const x = r * Math.cos(angles[i]);
           const z = r * Math.sin(angles[i]);
