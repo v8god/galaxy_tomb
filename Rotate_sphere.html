@@ -122,7 +122,7 @@
     
     function animate() {
       requestAnimationFrame(animate);
-      const delta = clock.getDelta();
+      //const delta = clock.getDelta();
     
       if (isRotating) {
         sphere.rotation.y += 0.01;
@@ -131,6 +131,7 @@
           const star = stars[i];
           angles[i] += delta * velocities[i] * directions[i];
         */
+        const delta = clock.getDelta();
         const speed = 0.2;
 
         for (let i = 0; i < starCount; i++) {
