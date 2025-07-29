@@ -127,9 +127,29 @@
       if (isRotating) {
         sphere.rotation.y += 0.01;
     
-        for (let i = 0; i < stars.length; i++) {
+        /*for (let i = 0; i < stars.length; i++) {
           const star = stars[i];
           angles[i] += delta * velocities[i] * directions[i];
+        */
+        const speed = 0.2;
+
+        for (let i = 0; i < starCount; i++) {
+          const star = starMeshes[i];
+          angles[i] += delta * speed * directions[i];
+    
+          // ⭐ Repel from nearby stars to avoid overlap
+          for (let j = 0; j < starCount; j++) {
+            if (i === j) continue;
+            const other = starMeshes[j];
+            const dist = star.position.distanceTo(other.position);
+            if (dist < 0.8) {
+              const dir = new THREE.Vector3().subVectors(star.position, other.position).normalize();
+              star.position.addScaledVector(dir, 0.1);
+              const xRep = star.position.x;
+              const zRep = star.position.z;
+              angles[i] = Math.atan2(zRep, xRep);
+            }
+          }
           const r = radii[i];
           const x = r * Math.cos(angles[i]);
           const z = r * Math.sin(angles[i]);
