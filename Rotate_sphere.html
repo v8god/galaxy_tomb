@@ -74,10 +74,10 @@
     //const starGeometry = new THREE.BufferGeometry();
     const starPositions = new Float32Array(starCount * 3);
     const starDirections = new Float32Array(starCount); // +1 or -1 rotation direction
-    //const angles = new Float32Array(starCount);         // 🔵 individual orbit angles
-    //const radii = new Float32Array(starCount);          // 🔵 elliptical radii
-    const angles = [];
-    const radii = [];
+    const angles = new Float32Array(starCount);         // 🔵 individual orbit angles
+    const radii = new Float32Array(starCount);          // 🔵 elliptical radii
+    //const angles = [];
+    //const radii = [];
     const starMeshes = []; // 🟡 [NEW]
     const trails = [];     // 🟡 [NEW]
 
