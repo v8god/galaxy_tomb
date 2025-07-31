@@ -163,7 +163,7 @@
 */
 
       // 🟡 Trails
-    const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
+    /*const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
     const trailGeo = new THREE.BufferGeometry().setFromPoints([
       new THREE.Vector3(x, y, z),
       new THREE.Vector3(x, y, z)
@@ -171,7 +171,7 @@
     const trail = new THREE.Line(trailGeo, trailMat);
     scene.add(trail);
     trails.push(trail);
-    }
+    }*/
 
     starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
     /*const starMaterial = new THREE.PointsMaterial({
@@ -259,7 +259,7 @@
         }
 
         starGeometry.attributes.position.needsUpdate = true;
-      //}
+      }
 
       controls.update(); // for damping
       composer.render(); // 🔵 replaced renderer.render with composer for bloom
