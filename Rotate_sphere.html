@@ -64,6 +64,7 @@
     const wireframe = new THREE.WireframeGeometry(geometry);
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff });
     const sphere = new THREE.LineSegments(wireframe, lineMaterial);
+    
     scene.add(sphere);
     
     // ✨ Stars Setup
@@ -100,9 +101,11 @@
     //🟠 STAR SETUP AFTER !ST TIME    
     const starGroup = new THREE.Group();
     
-    const starMaterial = new THREE.MeshBasicMaterial({
+    const starMaterial =
+      const radius = coreRadius + Math.random() * 20;
+      new THREE.MeshBasicMaterial({
       color: 0xffffff,
-      size: 1.5,
+      size: 2.5,
       sizeAttenuation: true,
       transparent: true,
       opacity: 1.0,
