@@ -129,7 +129,6 @@
 
       const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
       mesh.position.set(x, y, z);
-      starMeshes.push(mesh); // ✅
 
       directions.push(Math.random() < 0.5 ? 1 : -1);
       angles.push(angle);
@@ -187,7 +186,7 @@
     });*/
     const stars = new THREE.Points(starGeometry, starMaterial);
     scene.add(stars);
-    
+
 
     // 🔵 Bloom Composer
     const composer = new EffectComposer(renderer);
@@ -238,7 +237,7 @@
           positions[i3] = newX;
           positions[i3 + 2] = newZ;
         }*/
-        
+
         // 🔵 New elliptical galaxy-style motion
         const delta = clock.getDelta();
         const speed = 0.2;
@@ -260,7 +259,7 @@
         }
 
         starGeometry.attributes.position.needsUpdate = true;
-      }
+      //}
 
       controls.update(); // for damping
       composer.render(); // 🔵 replaced renderer.render with composer for bloom
@@ -278,16 +277,12 @@
     });
 
     // 🟡 Trail update
-    for (let i = 0; i < starCount; i++) {
-      const star = starMeshes[i];
-      const trail = trails[i];
-      //const trail = trails[starCount];
-      const points = [trail.geometry.attributes.position.array];
-      trail.geometry.setFromPoints([
-        new THREE.Vector3(star.position.x, star.position.y, star.position.z),
-        new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
-      ]);
-    }
+    /*const trail = trails[i];
+    const points = [trail.geometry.attributes.position.array];
+    trail.geometry.setFromPoints([
+      new THREE.Vector3(star.position.x, star.position.y, star.position.z),
+      new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
+    ]);*/
   </script>
 </body>
 </html>
