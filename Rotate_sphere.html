@@ -64,7 +64,7 @@
     const wireframe = new THREE.WireframeGeometry(geometry);
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff });
     const sphere = new THREE.LineSegments(wireframe, lineMaterial);
-    
+    const coreRadius = 10;
     scene.add(sphere);
     
     // ✨ Stars Setup
