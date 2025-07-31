@@ -256,16 +256,6 @@
 
           positions[i3] = x;
           positions[i3 + 2] = z;
-
-          //🟡 Trail update
-          for (let i = 0; i < starCount; i++) {};
-          const trail = trails[i];
-          //const trail = trails[starCount];
-          const points = [trail.geometry.attributes.position.array];
-          trail.geometry.setFromPoints([
-            new THREE.Vector3(star.position.x, star.position.y, star.position.z),
-            new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
-          ]);
         }
 
         starGeometry.attributes.position.needsUpdate = true;
@@ -287,14 +277,28 @@
     });
 
     // 🟡 Trail update
-    /*for (let i = 0; i < starCount; i++) {};
-    const trail = trails[i];
-    //const trail = trails[starCount];
-    const points = [trail.geometry.attributes.position.array];
-    trail.geometry.setFromPoints([
-      new THREE.Vector3(star.position.x, star.position.y, star.position.z),
-      new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
-    ]);*/
+    for (let i = 0; i < starCount; i++) {
+      const starMaterial = new THREE.MeshBasicMaterial({
+        color: 0xffffff,
+        size: 1.5,
+        sizeAttenuation: true,
+        transparent: true,
+        //opacity: 0.8,
+        opacity: 1.0,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      });
+      const starGeometry = new THREE.SphereGeometry(0.4, 12, 12); // ⭕️ Round star shape
+
+      const stars = new THREE.Points(starGeometry, starMaterial);
+      const trail = trails[i];
+      //const trail = trails[starCount];
+      const points = [trail.geometry.attributes.position.array];
+      trail.geometry.setFromPoints([
+        new THREE.Vector3(star.position.x, star.position.y, star.position.z),
+        new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
+      ]);
+    }
   </script>
 </body>
 </html>
