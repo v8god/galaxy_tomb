@@ -101,6 +101,7 @@
       starDirections[i] = Math.random() < 0.5 ? 1 : -1;
       angles[i] = Math.atan2(z, x);         // 🔵 for XZ-plane rotation
       radii[i] = Math.sqrt(x * x + z * z);  // 🔵 distance from center
+      }
     */
 
     //🟠 STAR SETUP AFTER !ST TIME
@@ -134,7 +135,9 @@
       angles.push(angle);
       radii.push(radius);
       velocities.push(0.2);
-
+      scene.add(mesh);            // ✅ Also add this
+      starMeshes.push(mesh);      // ✅ Store for dragging
+    } // ✅ ADD THIS — closes the for loop
 
 
     // 🟡 NEW STAR DISTRIBUTION (spiral galaxy arms)
@@ -159,7 +162,7 @@
       angles[i] = Math.atan2(z, x);
       radii[i] = Math.sqrt(x * x + z * z);
       starDirections[i] = Math.random() < 0.5 ? 1 : -1;
-    
+    }
 */
 
       // 🟡 Trails
