@@ -129,6 +129,7 @@
 
       const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
       mesh.position.set(x, y, z);
+      starMeshes.push(mesh); // ✅
 
       directions.push(Math.random() < 0.5 ? 1 : -1);
       angles.push(angle);
@@ -277,7 +278,7 @@
     });
 
     // 🟡 Trail update
-    /*for (let i = 0; i < starCount; i++) {
+    for (let i = 0; i < starCount; i++) {
       const star = starMeshes[i];
       const trail = trails[i];
       //const trail = trails[starCount];
@@ -286,7 +287,7 @@
         new THREE.Vector3(star.position.x, star.position.y, star.position.z),
         new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
       ]);
-    }*/
+    }
   </script>
 </body>
 </html>
