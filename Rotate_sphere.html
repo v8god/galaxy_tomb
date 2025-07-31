@@ -278,14 +278,14 @@
 
     // 🟡 Trail update
     for (let i = 0; i < starCount; i++) {
-    const trail = trails[i];
+      const trail = trails[i];
+      //const trail = trails[starCount];
+      const points = [trail.geometry.attributes.position.array];
+      trail.geometry.setFromPoints([
+        new THREE.Vector3(star.position.x, star.position.y, star.position.z),
+        new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
+      ]);
     }
-    //const trail = trails[starCount];
-    const points = [trail.geometry.attributes.position.array];
-    trail.geometry.setFromPoints([
-      new THREE.Vector3(star.position.x, star.position.y, star.position.z),
-      new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
-    ]);
   </script>
 </body>
 </html>
