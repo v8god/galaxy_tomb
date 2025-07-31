@@ -223,8 +223,8 @@
           const star = starMeshes[i];
           angles[i] += delta * speed * directions[i];
 
-          const i3 = i * 3;
-          const y = positions[i3 + 1];
+          //const i3 = i * 3;
+          //const y = positions[i3 + 1];
     
           // ⭐ Repel from nearby stars to avoid overlap
           for (let j = 0; j < starCount; j++) {
@@ -244,12 +244,12 @@
           const x = r * Math.cos(angles[i]);
           const z = r * Math.sin(angles[i]);
           const y = star.position.y;
-          positions[i3] = x;
-          positions[i3 + 2] = z
+          //positions[i3] = x;
+          //positions[i3 + 2] = z
     
           star.position.set(x, y, z);
         }
-        starGeometry.attributes.position.needsUpdate = true;
+        //starGeometry.attributes.position.needsUpdate = true;
       }
     
       controls.update(); // for damping
