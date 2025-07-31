@@ -74,7 +74,30 @@
     const radii = new Float32Array(starCount);
     const starMeshes = [];
     const trails = [];
-    
+
+    // 🟢 Keep the old star initialization and movement logic commented
+    /*for (let i = 0; i < starCount; i++) {
+      const theta = Math.random() * 2 * Math.PI;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const radius = 70 + Math.random() * 30; // stars around the sphere
+
+      const x = radius * Math.sin(phi) * Math.cos(theta);
+      const y = (Math.random() - 0.5) * 3; // 🟢 Disc height
+      //const y = radius * Math.sin(phi) * Math.sin(theta);
+      const z = radius * Math.cos(phi);
+
+      starPositions[i * 3] = x;
+      starPositions[i * 3 + 1] = y;
+      starPositions[i * 3 + 2] = z;
+
+      // Half clockwise, half counterclockwise
+      starDirections[i] = Math.random() < 0.5 ? 1 : -1;
+      angles[i] = Math.atan2(z, x);         // 🔵 for XZ-plane rotation
+      radii[i] = Math.sqrt(x * x + z * z);  // 🔵 distance from center
+      }
+    */
+
+    //🟠 STAR SETUP AFTER !ST TIME    
     const starGroup = new THREE.Group();
     
     const starMaterial = new THREE.MeshBasicMaterial({
@@ -86,7 +109,7 @@
       blending: THREE.AdditiveBlending,
       depthWrite: false
     });
-    const starGeometry = new THREE.SphereGeometry(0.4, 12, 12);
+    const starGeometry = new THREE.SphereGeometry(0.4, 12, 12);// ⭕️ Round star shape
     
     const directions = [], velocities = [];
     
@@ -108,17 +131,53 @@
       starMeshes.push(mesh);
       scene.add(mesh);
     }
-    
+    // 🟡 NEW STAR DISTRIBUTION (spiral galaxy arms)
+    /* const spiralArms = 3;         // Number of spiral arms
+    const spiralTwist = 0.5;      // Controls spiral tightness
+    const spread = 10;            // Spread around arm
+    const coreRadius = 30;        // Radius of core glow
+
+    for (let i = 0; i < starCount; i++) {
+      const arm = i % spiralArms;
+      const angle = (i / starCount) * Math.PI * 6 + (arm * (2 * Math.PI / spiralArms));
+      const radius = coreRadius + Math.random() * 50;
+
+      const x = radius * Math.cos(angle + radius * spiralTwist * 0.01);
+      const z = radius * Math.sin(angle + radius * spiralTwist * 0.01);
+      const y = (Math.random() - 0.5) * 4; // slight thickness in Y
+
+      starPositions[i * 3] = x + (Math.random() - 0.5) * spread;
+      starPositions[i * 3 + 1] = y;
+      starPositions[i * 3 + 2] = z + (Math.random() - 0.5) * spread;
+
+      angles[i] = Math.atan2(z, x);
+      radii[i] = Math.sqrt(x * x + z * z);
+      starDirections[i] = Math.random() < 0.5 ? 1 : -1;
+    }
+    // 🟡 Trails
+    /*const trailMat = new THREE.LineBasicMaterial({ color: 0xffffaa });
+    const trailGeo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, y, z)
+    ]);
+    const trail = new THREE.Line(trailGeo, trailMat);
+    scene.add(trail);
+    trails.push(trail);
+    }*/
+
+
+    // 🔵 Bloom Composer
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
     const bloomPass = new UnrealBloomPass(
       new THREE.Vector2(window.innerWidth, window.innerHeight),
-      1.5,
-      0.4,
-      0.85
+      1.5,  // 🔵 intensity
+      0.4,  // 🔵 radius
+      0.85  // 🔵 threshold
     );
     composer.addPass(bloomPass);
-    
+
+    // Rotation toggle
     let isRotating = true;
     document.getElementById("toggleRotation").onclick = () => {
       isRotating = !isRotating;
@@ -137,13 +196,35 @@
     
       if (isRotating) {
         sphere.rotation.y += 0.01;
-    
+        //sphere.rotation.y += 0.002; // 🔵 smooth slow rotation
+
+        // 🔴 Old star rotation logic (replaced)
+        // Rotate stars manually by updating their positions
+        /*const delta = clock.getDelta();
+        const positions = starGeometry.attributes.position.array;
+        for (let i = 0; i < starCount; i++) {
+          const i3 = i * 3;
+          const x = positions[i3];
+          const z = positions[i3 + 2];
+          const angle = delta * 0.3 * starDirections[i];
+
+          const newX = x * Math.cos(angle) - z * Math.sin(angle);
+          const newZ = x * Math.sin(angle) + z * Math.cos(angle);
+
+          positions[i3] = newX;
+          positions[i3 + 2] = newZ;
+        }*/
+
+        // 🔵 New elliptical galaxy-style motion
         const delta = clock.getDelta();
         const speed = 0.2;
     
         for (let i = 0; i < starCount; i++) {
           const star = starMeshes[i];
           angles[i] += delta * speed * directions[i];
+
+          const i3 = i * 3;
+          const y = positions[i3 + 1];
     
           // ⭐ Repel from nearby stars to avoid overlap
           for (let j = 0; j < starCount; j++) {
@@ -163,23 +244,35 @@
           const x = r * Math.cos(angles[i]);
           const z = r * Math.sin(angles[i]);
           const y = star.position.y;
+          positions[i3] = x;
+          positions[i3 + 2] = z
     
           star.position.set(x, y, z);
         }
+        starGeometry.attributes.position.needsUpdate = true;
       }
     
-      controls.update();
-      composer.render();
+      controls.update(); // for damping
+      composer.render(); // 🔵 replaced renderer.render with composer for bloom
+      //renderer.render(scene, camera);
     }
     
     animate();
-    
+
+    // Resize handling
     window.addEventListener("resize", () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
       composer.setSize(window.innerWidth, window.innerHeight);
     });
+    // 🟡 Trail update
+    /*const trail = trails[i];
+    const points = [trail.geometry.attributes.position.array];
+    trail.geometry.setFromPoints([
+      new THREE.Vector3(star.position.x, star.position.y, star.position.z),
+      new THREE.Vector3(star.position.x * 0.95, star.position.y, star.position.z * 0.95)
+    ]);*/
 
   </script>
 </body>
