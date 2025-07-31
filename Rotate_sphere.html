@@ -278,19 +278,7 @@
 
     // 🟡 Trail update
     for (let i = 0; i < starCount; i++) {
-      const starMaterial = new THREE.MeshBasicMaterial({
-        color: 0xffffff,
-        size: 1.5,
-        sizeAttenuation: true,
-        transparent: true,
-        //opacity: 0.8,
-        opacity: 1.0,
-        blending: THREE.AdditiveBlending,
-        depthWrite: false
-      });
-      const starGeometry = new THREE.SphereGeometry(0.4, 12, 12); // ⭕️ Round star shape
-
-      const stars = new THREE.Points(starGeometry, starMaterial);
+      const star = starMeshes[i];
       const trail = trails[i];
       //const trail = trails[starCount];
       const points = [trail.geometry.attributes.position.array];
