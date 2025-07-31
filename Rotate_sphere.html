@@ -101,9 +101,7 @@
     //🟠 STAR SETUP AFTER !ST TIME    
     const starGroup = new THREE.Group();
     
-    const starMaterial =
-      const radius = coreRadius + Math.random() * 20;
-      new THREE.MeshBasicMaterial({
+    const starMaterial = new THREE.MeshBasicMaterial({
       color: 0xffffff,
       size: 2.5,
       sizeAttenuation: true,
@@ -118,7 +116,8 @@
     
     for (let i = 0; i < starCount; i++) {
       const angle = Math.random() * 2 * Math.PI;
-      const radius = 70 + Math.random() * 30;
+      const radius = coreRadius + Math.random() * 20;
+      //const radius = 70 + Math.random() * 30;
       const x = radius * Math.cos(angle);
       const z = radius * Math.sin(angle);
       const y = (Math.random() - 0.5) * 3;
