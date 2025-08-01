@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rotating Grid Sphere</title>
   <style>
     body { margin: 0; overflow: hidden; background: #000; }
@@ -230,7 +231,7 @@
           //const y = positions[i3 + 1];
     
           // ⭐ Repel from nearby stars to avoid overlap
-          for (let j = 0; j < starCount; j++) {
+          /*for (let j = 0; j < starCount; j++) {
             if (i === j) continue;
             const other = starMeshes[j];
             const dist = star.position.distanceTo(other.position);
@@ -241,7 +242,7 @@
               const zRep = star.position.z;
               angles[i] = Math.atan2(zRep, xRep);
             }
-          }
+          }*/
     
           const r = radii[i];
           const x = r * Math.cos(angles[i]);
