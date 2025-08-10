@@ -41,7 +41,7 @@
     // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 2000);
-    camera.position.set(0, 200, 600); // 🆕 CHANGED — further away for bigger sphere
+    camera.position.set(0, 0, 600); // 🆕 CHANGED — further away for bigger sphere
     
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
