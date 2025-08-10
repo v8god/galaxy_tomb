@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content ="width=device-width, initial-scale=1">
-  <title>Rotating Grid Sphere</title>
-  <style>
-    body { margin: 0; overflow: hidden; background: #000; }
-    #ui {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 10;
-    }
-    #ui button {
-      padding: 8px 12px;
-      color: white;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid white;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div id="ui">
-    <button id="toggleRotation">Pause Rotation</button>
-  </div>
-
-<!--  <script src="https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/controls/OrbitControls.js"></script>
--->
-  <!--<script defer>-->
   <script type="module">
     import * as THREE from './java_script/three.module.js';
     import { OrbitControls } from './java_script/OrbitControls.js';
@@ -70,6 +38,12 @@
     const numLayers = 10;             // total layers
     const layerSpacing = 20;          // vertical distance between layers
     const starsInFirstLayer = 256;    // stars in top layer
+    const coreSpacing = 10;
+    const radius = coreSpacing + coreRadius + (layer * layerSpacing);
+    const maxRadius = coreSpacing + coreRadius + (numLayers * layerSpacing);
+    const radius = maxRadius - (layer * layerSpacing);
+
+
     
     const starMaterial = new THREE.MeshBasicMaterial({
       color: 0xffffff,
@@ -83,14 +57,17 @@
     // 🆕 CHANGED — Generate stars in layers
     for (let layer = 0; layer < numLayers; layer++) {
       const starsInLayer = Math.floor(starsInFirstLayer / Math.pow(2, layer));
-      const y = -(layer * layerSpacing);
+      const layerRadius = galaxyConfig.coreSpacing + coreRadius + (layer * galaxyConfig.layerSpacing);
+      //const y = -(layer * layerSpacing);<<--10/8>6:17pm
     
       for (let s = 0; s < starsInLayer; s++) {
         const angle = Math.random() * 2 * Math.PI;
-        const radius = coreRadius + Math.random() * 200; // wider spread
-    
-        const x = radius * Math.cos(angle);
-        const z = radius * Math.sin(angle);
+        //const radius = coreRadius + Math.random() * 200; // wider spread<<--10/8>6:17pm
+        //const x = radius * Math.cos(angle);<<--10/8>6:17pm
+        //const z = radius * Math.sin(angle);<<--10/8>6:17pm
+        const x = layerRadius * Math.cos(angle);
+        const z = layerRadius * Math.sin(angle);
+        const y = (Math.random() - 0.5) * 3;
     
         const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
         mesh.position.set(x, y, z);
