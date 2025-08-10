@@ -72,6 +72,8 @@
     const starsInFirstLayer = 1024;    // stars in top layer
     // 🆕 Distance between sphere and closest stars
     const sphereGap = 50;  // Change this to control minimum distance from sphere surface
+    // 🆕 Factor controlling how much the disc shrinks per layer
+    const discShrinkFactor = 0.85;  // smaller = faster shrink
 
     
     const starMaterial = new THREE.MeshBasicMaterial({
@@ -87,11 +89,15 @@
     for (let layer = 0; layer < numLayers; layer++) {
       const starsInLayer = Math.floor(starsInFirstLayer / Math.pow(2, layer));
       const y = -(layer * layerSpacing);
+
+      // Shrink maximum radius per layer
+      const layerMaxSpread = 200 * Math.pow(discShrinkFactor, layer);
     
       for (let s = 0; s < starsInLayer; s++) {
         const angle = Math.random() * 2 * Math.PI;
-        const radius = (coreRadius + sphereGap) + Math.random() * 200; // wider spread
-    
+        //const radius = (coreRadius + sphereGap) + Math.random() * 200; // wider spread
+        const radius = (coreRadius + sphereGap) + Math.random() * layerMaxSpread; // wider spread
+        
         const x = radius * Math.cos(angle);
         const z = radius * Math.sin(angle);
     
