@@ -89,7 +89,7 @@
       // 🆕 CHANGED — Generate stars in layers
       for (let layer = 0; layer < numLayers; layer++) {
         const starsInLayer = Math.floor(starsInFirstLayer / Math.pow(2, layer));
-        const layerRadius = galaxyConfig.coreSpacing + coreRadius + (layer * galaxyConfig.layerSpacing);
+        const layerRadius = coreSpacing + coreRadius + (layer * layerSpacing);
         //const y = -(layer * layerSpacing);<<--10/8>6:17pm
       
         for (let s = 0; s < starsInLayer; s++) {
