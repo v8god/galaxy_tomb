@@ -71,9 +71,8 @@
       const layerSpacing = 20;          // vertical distance between layers
       const starsInFirstLayer = 256;    // stars in top layer
       const coreSpacing = 10;
-      const radius = coreSpacing + coreRadius + (layer * layerSpacing);
-      const maxRadius = coreSpacing + coreRadius + (numLayers * layerSpacing);
-      const radius = maxRadius - (layer * layerSpacing);
+      //const radius = coreSpacing + coreRadius + (numLayers * layerSpacing);
+      
   
   
       
@@ -89,16 +88,18 @@
       // 🆕 CHANGED — Generate stars in layers
       for (let layer = 0; layer < numLayers; layer++) {
         const starsInLayer = Math.floor(starsInFirstLayer / Math.pow(2, layer));
-        const layerRadius = coreSpacing + coreRadius + (layer * layerSpacing);
+        const maxRadius = coreSpacing + coreRadius + (numLayers * layerSpacing);
+        const radius = maxRadius - (layer * layerSpacing);
+        //const layerRadius = coreSpacing + coreRadius + (numLayers * layerSpacing);//<<--10/8>7:46pm
         //const y = -(layer * layerSpacing);<<--10/8>6:17pm
       
         for (let s = 0; s < starsInLayer; s++) {
           const angle = Math.random() * 2 * Math.PI;
           //const radius = coreRadius + Math.random() * 200; // wider spread<<--10/8>6:17pm
-          //const x = radius * Math.cos(angle);<<--10/8>6:17pm
-          //const z = radius * Math.sin(angle);<<--10/8>6:17pm
-          const x = layerRadius * Math.cos(angle);
-          const z = layerRadius * Math.sin(angle);
+          const x = radius * Math.cos(angle);//<<--10/8>6:17pm
+          const z = radius * Math.sin(angle);//<<--10/8>6:17pm
+          //const x = layerRadius * Math.cos(angle);//<<--10/8>7:46pm
+          //const z = layerRadius * Math.sin(angle);//<<--10/8>7:46pm
           const y = (Math.random() - 0.5) * 3;
       
           const mesh = new THREE.Mesh(starGeometry, starMaterial.clone());
@@ -106,8 +107,8 @@
       
           directions.push(Math.random() < 0.5 ? 1 : -1);
           angles.push(angle);
-          radii.push(layerRadius);
-          //radii.push(radius);
+          //radii.push(layerRadius);//<<--10/8>7:46pm
+          radii.push(radius);
           velocities.push(0.2);
       
           starMeshes.push(mesh);
