@@ -53,7 +53,7 @@
       
       // 🆕 CHANGED — Bigger grid sphere (5× radius)
       const coreRadius = 20;
-      const geometry = new THREE.SphereGeometry(2 * 5, 64, 64); // radius=10, more segments
+      const geometry = new THREE.SphereGeometry(2 * 10, 64, 64); // radius=10, more segments
       const wireframe = new THREE.WireframeGeometry(geometry);
       const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff });
       const sphere = new THREE.LineSegments(wireframe, lineMaterial);
