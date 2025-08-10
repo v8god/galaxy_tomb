@@ -70,6 +70,9 @@
     const numLayers = 10;             // total layers
     const layerSpacing = 20;          // vertical distance between layers
     const starsInFirstLayer = 1024;    // stars in top layer
+    // 🆕 Distance between sphere and closest stars
+    const sphereGap = 50;  // Change this to control minimum distance from sphere surface
+
     
     const starMaterial = new THREE.MeshBasicMaterial({
       color: 0xffffff,
@@ -87,7 +90,7 @@
     
       for (let s = 0; s < starsInLayer; s++) {
         const angle = Math.random() * 2 * Math.PI;
-        const radius = coreRadius + Math.random() * 200; // wider spread
+        const radius = (coreRadius + sphereGap) + Math.random() * 200; // wider spread
     
         const x = radius * Math.cos(angle);
         const z = radius * Math.sin(angle);
