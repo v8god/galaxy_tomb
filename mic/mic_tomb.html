@@ -44,25 +44,30 @@
         animation: wave 1s finite;
       }
       @keyframes wave{
-        50%{
-          background-size: auto 50%;
+        33%{
+          transform: scale(0.5);
+        }
+        66%{
+          transform: scale(1.5);
         }
         100%{
-          background-size: auto 100%;
+          transform: scale(1);
         }
       }
       .arch1{
-/*         position: relative;
-        display: flex;
+        position: relative;
+        top: 10px;
+        left: 10px;
+/*         display: flex;
         justify-content: center;
-        align-items: center; */
-        position: absolute;
+        align-items: center;  */
+/*         position: absolute;
         top: 35vh;
-        left: 44vw;
+        left: 44vw; */
         height: 180px;
         width: 180px;
         background-color: transparent;
-        border: 5px solid #fff;
+        border: 15px solid #fff;
 /*         box-shadow: 0 0 0 5px #fff inset; */
 /*         border-radius:  */
         border-top-left-radius: 90px 90px;
