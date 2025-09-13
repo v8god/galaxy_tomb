@@ -40,6 +40,17 @@
       .circle:hover .mic{
         opacity: 1;
       }
+      .circle:active{
+        animation: wave 1s finite;
+      }
+      @keyframes wave{
+        50%{
+          background-size: auto 50%;
+        }
+        100%{
+          background-size: auto 100%;
+        }
+      }
       .arch1{
 /*         position: relative;
         display: flex;
