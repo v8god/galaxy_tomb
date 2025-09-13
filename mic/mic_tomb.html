@@ -1,85 +1,69 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>
-      Mic Proto Tomb
-    </title>
-    <style>
-      body{
-        background: #2B4254; 
+<head>
+  <title>Mic Proto Tomb</title>
+  <style>
+    body {
+      background: #2B4254;
+    }
+    .circle {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: #A1BAC9;
+      position: absolute;
+      top: 35vh;
+      left: 44vw;
+      overflow: hidden;
+      opacity: 0.5;
+      z-index: 1;
+      /* make circle relative for positioning arch inside */
+      position: relative;
+    }
+    .mic {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      background-image: url("mic_image.png");
+      background-size: auto 100%;
+      opacity: 0.5;
+      z-index: 2;
+    }
+    .circle:hover .mic {
+      opacity: 1;
+    }
+    .circle:active {
+      animation: wave 1s forwards;
+    }
+    @keyframes wave {
+      50% {
+        transform: scale(0.5);
       }
-      .circle{
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        background-color: #A1BAC9;
-        position: absolute;
-        top: 35vh;
-        left: 44vw;
-/*         display: flex;
-        justify-content: center;
-        align-items: center; */
-        overflow: hidden;
-        opacity: 0.5;
-        z-index: 1;
+      100% {
+        transform: scale(1);
       }
-      .mic{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-/*         top: -50px;
-        left: -50px; */
-        height: 200px;
-        width: 200px;
-        background-image: url("mic_image.png");
-        background-size: auto 100%;
-        opacity: 0.5;
-        z-index: 2;
-      }
-      .circle:hover .mic{
-        opacity: 1;
-      }
-      .circle:active{
-        animation: wave 1s finite;
-      }
-      @keyframes wave{
-        33%{
-          transform: scale(0.5);
-        }
-        66%{
-          transform: scale(1.5);
-        }
-        100%{
-          transform: scale(1);
-        }
-      }
-      .arch1{
-        position: relative;
-        top: 10px;
-        left: 10px;
-/*         display: flex;
-        justify-content: center;
-        align-items: center;  */
-/*         position: absolute;
-        top: 35vh;
-        left: 44vw; */
-        height: 180px;
-        width: 180px;
-        background-color: transparent;
-        border: 15px solid #fff;
-/*         box-shadow: 0 0 0 5px #fff inset; */
-/*         border-radius:  */
-        border-top-left-radius: 90px 90px;
-        border-top-right-radius: 90px 90px;
-        z-index: 3;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="circle">
-      <div class="mic"></div>
-      <div class="arch1"></div>
-    </div>
-  </body>
-</html>  
+    }
+    .arch1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 180px;
+      width: 180px;
+      background-color: transparent;
+      border: 5px solid #fff;
+      border-top-left-radius: 90px 90px;
+      border-top-right-radius: 90px 90px;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle">
+    <div class="mic"></div>
+    <div class="arch1"></div>
+  </div>
+</body>
+</html>
