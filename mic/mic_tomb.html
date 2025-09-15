@@ -41,7 +41,7 @@
         opacity: 1;
       }
       .circle:active{
-        animation: waves 1s forwards;
+        animation: waves 3s forwards;
       }
       .arch1{
         position: absolute;
@@ -67,6 +67,18 @@
         clip-path: inset(0 50% 10% 0);
         z-index: 3;
       }
+      .arch2{
+        position: absolute;
+        top: -20px;
+        left: -15px;
+        height: 225px;
+        width: 225px;
+        background-color: transparent;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        clip-path: inset{0 50% 10% 0};
+        z-index: 4;
+      }
       @keyframes waves{
         33%{
           transform: scale(0.5);
@@ -84,6 +96,7 @@
     <div class="circle">
       <div class="mic"></div>
       <div class="arch1"></div>
+      <div class="arch2"></div>
     </div>
   </body>
 </html>  
