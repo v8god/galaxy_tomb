@@ -8,6 +8,9 @@
       body{
         background: #2B4254; 
       }
+      #toggle{
+      	display: none;
+      }
       .circle{
         height: 200px;
         width: 200px;
@@ -16,6 +19,8 @@
         position: absolute;
         top: 35vh;
         left: 44vw;
+      /*   top: 10vh;
+        right: 10vw; */
         /*         display: flex;
         justify-content: center;
         align-items: center; */
@@ -32,7 +37,7 @@
         left: -50px; */
         height: 200px;
         width: 200px;
-/*         background-image: url("mic_image.png"); */
+        /*         background-image: url("mic_image.png"); */
         background-image: url("https://static.vecteezy.com/system/resources/thumbnails/018/754/486/small/microphone-icon-in-black-colors-podcast-signs-illustration-png.png");
         background-size: auto 100%;
         opacity: 0.5;
@@ -42,7 +47,7 @@
         opacity: 1;
       }
       .circle:active{
-        animation: waves 1s forwards;
+        animation: waves 0.3s forwards;
       }
       .arch1{
         position: absolute;
@@ -136,6 +141,26 @@
       clip-path: inset(0 0 50% 30%);
       z-index: 8;
       } */
+       #toggle:checked + .circle .arch1{
+        	opacity: 1;
+      	animation: spin 5s infinite;
+      }
+       #toggle:checked + .circle .arch5{
+        	opacity: 1;
+      	animation: spin 5s infinite;
+      }
+       #toggle:checked + .circle .arch4{
+        	opacity: 1;
+      	animation: spin 5s infinite;
+      }
+       #toggle:checked + .circle .arch3{
+        	opacity: 1;
+      	animation: spin 5s infinite;
+      }
+       #toggle:checked + .circle .arch2{
+        	opacity: 1;
+      	animation: spin 5s infinite;
+      }
       @keyframes waves{
         33%{
           transform: scale(0.5);
@@ -147,10 +172,40 @@
           transform: scale(1);
         }
       }
+      @keyframes spin{
+        0%{
+        	transform: rotate(0deg);
+        }
+        33%{
+        	transform: rotate(120deg);
+        }
+        40%{
+        	transform: rotate(90deg);
+        }
+        66%{
+        	transform: rotate(150deg);
+        }
+        70%{
+        	transform: rotate(0deg);
+        }
+        85%{
+          transform: rotate(-120deg);
+        }
+        90%{
+        	transform: rotate(-90deg);
+        }
+        93%{
+        	transform: rotate(-150deg);
+        }
+        100%{
+        	transform: rotate(0deg);
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="circle">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="circle">
       <div class="mic"></div>
       <div class="arch1"></div>
       <div class="arch2"></div>
