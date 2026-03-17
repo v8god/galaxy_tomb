@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ff25789b27854744ba64f4e366eb7dec</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="experiment-2" class="cell markdown">
+<h1><strong>Experiment 2</strong></h1>
+</section>
+<div class="cell markdown">
+<p><strong>Aim:</strong> Build an Artificial Neural Network to implement
+Binary Classification task using the Back-propagation algorithm and test
+the same using appropriate data sets.</p>
+</div>
+<div class="cell markdown">
+<p>Pratham Goyal A2345924079 4CSE-2eve</p>
+</div>
+<div id="38b5f6b9" class="cell markdown" id="iJ0ZKrDxffoG"
+data-papermill="{&quot;duration&quot;:9.533e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:11.562510&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:11.552977&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="importing-necessary-libraries"><strong>Importing Necessary
+Libraries</strong></h1>
+</div>
+<div id="666ca50e" class="cell code" data-execution_count="1"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:11.581230Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:11.580884Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:12.843113Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:12.842166Z&quot;}"
+id="JuKSi3EJyGb-"
+data-papermill="{&quot;duration&quot;:1.274221,&quot;end_time&quot;:&quot;2025-12-20T22:40:12.845411&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:11.571190&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div>
+</div>
+<div id="360b1434" class="cell markdown" id="92epT7aZgF74"
+data-papermill="{&quot;duration&quot;:8.525e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:12.862488&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:12.853963&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="loading-the-birds-dataset"><strong>Loading the Birds
+Dataset</strong></h1>
+<p>There are many kinds of birds: pigeons, ducks, ostriches, penguins…
+Some are good at flying, others can't fly but run fast. Some swim under
+water, others wading in shallow pool.</p>
+<p>According to their living environments and living habits, birds are
+classified into different ecological groups. There are 6 ecological
+groups of birds:</p>
+<ul>
+<li>Swimming Birds (SW)</li>
+<li>Wading Birds (W)</li>
+<li>Terrestrial Birds (T)</li>
+<li>Raptors (R)</li>
+<li>Scansorial Birds (P)</li>
+<li>Singing Birds (SO)</li>
+</ul>
+<p>Apparently, birds belong to different ecological groups have
+different appearances: <strong>flying birds have strong wings and wading
+birds have long legs</strong>. Their living habits are somewhat
+reflected in their bones' shapes. As data scientists we may think of
+examining the underlying relationship between sizes of bones and
+ecological groups, and recognising birds' ecological groups by their
+bones' shapes.</p>
+<p><strong>Content</strong></p>
+<p>There are 420 birds contained in this dataset. Each bird is
+represented by 10 measurements (features):</p>
+<ul>
+<li>Length and Diameter of Humerus</li>
+<li>Length and Diameter of Ulna</li>
+<li>Length and Diameter of Femur</li>
+<li>Length and Diameter of Tibiotarsus</li>
+<li>Length and Diameter of Tarsometatarsus</li>
+</ul>
+</div>
+<div id="019ef690" class="cell code" data-execution_count="2"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:12.881624Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:12.881179Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:12.939219Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:12.937760Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:5,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925954947,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="mslwX-u6eqdi" data-outputId="0477301b-1de0-4e20-cf47-9d490c160fd7"
+data-papermill="{&quot;duration&quot;:6.9572e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:12.941269&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:12.871697&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>bird_data <span class="op">=</span> pd.read_csv(<span class="st">&#39;/kaggle/input/bird-file/bird.csv&#39;</span>, delimiter <span class="op">=</span> <span class="st">&#39;,&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>bird_data.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="2">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>huml</th>
+      <th>humw</th>
+      <th>ulnal</th>
+      <th>ulnaw</th>
+      <th>feml</th>
+      <th>femw</th>
+      <th>tibl</th>
+      <th>tibw</th>
+      <th>tarl</th>
+      <th>tarw</th>
+      <th>type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>80.78</td>
+      <td>6.68</td>
+      <td>72.01</td>
+      <td>4.88</td>
+      <td>41.81</td>
+      <td>3.70</td>
+      <td>5.50</td>
+      <td>4.03</td>
+      <td>38.70</td>
+      <td>3.84</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>88.91</td>
+      <td>6.63</td>
+      <td>80.53</td>
+      <td>5.59</td>
+      <td>47.04</td>
+      <td>4.30</td>
+      <td>80.22</td>
+      <td>4.51</td>
+      <td>41.50</td>
+      <td>4.01</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>79.97</td>
+      <td>6.37</td>
+      <td>69.26</td>
+      <td>5.28</td>
+      <td>43.07</td>
+      <td>3.90</td>
+      <td>75.35</td>
+      <td>4.04</td>
+      <td>38.31</td>
+      <td>3.34</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>77.65</td>
+      <td>5.70</td>
+      <td>65.76</td>
+      <td>4.77</td>
+      <td>40.04</td>
+      <td>3.52</td>
+      <td>69.17</td>
+      <td>3.40</td>
+      <td>35.78</td>
+      <td>3.41</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>62.80</td>
+      <td>4.84</td>
+      <td>52.09</td>
+      <td>3.73</td>
+      <td>33.95</td>
+      <td>2.72</td>
+      <td>56.27</td>
+      <td>2.96</td>
+      <td>31.88</td>
+      <td>3.13</td>
+      <td>SW</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="9604fbd4" class="cell markdown" id="TgacS0JggQgr"
+data-papermill="{&quot;duration&quot;:8.816e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:12.958431&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:12.949615&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="accessing-the-column-names-in-the-dataset"><strong>Accessing the
+Column Names in the Dataset</strong></h1>
+</div>
+<div id="838a0a9d" class="cell code" data-execution_count="3"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:12.976547Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:12.976214Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:12.982944Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:12.981899Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:9,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925957020,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="hqRcQ0jffWS6" data-outputId="c09bec30-c8e4-4e7e-b861-a739eb15dc6d"
+data-papermill="{&quot;duration&quot;:1.8329e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:12.984973&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:12.966644&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>bird_data.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<pre><code>Index([&#39;id&#39;, &#39;huml&#39;, &#39;humw&#39;, &#39;ulnal&#39;, &#39;ulnaw&#39;, &#39;feml&#39;, &#39;femw&#39;, &#39;tibl&#39;, &#39;tibw&#39;,
+       &#39;tarl&#39;, &#39;tarw&#39;, &#39;type&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<div id="9b1ce862" class="cell code" data-execution_count="4"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.004098Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.003731Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.028293Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.027081Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:9,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925957021,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="uHyanSIie5Xx" data-outputId="8d407946-c446-414b-9b13-172f3064ea1e"
+data-papermill="{&quot;duration&quot;:3.6269e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.030223&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:12.993954&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>bird_data <span class="op">=</span> bird_data.set_index(<span class="st">&#39;id&#39;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>bird_data.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>huml</th>
+      <th>humw</th>
+      <th>ulnal</th>
+      <th>ulnaw</th>
+      <th>feml</th>
+      <th>femw</th>
+      <th>tibl</th>
+      <th>tibw</th>
+      <th>tarl</th>
+      <th>tarw</th>
+      <th>type</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>80.78</td>
+      <td>6.68</td>
+      <td>72.01</td>
+      <td>4.88</td>
+      <td>41.81</td>
+      <td>3.70</td>
+      <td>5.50</td>
+      <td>4.03</td>
+      <td>38.70</td>
+      <td>3.84</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>88.91</td>
+      <td>6.63</td>
+      <td>80.53</td>
+      <td>5.59</td>
+      <td>47.04</td>
+      <td>4.30</td>
+      <td>80.22</td>
+      <td>4.51</td>
+      <td>41.50</td>
+      <td>4.01</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>79.97</td>
+      <td>6.37</td>
+      <td>69.26</td>
+      <td>5.28</td>
+      <td>43.07</td>
+      <td>3.90</td>
+      <td>75.35</td>
+      <td>4.04</td>
+      <td>38.31</td>
+      <td>3.34</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>77.65</td>
+      <td>5.70</td>
+      <td>65.76</td>
+      <td>4.77</td>
+      <td>40.04</td>
+      <td>3.52</td>
+      <td>69.17</td>
+      <td>3.40</td>
+      <td>35.78</td>
+      <td>3.41</td>
+      <td>SW</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>62.80</td>
+      <td>4.84</td>
+      <td>52.09</td>
+      <td>3.73</td>
+      <td>33.95</td>
+      <td>2.72</td>
+      <td>56.27</td>
+      <td>2.96</td>
+      <td>31.88</td>
+      <td>3.13</td>
+      <td>SW</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="6aa711d9" class="cell markdown" id="WbWc384ZgkNk"
+data-papermill="{&quot;duration&quot;:8.5e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.047985&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.039485&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="finding-the-shape-of-the-dataset"><strong>Finding the Shape of
+the Dataset</strong></h1>
+</div>
+<div id="27354675" class="cell code" data-execution_count="5"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.066727Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.066375Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.072561Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.071518Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925957021,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="v3r-6BsCfO6O" data-outputId="e7002933-e5b3-4f35-9c2b-7c90c25c43e2"
+data-papermill="{&quot;duration&quot;:1.7867e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.074432&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.056565&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>bird_data.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>(420, 11)</code></pre>
+</div>
+</div>
+<div id="fb570f57" class="cell code" data-execution_count="6"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.093354Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.093016Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.120090Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.118902Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:6,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925957021,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="DR5iJOoggqVl" data-outputId="72e61b42-618d-4913-d733-87ef6660ae18"
+data-papermill="{&quot;duration&quot;:3.8932e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.121994&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.083062&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>bird_data.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 420 entries, 0 to 419
+Data columns (total 11 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   huml    419 non-null    float64
+ 1   humw    419 non-null    float64
+ 2   ulnal   417 non-null    float64
+ 3   ulnaw   418 non-null    float64
+ 4   feml    418 non-null    float64
+ 5   femw    419 non-null    float64
+ 6   tibl    418 non-null    float64
+ 7   tibw    419 non-null    float64
+ 8   tarl    419 non-null    float64
+ 9   tarw    419 non-null    float64
+ 10  type    420 non-null    object 
+dtypes: float64(10), object(1)
+memory usage: 39.4+ KB
+</code></pre>
+</div>
+</div>
+<div id="d4682ee1" class="cell markdown" id="MOi7okQ_tQrB"
+data-papermill="{&quot;duration&quot;:8.655e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.139403&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.130748&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="checking-missing-values"><strong>Checking Missing
+Values</strong></h3>
+</div>
+<div id="2c4744e7" class="cell code" data-execution_count="7"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.159220Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.158889Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.166370Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.165357Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:7,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925959196,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="3XbsLJg0tN-L" data-outputId="54e7d619-4e2a-47ae-e354-75c28a9a9bab"
+data-papermill="{&quot;duration&quot;:2.0751e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.169144&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.148393&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>bird_data.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<pre><code>huml     1
+humw     1
+ulnal    3
+ulnaw    2
+feml     2
+femw     1
+tibl     2
+tibw     1
+tarl     1
+tarw     1
+type     0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="f600778f" class="cell code" data-execution_count="8"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.189142Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.188564Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.195311Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.194233Z&quot;}"
+id="lN0LogSwGCLy"
+data-papermill="{&quot;duration&quot;:1.8912e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.197277&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.178365&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>bird_data.dropna(how<span class="op">=</span><span class="st">&#39;any&#39;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div id="2fe26219" class="cell code" data-execution_count="9"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.216904Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.216521Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.224417Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.223586Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:4,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925959196,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="lhfQVtHAGPk1" data-outputId="b2042432-f434-491b-ac39-a12688c40251"
+data-papermill="{&quot;duration&quot;:2.0291e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.226423&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.206132&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>bird_data.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<pre><code>huml     0
+humw     0
+ulnal    0
+ulnaw    0
+feml     0
+femw     0
+tibl     0
+tibw     0
+tarl     0
+tarw     0
+type     0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="61ec8a31" class="cell code" data-execution_count="10"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.246676Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.246320Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.252449Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.251675Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925961603,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="Qiui1vOsGidM" data-outputId="812d4e68-027a-49c9-97be-54a3eef0accd"
+data-papermill="{&quot;duration&quot;:1.8734e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.254406&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.235672&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>bird_data.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<pre><code>(413, 11)</code></pre>
+</div>
+</div>
+<div id="badd6c1e" class="cell markdown" id="gL5klaMFg4U0"
+data-papermill="{&quot;duration&quot;:9.186e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.272884&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.263698&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="unique-values-in-the-data"><strong>Unique Values in the
+Data</strong></h1>
+</div>
+<div id="e5031269" class="cell code" data-execution_count="11"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.293006Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.292613Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.303965Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.303033Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:7,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925961604,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="yNjlTn9yhJtA" data-outputId="b9dcc42f-751b-47d7-a282-91b6245fe03d"
+data-papermill="{&quot;duration&quot;:2.4044e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.305785&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.281741&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>bird_data.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+<pre><code>huml     403
+humw     319
+ulnal    394
+ulnaw    305
+feml     397
+femw     287
+tibl     401
+tibw     283
+tarl     403
+tarw     277
+type       6
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="ef7042b2" class="cell code" data-execution_count="12"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.325836Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.325463Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:13.332496Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:13.331492Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:4,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682925961604,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="ccm8FqHuM2CQ" data-outputId="ae6d71cd-525c-4618-9419-3d2e1430fb8c"
+data-papermill="{&quot;duration&quot;:1.9643e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.334495&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.314852&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>bird_data[<span class="st">&#39;type&#39;</span>].unique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<pre><code>array([&#39;SW&#39;, &#39;W&#39;, &#39;T&#39;, &#39;R&#39;, &#39;P&#39;, &#39;SO&#39;], dtype=object)</code></pre>
+</div>
+</div>
+<div id="a10047d0" class="cell markdown" id="ohHEfCNNMDNU"
+data-papermill="{&quot;duration&quot;:8.968e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:13.353095&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.344127&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="label-encoding-of-categorical-variables"><strong>Label Encoding
+of Categorical Variables</strong></h1>
+<p>Label Encoding means converting categorical features into numerical
+values. So that they can be fitted by machine learning models which only
+take numerical data.</p>
+<p><strong>Example:</strong> Suppose we have a column Height in some
+dataset that has elements as Tall, Medium, and short. To convert this
+categorical column into a numerical column we will apply label encoding
+to this column. After applying label encoding, the Height column is
+converted into a numerical column having elements 0,1, and 2 where 0 is
+the label for tall, 1 is the label for medium, and 2 is the label for
+short height.</p>
+</div>
+<div id="351eb11c" class="cell code" data-execution_count="13"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:13.372612Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:13.372282Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.351203Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.350029Z&quot;}"
+id="-d9-2bXeMFg_"
+data-papermill="{&quot;duration&quot;:1.991758,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.353837&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:13.362079&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>le <span class="op">=</span> LabelEncoder()</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>bird_data[[<span class="st">&#39;type&#39;</span>]] <span class="op">=</span> bird_data[[<span class="st">&#39;type&#39;</span>]].<span class="bu">apply</span>(le.fit_transform)</span></code></pre></div>
+</div>
+<div id="fb028d1f" class="cell code" data-execution_count="14"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.375431Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.374872Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.392736Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.391738Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:9,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926119205,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="Y_MpErPUMrLx" data-outputId="af9ec1a3-64ce-4fc7-d632-8155ed4b1e76"
+data-papermill="{&quot;duration&quot;:3.0817e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.394774&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.363957&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>bird_data.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>huml</th>
+      <th>humw</th>
+      <th>ulnal</th>
+      <th>ulnaw</th>
+      <th>feml</th>
+      <th>femw</th>
+      <th>tibl</th>
+      <th>tibw</th>
+      <th>tarl</th>
+      <th>tarw</th>
+      <th>type</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>80.78</td>
+      <td>6.68</td>
+      <td>72.01</td>
+      <td>4.88</td>
+      <td>41.81</td>
+      <td>3.70</td>
+      <td>5.50</td>
+      <td>4.03</td>
+      <td>38.70</td>
+      <td>3.84</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>88.91</td>
+      <td>6.63</td>
+      <td>80.53</td>
+      <td>5.59</td>
+      <td>47.04</td>
+      <td>4.30</td>
+      <td>80.22</td>
+      <td>4.51</td>
+      <td>41.50</td>
+      <td>4.01</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>79.97</td>
+      <td>6.37</td>
+      <td>69.26</td>
+      <td>5.28</td>
+      <td>43.07</td>
+      <td>3.90</td>
+      <td>75.35</td>
+      <td>4.04</td>
+      <td>38.31</td>
+      <td>3.34</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>77.65</td>
+      <td>5.70</td>
+      <td>65.76</td>
+      <td>4.77</td>
+      <td>40.04</td>
+      <td>3.52</td>
+      <td>69.17</td>
+      <td>3.40</td>
+      <td>35.78</td>
+      <td>3.41</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>62.80</td>
+      <td>4.84</td>
+      <td>52.09</td>
+      <td>3.73</td>
+      <td>33.95</td>
+      <td>2.72</td>
+      <td>56.27</td>
+      <td>2.96</td>
+      <td>31.88</td>
+      <td>3.13</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="56da058e" class="cell markdown" id="RBhC2pV6kG-m"
+data-papermill="{&quot;duration&quot;:9.158e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.413580&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.404422&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="seperating-label-from-data"><strong>Seperating Label from
+Data</strong></h3>
+</div>
+<div id="74fb2d98" class="cell code" data-execution_count="15"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.435404Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.435052Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.441003Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.440024Z&quot;}"
+id="CU-h5H-vilid"
+data-papermill="{&quot;duration&quot;:2.0246e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.443135&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.422889&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> bird_data[<span class="st">&#39;type&#39;</span>]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> bird_data.drop([<span class="st">&#39;type&#39;</span>],axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+</div>
+<div id="fad526d4" class="cell code" data-execution_count="16"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.463714Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.463396Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.469963Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.469074Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926119206,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="doNxQbxXkrXv" data-outputId="a5f985db-5f9c-4917-d0b2-9e25042a4773"
+data-papermill="{&quot;duration&quot;:1.9242e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.471940&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.452698&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>X.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="16">
+<pre><code>Index([&#39;huml&#39;, &#39;humw&#39;, &#39;ulnal&#39;, &#39;ulnaw&#39;, &#39;feml&#39;, &#39;femw&#39;, &#39;tibl&#39;, &#39;tibw&#39;,
+       &#39;tarl&#39;, &#39;tarw&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<div id="93f1896f" class="cell code" data-execution_count="17"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.492882Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.492519Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.500216Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.499018Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:7,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926119206,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="JxmY3LYgksbe" data-outputId="756d07d7-77b8-4e6e-bf8c-923b7c1e78db"
+data-papermill="{&quot;duration&quot;:2.0701e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.502432&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.481731&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>id
+0      3
+1      3
+2      3
+3      3
+4      3
+      ..
+415    2
+416    2
+417    2
+418    2
+419    2
+Name: type, Length: 413, dtype: int64</code></pre>
+</div>
+</div>
+<div id="d0e08226" class="cell code" data-execution_count="18"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.524594Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.523926Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:15.530412Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:15.529193Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926120011,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="Y3L_7AdDLqrR" data-outputId="9a75cfbe-fc0c-48af-8c65-ef4a1ba0e923"
+data-papermill="{&quot;duration&quot;:1.9579e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.532370&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.512791&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>y.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<pre><code>(413,)</code></pre>
+</div>
+</div>
+<div id="26f2d903" class="cell markdown" id="ZKjRtpJ0JWJf"
+data-papermill="{&quot;duration&quot;:9.804e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:15.552065&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.542261&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="one-hot-encoding"><strong>One-Hot-Encoding</strong></h1>
+<ul>
+<li>It allows the use of categorical variables in models that require
+numerical input.</li>
+<li>It can improve model performance by providing more information to
+the model about the categorical variable.</li>
+<li>It can help to avoid the problem of ordinality, which can occur when
+a categorical variable has a natural ordering (e.g. “small”, “medium”,
+“large”).</li>
+</ul>
+</div>
+<div id="382c79f7" class="cell code" data-execution_count="19"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:15.573600Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:15.572647Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.166428Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.165475Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:7,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926120011,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="L5twQod-KyJY" data-outputId="b61b9213-d995-4833-d9b1-67746f3eb4e7"
+data-papermill="{&quot;duration&quot;:18.606956,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.168587&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:15.561631&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.utils <span class="im">import</span> to_categorical</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>num_classes <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>y_encoded <span class="op">=</span> to_categorical(y, num_classes<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>2025-12-20 22:40:17.895111: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1766270418.153082      17 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1766270418.226299      17 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1766270418.815211      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766270418.815266      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766270418.815270      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766270418.815274      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="19">
+<pre><code>id
+0      3
+1      3
+2      3
+3      3
+4      3
+      ..
+415    2
+416    2
+417    2
+418    2
+419    2
+Name: type, Length: 413, dtype: int64</code></pre>
+</div>
+</div>
+<div id="d7e4faa0" class="cell markdown" id="OB8cY_fNk2KG"
+data-papermill="{&quot;duration&quot;:9.483e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.188088&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.178605&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="splitting-the-data-into-training-and-testing"><strong>Splitting
+the Data into Training and Testing</strong></h3>
+</div>
+<div id="1556acf1" class="cell code" data-execution_count="20"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.209856Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.208730Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.346422Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.345415Z&quot;}"
+id="ONhh9fw5kunZ"
+data-papermill="{&quot;duration&quot;:0.151309,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.349097&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.197788&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size <span class="op">=</span> <span class="fl">0.2</span>, random_state <span class="op">=</span> <span class="dv">2</span>)</span></code></pre></div>
+</div>
+<div id="5d843165" class="cell code" data-execution_count="21"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.370975Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.370259Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.376543Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.375514Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:4,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926120011,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="n7QUNsrflJyd" data-outputId="26fcbe14-5d40-4dc0-c0ff-897fa20c6a58"
+data-papermill="{&quot;duration&quot;:1.9342e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.378364&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.359022&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the X_train&quot;</span>, X_train.shape)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the X_test&quot;</span>, X_test.shape)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the y_train&quot;</span>, y_train.shape)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the y_test&quot;</span>, y_test.shape)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of the X_train (330, 10)
+Shape of the X_test (83, 10)
+Shape of the y_train (330,)
+Shape of the y_test (83,)
+</code></pre>
+</div>
+</div>
+<div id="fc12b1f9" class="cell markdown" id="qRe4F-ZllGU0"
+data-papermill="{&quot;duration&quot;:9.608e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.397910&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.388302&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="feature-scaling"><strong>Feature Scaling:</strong></h1>
+<p>The result of <strong>standardization</strong> (or <strong>Z-Score
+normalization</strong>) is that the features will be re scaled so that
+they'll have the properties of a standard normal distribution with:
+<span class="math display"><em>μ</em> = 0</span> And <span
+class="math display"><em>σ</em> = 1</span></p>
+<p>Where <span class="math inline"><em>μ</em></span> is the
+mean(average) and <span class="math inline"><em>σ</em></span> is the
+standard deviation from the mean; standard scores (also called
+<strong>Z</strong> scores) of the sampels are calculated as follows:
+<span class="math display">$$z = \frac{x - \mu}{\sigma}$$</span></p>
+<hr />
+<h1 id="about-min-max-scaling"><strong>About Min-Max
+Scaling</strong></h1>
+<p>An alternative approach to <strong>Z-Score</strong> normalization (or
+called standardization) is the so-called <strong>Min-Max
+Scaling</strong> (often also simply called
+<strong>Normalization</strong> - a common cause for ambiguities)</p>
+<p>In this approach, the data is scaled to a fixed range - usually
+<code>[0, 1]</code>. The cost of having this bounded range - in contrast
+to standrdization - is that we will end up with smaaller standard
+deviations, which can suppress the effect of outliers.</p>
+<p><strong>Note</strong>:</p>
+<p>If the dataset have lot's of outliers, and the algorithms are
+sensitive to outliers, please use <code>Min-Max Scaler</code></p>
+<p>A <code>Min-Max Scaling</code> is typically done via the foloowing
+equation:</p>
+<p><span class="math display">$$X_{norm} = \frac{X_{i} -
+X_{min}}{X_{max} - X_{min}}$$</span></p>
+<p><span class="math inline"><em>X</em><sub><em>i</em></sub></span> is
+the <span
+class="math inline"><em>i</em><sup><em>t</em><em>h</em></sup></span>
+sample of dataset.</p>
+<h1 id="z-score-standardization-or-min-max-scaling"><strong>Z-Score
+Standardization or Min-Max Scaling</strong></h1>
+<p>"Standardization or Min-Max scaling"? - There is no obvious answer to
+this question: it really depends on the application.</p>
+<p>However this doesn't mean that <code>Min-Max Scaling</code> is not
+useful at all, A popular application is <code>image processing</code>,
+where pixel intensities have to be normalized to fit withint a certain
+range (i.e., <code>[0, 255]</code> for the RGB colour range). Also,
+typical <em>Neural Network</em> Algorithm require data that on a
+<code>0 - 1</code> scale.</p>
+</div>
+<div id="d8f2e249" class="cell code" data-execution_count="22"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.419210Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.418859Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.429076Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.428033Z&quot;}"
+id="0tJwn52Wk9ty"
+data-papermill="{&quot;duration&quot;:2.3395e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.431188&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.407793&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>sc <span class="op">=</span> StandardScaler()</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> sc.fit_transform(X_train)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> sc.transform(X_test)</span></code></pre></div>
+</div>
+<div id="23c6f84a" class="cell markdown" id="N-18bjO3rOHB"
+data-papermill="{&quot;duration&quot;:9.869e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.450878&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.441009&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>#<strong>Building the ANN Model</strong></p>
+</div>
+<div id="53f72d30" class="cell code" data-execution_count="23"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.472243Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.471884Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.476563Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.475540Z&quot;}"
+id="lYWxtWt4lwsa"
+data-papermill="{&quot;duration&quot;:1.7936e-2,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.478697&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.460761&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sequential model to initialise our ann and dense module to build the layers</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.models <span class="im">import</span> Sequential</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.layers <span class="im">import</span> Dense</span></code></pre></div>
+</div>
+<div id="8fcf6244" class="cell code" data-execution_count="24"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.501033Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.500312Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:40:34.612757Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:40:34.611666Z&quot;}"
+id="5SHVdj9Xl6se"
+data-papermill="{&quot;duration&quot;:0.125763,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.614829&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.489066&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;from tensorflow.keras.models import Sequential</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="co">from tensorflow.keras.layers import Dense, Input</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="co">classifier = Sequential()</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the input layer and the first hidden layer</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="co">classifier.add(Dense(units = 8, kernel_initializer = &#39;uniform&#39;, activation = &#39;relu&#39;, input_dim = 10))</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the second hidden layer</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="co">classifier.add(Dense(units = 16, kernel_initializer = &#39;uniform&#39;, activation = &#39;relu&#39;))</span></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the third hidden layer</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="co">classifier.add(Dense(units = 32, kernel_initializer = &#39;uniform&#39;, activation = &#39;relu&#39;))</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the output layer</span></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="co">classifier.add(Dense(units = 6, kernel_initializer = &#39;uniform&#39;, activation = &#39;softmax&#39;))</span></span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;</span></span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Sequential</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Dense, Input</span>
+<span id="cb38-19"><a href="#cb38-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-20"><a href="#cb38-20" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> Sequential()</span>
+<span id="cb38-21"><a href="#cb38-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-22"><a href="#cb38-22" aria-hidden="true" tabindex="-1"></a>classifier.add(Input(shape<span class="op">=</span>(<span class="dv">10</span>,)))   <span class="co"># input layer</span></span>
+<span id="cb38-23"><a href="#cb38-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-24"><a href="#cb38-24" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(<span class="dv">8</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb38-25"><a href="#cb38-25" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(<span class="dv">16</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb38-26"><a href="#cb38-26" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(<span class="dv">32</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb38-27"><a href="#cb38-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-28"><a href="#cb38-28" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(<span class="dv">6</span>, activation<span class="op">=</span><span class="st">&#39;softmax&#39;</span>))</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>2025-12-20 22:40:34.516546: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+</code></pre>
+</div>
+</div>
+<div id="fcba6808" class="cell markdown" id="MDjrKcLnrSw0"
+data-papermill="{&quot;duration&quot;:9.737e-3,&quot;end_time&quot;:&quot;2025-12-20T22:40:34.634452&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.624715&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="compiling-and-fitting-the-model"><strong>Compiling and Fitting
+the Model</strong></h1>
+</div>
+<div id="b24edfea" class="cell code" data-execution_count="25"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:40:34.656774Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:40:34.656431Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:44.959534Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:44.958576Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:60327,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926184616,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="RRtVuxFumFcS" data-outputId="98e8ca40-6dcd-433d-fcc1-e685af351590"
+data-papermill="{&quot;duration&quot;:70.317256,&quot;end_time&quot;:&quot;2025-12-20T22:41:44.961603&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:40:34.644347&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>classifier.<span class="bu">compile</span>(optimizer<span class="op">=</span><span class="st">&#39;adam&#39;</span>, </span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>                   loss<span class="op">=</span><span class="st">&#39;sparse_categorical_crossentropy&#39;</span>, </span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>                   metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Fitting the ANN to the Training set</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>classifier.fit(X_train, y_train, batch_size <span class="op">=</span> <span class="dv">16</span>, epochs <span class="op">=</span> <span class="dv">800</span>, verbose <span class="op">=</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.3165 - loss: 1.7536
+Epoch 2/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.3889 - loss: 1.5443 
+Epoch 3/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5255 - loss: 1.3903 
+Epoch 4/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5623 - loss: 1.3173 
+Epoch 5/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5406 - loss: 1.2857 
+Epoch 6/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5866 - loss: 1.1861 
+Epoch 7/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5315 - loss: 1.2297 
+Epoch 8/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5295 - loss: 1.1681 
+Epoch 9/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5788 - loss: 1.0975 
+Epoch 10/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5633 - loss: 1.1005 
+Epoch 11/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5917 - loss: 1.0617 
+Epoch 12/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6287 - loss: 1.0173 
+Epoch 13/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6095 - loss: 1.0148 
+Epoch 14/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.5685 - loss: 1.0781 
+Epoch 15/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6004 - loss: 0.9854 
+Epoch 16/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6513 - loss: 0.9352 
+Epoch 17/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6350 - loss: 0.9543 
+Epoch 18/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6394 - loss: 0.9348 
+Epoch 19/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6660 - loss: 0.8986 
+Epoch 20/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6451 - loss: 0.8631 
+Epoch 21/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6634 - loss: 0.8676 
+Epoch 22/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6423 - loss: 0.8431 
+Epoch 23/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6419 - loss: 0.8657 
+Epoch 24/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6680 - loss: 0.8109 
+Epoch 25/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6818 - loss: 0.8017 
+Epoch 26/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6789 - loss: 0.8122 
+Epoch 27/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7206 - loss: 0.7060 
+Epoch 28/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.6681 - loss: 0.8041 
+Epoch 29/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7035 - loss: 0.7331 
+Epoch 30/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7047 - loss: 0.7460 
+Epoch 31/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7300 - loss: 0.6714 
+Epoch 32/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7250 - loss: 0.7295 
+Epoch 33/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7138 - loss: 0.7267 
+Epoch 34/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7418 - loss: 0.7026 
+Epoch 35/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7467 - loss: 0.6888 
+Epoch 36/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7577 - loss: 0.7104 
+Epoch 37/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7480 - loss: 0.6758 
+Epoch 38/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7456 - loss: 0.6493 
+Epoch 39/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7603 - loss: 0.6503 
+Epoch 40/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7649 - loss: 0.6346 
+Epoch 41/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7787 - loss: 0.6491 
+Epoch 42/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7759 - loss: 0.5999 
+Epoch 43/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8023 - loss: 0.6283 
+Epoch 44/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8061 - loss: 0.5446 
+Epoch 45/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8008 - loss: 0.6016 
+Epoch 46/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8110 - loss: 0.5727 
+Epoch 47/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8426 - loss: 0.5424 
+Epoch 48/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8420 - loss: 0.5456 
+Epoch 49/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8215 - loss: 0.5035 
+Epoch 50/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8036 - loss: 0.5584 
+Epoch 51/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.7952 - loss: 0.5613 
+Epoch 52/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8488 - loss: 0.5092 
+Epoch 53/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8405 - loss: 0.4770 
+Epoch 54/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8230 - loss: 0.5210 
+Epoch 55/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8323 - loss: 0.5213 
+Epoch 56/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8349 - loss: 0.5004 
+Epoch 57/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8500 - loss: 0.5059 
+Epoch 58/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8201 - loss: 0.4914 
+Epoch 59/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8499 - loss: 0.5019 
+Epoch 60/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8231 - loss: 0.4853 
+Epoch 61/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8405 - loss: 0.4894 
+Epoch 62/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8708 - loss: 0.4566 
+Epoch 63/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8377 - loss: 0.4307 
+Epoch 64/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8309 - loss: 0.4858 
+Epoch 65/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8613 - loss: 0.4562 
+Epoch 66/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8509 - loss: 0.4091 
+Epoch 67/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8808 - loss: 0.4092 
+Epoch 68/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8552 - loss: 0.4135 
+Epoch 69/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8885 - loss: 0.3734 
+Epoch 70/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8612 - loss: 0.4073 
+Epoch 71/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8591 - loss: 0.3836 
+Epoch 72/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.8674 - loss: 0.3902
+Epoch 73/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8810 - loss: 0.3817 
+Epoch 74/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8826 - loss: 0.3977 
+Epoch 75/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8952 - loss: 0.3557 
+Epoch 76/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8630 - loss: 0.4548 
+Epoch 77/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8967 - loss: 0.3480 
+Epoch 78/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8903 - loss: 0.3656 
+Epoch 79/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9057 - loss: 0.3481 
+Epoch 80/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8667 - loss: 0.4005 
+Epoch 81/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8676 - loss: 0.4013 
+Epoch 82/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8917 - loss: 0.3809 
+Epoch 83/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8634 - loss: 0.3586 
+Epoch 84/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8951 - loss: 0.3596 
+Epoch 85/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9220 - loss: 0.3177 
+Epoch 86/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8761 - loss: 0.3934 
+Epoch 87/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9047 - loss: 0.3293 
+Epoch 88/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8774 - loss: 0.3897 
+Epoch 89/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8738 - loss: 0.3673 
+Epoch 90/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9064 - loss: 0.3061 
+Epoch 91/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9016 - loss: 0.3292 
+Epoch 92/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9005 - loss: 0.3480 
+Epoch 93/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9007 - loss: 0.3149 
+Epoch 94/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9155 - loss: 0.2945 
+Epoch 95/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8886 - loss: 0.3621 
+Epoch 96/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9182 - loss: 0.3193 
+Epoch 97/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9000 - loss: 0.3303 
+Epoch 98/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8958 - loss: 0.3084 
+Epoch 99/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8951 - loss: 0.3139 
+Epoch 100/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9147 - loss: 0.3163 
+Epoch 101/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8903 - loss: 0.3164 
+Epoch 102/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8977 - loss: 0.2786 
+Epoch 103/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9262 - loss: 0.2926 
+Epoch 104/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9166 - loss: 0.2774 
+Epoch 105/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8876 - loss: 0.3782 
+Epoch 106/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9200 - loss: 0.3258 
+Epoch 107/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9177 - loss: 0.2913 
+Epoch 108/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9125 - loss: 0.2753 
+Epoch 109/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9287 - loss: 0.2429 
+Epoch 110/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9108 - loss: 0.3273 
+Epoch 111/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9079 - loss: 0.3142 
+Epoch 112/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9036 - loss: 0.3030 
+Epoch 113/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9113 - loss: 0.3146 
+Epoch 114/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9010 - loss: 0.3165 
+Epoch 115/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9014 - loss: 0.3202 
+Epoch 116/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9359 - loss: 0.2509 
+Epoch 117/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9112 - loss: 0.2704 
+Epoch 118/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9246 - loss: 0.2600 
+Epoch 119/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9510 - loss: 0.2318 
+Epoch 120/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9236 - loss: 0.2845 
+Epoch 121/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8983 - loss: 0.2797 
+Epoch 122/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9247 - loss: 0.2707 
+Epoch 123/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9353 - loss: 0.2718 
+Epoch 124/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9323 - loss: 0.2344 
+Epoch 125/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9364 - loss: 0.2709 
+Epoch 126/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9297 - loss: 0.3044 
+Epoch 127/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9341 - loss: 0.2344 
+Epoch 128/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9601 - loss: 0.2338 
+Epoch 129/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9508 - loss: 0.2423 
+Epoch 130/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9451 - loss: 0.2178 
+Epoch 131/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9374 - loss: 0.2648 
+Epoch 132/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9474 - loss: 0.2406 
+Epoch 133/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9323 - loss: 0.2775 
+Epoch 134/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9372 - loss: 0.2436 
+Epoch 135/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9195 - loss: 0.2604 
+Epoch 136/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9246 - loss: 0.2754 
+Epoch 137/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9375 - loss: 0.2934 
+Epoch 138/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9196 - loss: 0.2568 
+Epoch 139/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9536 - loss: 0.2073 
+Epoch 140/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9372 - loss: 0.2381 
+Epoch 141/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9498 - loss: 0.2335 
+Epoch 142/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9185 - loss: 0.2694 
+Epoch 143/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9354 - loss: 0.2307 
+Epoch 144/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9542 - loss: 0.2089 
+Epoch 145/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9308 - loss: 0.2292 
+Epoch 146/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9400 - loss: 0.2349 
+Epoch 147/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9337 - loss: 0.2476 
+Epoch 148/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9420 - loss: 0.2465 
+Epoch 149/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9210 - loss: 0.2717 
+Epoch 150/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9346 - loss: 0.2561 
+Epoch 151/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9438 - loss: 0.2351 
+Epoch 152/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9562 - loss: 0.2159 
+Epoch 153/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9280 - loss: 0.2476 
+Epoch 154/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9450 - loss: 0.2334 
+Epoch 155/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9316 - loss: 0.2264 
+Epoch 156/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9589 - loss: 0.2049 
+Epoch 157/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9455 - loss: 0.2082 
+Epoch 158/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9369 - loss: 0.2036 
+Epoch 159/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9609 - loss: 0.1899 
+Epoch 160/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9546 - loss: 0.1872 
+Epoch 161/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9575 - loss: 0.2097 
+Epoch 162/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9506 - loss: 0.2360 
+Epoch 163/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9438 - loss: 0.2311 
+Epoch 164/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9361 - loss: 0.1991 
+Epoch 165/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9538 - loss: 0.1963 
+Epoch 166/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9440 - loss: 0.2223 
+Epoch 167/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9321 - loss: 0.2237 
+Epoch 168/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9449 - loss: 0.2057 
+Epoch 169/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9469 - loss: 0.2426 
+Epoch 170/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9374 - loss: 0.2392 
+Epoch 171/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9395 - loss: 0.2286 
+Epoch 172/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9625 - loss: 0.2112 
+Epoch 173/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9536 - loss: 0.1817 
+Epoch 174/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9433 - loss: 0.2111 
+Epoch 175/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9407 - loss: 0.2043 
+Epoch 176/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9393 - loss: 0.2174 
+Epoch 177/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9666 - loss: 0.1700 
+Epoch 178/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9552 - loss: 0.2140 
+Epoch 179/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9178 - loss: 0.2524 
+Epoch 180/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9520 - loss: 0.1995 
+Epoch 181/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9297 - loss: 0.2753 
+Epoch 182/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9411 - loss: 0.2107 
+Epoch 183/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9394 - loss: 0.2199 
+Epoch 184/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9430 - loss: 0.2355 
+Epoch 185/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9348 - loss: 0.2036 
+Epoch 186/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.1737 
+Epoch 187/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9353 - loss: 0.2092 
+Epoch 188/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9406 - loss: 0.2285
+Epoch 189/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9478 - loss: 0.2238 
+Epoch 190/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9539 - loss: 0.2052 
+Epoch 191/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9310 - loss: 0.1966 
+Epoch 192/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9490 - loss: 0.2015 
+Epoch 193/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9487 - loss: 0.1775 
+Epoch 194/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9508 - loss: 0.1875 
+Epoch 195/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9536 - loss: 0.2069 
+Epoch 196/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9366 - loss: 0.1963 
+Epoch 197/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9279 - loss: 0.2025 
+Epoch 198/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9515 - loss: 0.1668 
+Epoch 199/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9216 - loss: 0.2426 
+Epoch 200/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9571 - loss: 0.1588 
+Epoch 201/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9433 - loss: 0.1867 
+Epoch 202/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9522 - loss: 0.1930 
+Epoch 203/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9285 - loss: 0.2236 
+Epoch 204/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9450 - loss: 0.1942 
+Epoch 205/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9513 - loss: 0.1811 
+Epoch 206/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9385 - loss: 0.2298 
+Epoch 207/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9486 - loss: 0.1626 
+Epoch 208/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9441 - loss: 0.1808 
+Epoch 209/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9413 - loss: 0.1660 
+Epoch 210/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9496 - loss: 0.1701 
+Epoch 211/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9455 - loss: 0.1698 
+Epoch 212/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9541 - loss: 0.1797 
+Epoch 213/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9505 - loss: 0.1617 
+Epoch 214/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9252 - loss: 0.2174 
+Epoch 215/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9540 - loss: 0.1658 
+Epoch 216/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9531 - loss: 0.1888 
+Epoch 217/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9549 - loss: 0.1629 
+Epoch 218/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9458 - loss: 0.1818 
+Epoch 219/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9713 - loss: 0.1529 
+Epoch 220/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9499 - loss: 0.1875 
+Epoch 221/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9556 - loss: 0.1625 
+Epoch 222/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9580 - loss: 0.1825 
+Epoch 223/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9546 - loss: 0.1881 
+Epoch 224/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9523 - loss: 0.1618 
+Epoch 225/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9389 - loss: 0.1934 
+Epoch 226/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9376 - loss: 0.1823 
+Epoch 227/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9604 - loss: 0.1553 
+Epoch 228/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9634 - loss: 0.1551 
+Epoch 229/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9543 - loss: 0.1586 
+Epoch 230/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9534 - loss: 0.1448 
+Epoch 231/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9472 - loss: 0.2045 
+Epoch 232/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9657 - loss: 0.1488 
+Epoch 233/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9400 - loss: 0.1881 
+Epoch 234/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.2080 
+Epoch 235/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9573 - loss: 0.1578 
+Epoch 236/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9306 - loss: 0.2087 
+Epoch 237/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9577 - loss: 0.1590 
+Epoch 238/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9644 - loss: 0.1508 
+Epoch 239/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9546 - loss: 0.1501 
+Epoch 240/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9479 - loss: 0.1632 
+Epoch 241/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9759 - loss: 0.1129 
+Epoch 242/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9476 - loss: 0.1656 
+Epoch 243/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9640 - loss: 0.1491 
+Epoch 244/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9496 - loss: 0.1546 
+Epoch 245/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9395 - loss: 0.2228 
+Epoch 246/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9614 - loss: 0.1170 
+Epoch 247/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.1620 
+Epoch 248/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9174 - loss: 0.2083 
+Epoch 249/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9524 - loss: 0.1949 
+Epoch 250/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9642 - loss: 0.1501 
+Epoch 251/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9589 - loss: 0.1266 
+Epoch 252/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9415 - loss: 0.1591 
+Epoch 253/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9564 - loss: 0.1507 
+Epoch 254/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9749 - loss: 0.1109 
+Epoch 255/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9596 - loss: 0.1443 
+Epoch 256/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9724 - loss: 0.1256 
+Epoch 257/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9543 - loss: 0.1601 
+Epoch 258/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9657 - loss: 0.1243 
+Epoch 259/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9513 - loss: 0.1673 
+Epoch 260/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9665 - loss: 0.1286 
+Epoch 261/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9594 - loss: 0.1296 
+Epoch 262/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9674 - loss: 0.1520 
+Epoch 263/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9405 - loss: 0.1556 
+Epoch 264/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9580 - loss: 0.1510 
+Epoch 265/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9588 - loss: 0.1082 
+Epoch 266/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9581 - loss: 0.1378 
+Epoch 267/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9541 - loss: 0.1795 
+Epoch 268/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9379 - loss: 0.1837 
+Epoch 269/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9561 - loss: 0.1341 
+Epoch 270/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9653 - loss: 0.1400 
+Epoch 271/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.1301 
+Epoch 272/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9625 - loss: 0.1390 
+Epoch 273/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9603 - loss: 0.1382 
+Epoch 274/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9594 - loss: 0.1200 
+Epoch 275/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.1504 
+Epoch 276/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9582 - loss: 0.1495 
+Epoch 277/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9530 - loss: 0.1394 
+Epoch 278/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9461 - loss: 0.1623 
+Epoch 279/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9630 - loss: 0.1215 
+Epoch 280/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9527 - loss: 0.1375 
+Epoch 281/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9674 - loss: 0.1207 
+Epoch 282/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9636 - loss: 0.1550 
+Epoch 283/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9765 - loss: 0.1162 
+Epoch 284/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9638 - loss: 0.1384 
+Epoch 285/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9731 - loss: 0.1148 
+Epoch 286/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9588 - loss: 0.1292 
+Epoch 287/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9524 - loss: 0.1414 
+Epoch 288/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9768 - loss: 0.0896 
+Epoch 289/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9723 - loss: 0.1318 
+Epoch 290/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9615 - loss: 0.1408 
+Epoch 291/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9651 - loss: 0.1174 
+Epoch 292/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9467 - loss: 0.1383 
+Epoch 293/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9493 - loss: 0.1702 
+Epoch 294/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9643 - loss: 0.1337 
+Epoch 295/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9648 - loss: 0.1075 
+Epoch 296/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9691 - loss: 0.1001 
+Epoch 297/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9530 - loss: 0.1490 
+Epoch 298/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9590 - loss: 0.1336 
+Epoch 299/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9568 - loss: 0.1311 
+Epoch 300/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9638 - loss: 0.1282 
+Epoch 301/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9673 - loss: 0.1182 
+Epoch 302/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9336 - loss: 0.2031 
+Epoch 303/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9665 - loss: 0.1338 
+Epoch 304/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9705 - loss: 0.1385 
+Epoch 305/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9770 - loss: 0.0914
+Epoch 306/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9535 - loss: 0.1287 
+Epoch 307/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9581 - loss: 0.1159 
+Epoch 308/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9690 - loss: 0.1076 
+Epoch 309/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9568 - loss: 0.1295 
+Epoch 310/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9534 - loss: 0.1120 
+Epoch 311/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9742 - loss: 0.1229 
+Epoch 312/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9559 - loss: 0.1461 
+Epoch 313/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9438 - loss: 0.1448 
+Epoch 314/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9688 - loss: 0.1054 
+Epoch 315/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9612 - loss: 0.1282 
+Epoch 316/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9627 - loss: 0.1241 
+Epoch 317/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9729 - loss: 0.1066 
+Epoch 318/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9692 - loss: 0.1188 
+Epoch 319/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9646 - loss: 0.1163 
+Epoch 320/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9616 - loss: 0.1344 
+Epoch 321/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9544 - loss: 0.1318 
+Epoch 322/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9747 - loss: 0.0889 
+Epoch 323/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9565 - loss: 0.1375 
+Epoch 324/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9401 - loss: 0.1304 
+Epoch 325/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9769 - loss: 0.0985 
+Epoch 326/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9706 - loss: 0.1029 
+Epoch 327/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9543 - loss: 0.1272 
+Epoch 328/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9732 - loss: 0.1013 
+Epoch 329/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9619 - loss: 0.1053 
+Epoch 330/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9430 - loss: 0.1221 
+Epoch 331/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9629 - loss: 0.1284 
+Epoch 332/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9643 - loss: 0.1410 
+Epoch 333/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9639 - loss: 0.1073 
+Epoch 334/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9653 - loss: 0.1113 
+Epoch 335/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9630 - loss: 0.1109 
+Epoch 336/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9554 - loss: 0.1126 
+Epoch 337/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9676 - loss: 0.1045 
+Epoch 338/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9718 - loss: 0.0880 
+Epoch 339/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9687 - loss: 0.1101 
+Epoch 340/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9506 - loss: 0.1374 
+Epoch 341/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9692 - loss: 0.1122 
+Epoch 342/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9729 - loss: 0.0876 
+Epoch 343/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9625 - loss: 0.1014 
+Epoch 344/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9605 - loss: 0.0891 
+Epoch 345/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9687 - loss: 0.1082 
+Epoch 346/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9566 - loss: 0.0890 
+Epoch 347/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9550 - loss: 0.1160 
+Epoch 348/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9702 - loss: 0.0915 
+Epoch 349/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9680 - loss: 0.0797 
+Epoch 350/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9770 - loss: 0.0841 
+Epoch 351/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9842 - loss: 0.0870 
+Epoch 352/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9683 - loss: 0.0931 
+Epoch 353/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9759 - loss: 0.0811 
+Epoch 354/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9617 - loss: 0.1086 
+Epoch 355/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9667 - loss: 0.1187 
+Epoch 356/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9574 - loss: 0.1117 
+Epoch 357/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9776 - loss: 0.0997 
+Epoch 358/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9643 - loss: 0.1122 
+Epoch 359/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9640 - loss: 0.1151 
+Epoch 360/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9672 - loss: 0.1123 
+Epoch 361/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9580 - loss: 0.1041 
+Epoch 362/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9785 - loss: 0.0795 
+Epoch 363/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9715 - loss: 0.0827 
+Epoch 364/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9727 - loss: 0.0951 
+Epoch 365/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9699 - loss: 0.0897 
+Epoch 366/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9553 - loss: 0.1295 
+Epoch 367/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9871 - loss: 0.0650 
+Epoch 368/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9604 - loss: 0.1217 
+Epoch 369/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9568 - loss: 0.1123 
+Epoch 370/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9805 - loss: 0.0734 
+Epoch 371/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9434 - loss: 0.1441 
+Epoch 372/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9676 - loss: 0.0939 
+Epoch 373/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9711 - loss: 0.0967 
+Epoch 374/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9722 - loss: 0.0988 
+Epoch 375/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9624 - loss: 0.1028 
+Epoch 376/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9856 - loss: 0.0591 
+Epoch 377/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9519 - loss: 0.1157 
+Epoch 378/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9812 - loss: 0.0662 
+Epoch 379/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9707 - loss: 0.0832 
+Epoch 380/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9741 - loss: 0.0789 
+Epoch 381/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9677 - loss: 0.0824 
+Epoch 382/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9670 - loss: 0.1108 
+Epoch 383/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9750 - loss: 0.0753 
+Epoch 384/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9760 - loss: 0.0805 
+Epoch 385/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9729 - loss: 0.0901 
+Epoch 386/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9836 - loss: 0.0746 
+Epoch 387/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9766 - loss: 0.0892 
+Epoch 388/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9826 - loss: 0.0773 
+Epoch 389/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9718 - loss: 0.0839 
+Epoch 390/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9775 - loss: 0.0877 
+Epoch 391/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9791 - loss: 0.0750 
+Epoch 392/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9802 - loss: 0.0833 
+Epoch 393/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9750 - loss: 0.0891 
+Epoch 394/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9709 - loss: 0.0746 
+Epoch 395/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9647 - loss: 0.0965 
+Epoch 396/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9811 - loss: 0.0684 
+Epoch 397/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9785 - loss: 0.0683 
+Epoch 398/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9788 - loss: 0.0814 
+Epoch 399/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9856 - loss: 0.0607 
+Epoch 400/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9768 - loss: 0.0850 
+Epoch 401/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9822 - loss: 0.0804 
+Epoch 402/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9758 - loss: 0.0806 
+Epoch 403/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9736 - loss: 0.0914 
+Epoch 404/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9810 - loss: 0.0678 
+Epoch 405/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9820 - loss: 0.0644 
+Epoch 406/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9671 - loss: 0.1001 
+Epoch 407/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9723 - loss: 0.0799 
+Epoch 408/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9842 - loss: 0.0706 
+Epoch 409/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9759 - loss: 0.0757 
+Epoch 410/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9738 - loss: 0.0847 
+Epoch 411/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9757 - loss: 0.0855 
+Epoch 412/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9847 - loss: 0.0868 
+Epoch 413/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9778 - loss: 0.0763 
+Epoch 414/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9858 - loss: 0.0842 
+Epoch 415/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9898 - loss: 0.0618 
+Epoch 416/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9791 - loss: 0.0701 
+Epoch 417/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9797 - loss: 0.0720 
+Epoch 418/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9911 - loss: 0.0683 
+Epoch 419/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9786 - loss: 0.0973 
+Epoch 420/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9767 - loss: 0.0673
+Epoch 421/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9926 - loss: 0.0523 
+Epoch 422/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9906 - loss: 0.0737 
+Epoch 423/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9902 - loss: 0.0692 
+Epoch 424/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9718 - loss: 0.0910 
+Epoch 425/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9793 - loss: 0.0881 
+Epoch 426/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9871 - loss: 0.0911 
+Epoch 427/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9827 - loss: 0.0669 
+Epoch 428/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9850 - loss: 0.0578 
+Epoch 429/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9880 - loss: 0.0627 
+Epoch 430/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9777 - loss: 0.0731 
+Epoch 431/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9880 - loss: 0.0791 
+Epoch 432/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9754 - loss: 0.0657 
+Epoch 433/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9949 - loss: 0.0602 
+Epoch 434/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9842 - loss: 0.0665 
+Epoch 435/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9955 - loss: 0.0476 
+Epoch 436/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9856 - loss: 0.0680 
+Epoch 437/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9741 - loss: 0.0736 
+Epoch 438/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9813 - loss: 0.0731 
+Epoch 439/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9837 - loss: 0.0730 
+Epoch 440/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9883 - loss: 0.0680 
+Epoch 441/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9720 - loss: 0.0690 
+Epoch 442/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9778 - loss: 0.0626 
+Epoch 443/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9839 - loss: 0.0597 
+Epoch 444/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9825 - loss: 0.0702 
+Epoch 445/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9844 - loss: 0.0690 
+Epoch 446/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9919 - loss: 0.0550 
+Epoch 447/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9760 - loss: 0.0779 
+Epoch 448/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9786 - loss: 0.0602 
+Epoch 449/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9842 - loss: 0.0614 
+Epoch 450/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9803 - loss: 0.0599 
+Epoch 451/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9846 - loss: 0.0584 
+Epoch 452/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9847 - loss: 0.0590 
+Epoch 453/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9801 - loss: 0.0587 
+Epoch 454/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9880 - loss: 0.0640 
+Epoch 455/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9841 - loss: 0.0575 
+Epoch 456/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9725 - loss: 0.0748 
+Epoch 457/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9827 - loss: 0.0761 
+Epoch 458/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9697 - loss: 0.0784 
+Epoch 459/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9867 - loss: 0.0688 
+Epoch 460/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9778 - loss: 0.0776 
+Epoch 461/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9943 - loss: 0.0512 
+Epoch 462/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9832 - loss: 0.0607 
+Epoch 463/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9794 - loss: 0.0688 
+Epoch 464/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9933 - loss: 0.0469 
+Epoch 465/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9863 - loss: 0.0676 
+Epoch 466/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9567 - loss: 0.1037 
+Epoch 467/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9968 - loss: 0.0542 
+Epoch 468/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0423 
+Epoch 469/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9908 - loss: 0.0490 
+Epoch 470/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9957 - loss: 0.0518 
+Epoch 471/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9857 - loss: 0.0572 
+Epoch 472/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9803 - loss: 0.0596 
+Epoch 473/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9771 - loss: 0.0530 
+Epoch 474/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9779 - loss: 0.0773 
+Epoch 475/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9898 - loss: 0.0500 
+Epoch 476/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9831 - loss: 0.0515 
+Epoch 477/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9769 - loss: 0.0643 
+Epoch 478/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9854 - loss: 0.0590 
+Epoch 479/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9789 - loss: 0.0632 
+Epoch 480/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9783 - loss: 0.0669 
+Epoch 481/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9864 - loss: 0.0585 
+Epoch 482/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9895 - loss: 0.0550 
+Epoch 483/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9974 - loss: 0.0490 
+Epoch 484/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9953 - loss: 0.0561 
+Epoch 485/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9867 - loss: 0.0749 
+Epoch 486/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9910 - loss: 0.0592 
+Epoch 487/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9903 - loss: 0.0423 
+Epoch 488/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9863 - loss: 0.0460 
+Epoch 489/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9891 - loss: 0.0584 
+Epoch 490/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9902 - loss: 0.0379 
+Epoch 491/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9932 - loss: 0.0604 
+Epoch 492/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9912 - loss: 0.0472 
+Epoch 493/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9920 - loss: 0.0488 
+Epoch 494/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9970 - loss: 0.0466 
+Epoch 495/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9913 - loss: 0.0415 
+Epoch 496/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9731 - loss: 0.0684 
+Epoch 497/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9913 - loss: 0.0411 
+Epoch 498/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9849 - loss: 0.0584 
+Epoch 499/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0423 
+Epoch 500/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9868 - loss: 0.0457 
+Epoch 501/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9940 - loss: 0.0496 
+Epoch 502/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9927 - loss: 0.0488 
+Epoch 503/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9867 - loss: 0.0526 
+Epoch 504/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0397 
+Epoch 505/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9773 - loss: 0.0538 
+Epoch 506/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9906 - loss: 0.0432 
+Epoch 507/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9875 - loss: 0.0489 
+Epoch 508/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9915 - loss: 0.0388 
+Epoch 509/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9975 - loss: 0.0447 
+Epoch 510/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9730 - loss: 0.0847 
+Epoch 511/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9913 - loss: 0.0480 
+Epoch 512/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9935 - loss: 0.0446 
+Epoch 513/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9850 - loss: 0.0438 
+Epoch 514/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0341 
+Epoch 515/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9874 - loss: 0.0512 
+Epoch 516/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9873 - loss: 0.0489 
+Epoch 517/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0518 
+Epoch 518/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9946 - loss: 0.0375 
+Epoch 519/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9922 - loss: 0.0395 
+Epoch 520/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9962 - loss: 0.0363 
+Epoch 521/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9838 - loss: 0.0436 
+Epoch 522/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9908 - loss: 0.0328 
+Epoch 523/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9794 - loss: 0.0560 
+Epoch 524/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9962 - loss: 0.0338 
+Epoch 525/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9723 - loss: 0.0523 
+Epoch 526/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9892 - loss: 0.0384 
+Epoch 527/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0352 
+Epoch 528/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9896 - loss: 0.0401 
+Epoch 529/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9862 - loss: 0.0480 
+Epoch 530/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9896 - loss: 0.0420 
+Epoch 531/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9903 - loss: 0.0430 
+Epoch 532/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9882 - loss: 0.0454 
+Epoch 533/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9906 - loss: 0.0368 
+Epoch 534/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9940 - loss: 0.0344 
+Epoch 535/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9834 - loss: 0.0479 
+Epoch 536/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9958 - loss: 0.0355 
+Epoch 537/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9955 - loss: 0.0439 
+Epoch 538/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9910 - loss: 0.0395 
+Epoch 539/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9980 - loss: 0.0298 
+Epoch 540/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9911 - loss: 0.0344 
+Epoch 541/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9885 - loss: 0.0419 
+Epoch 542/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9777 - loss: 0.0470 
+Epoch 543/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9826 - loss: 0.0610 
+Epoch 544/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9856 - loss: 0.0483 
+Epoch 545/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9953 - loss: 0.0291 
+Epoch 546/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9912 - loss: 0.0420 
+Epoch 547/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9870 - loss: 0.0371 
+Epoch 548/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9873 - loss: 0.0457 
+Epoch 549/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9811 - loss: 0.0484 
+Epoch 550/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0294 
+Epoch 551/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9901 - loss: 0.0328 
+Epoch 552/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9922 - loss: 0.0451 
+Epoch 553/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9882 - loss: 0.0377 
+Epoch 554/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9959 - loss: 0.0280 
+Epoch 555/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9890 - loss: 0.0497 
+Epoch 556/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9774 - loss: 0.0556 
+Epoch 557/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9778 - loss: 0.0545 
+Epoch 558/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9801 - loss: 0.0399 
+Epoch 559/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0382 
+Epoch 560/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9901 - loss: 0.0275 
+Epoch 561/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0391 
+Epoch 562/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9962 - loss: 0.0286 
+Epoch 563/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9892 - loss: 0.0494 
+Epoch 564/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9900 - loss: 0.0386 
+Epoch 565/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0247 
+Epoch 566/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9832 - loss: 0.0477 
+Epoch 567/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9935 - loss: 0.0279 
+Epoch 568/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9964 - loss: 0.0348 
+Epoch 569/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9913 - loss: 0.0412 
+Epoch 570/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9915 - loss: 0.0363 
+Epoch 571/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9916 - loss: 0.0433 
+Epoch 572/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9885 - loss: 0.0479 
+Epoch 573/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9948 - loss: 0.0262 
+Epoch 574/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9966 - loss: 0.0355 
+Epoch 575/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9866 - loss: 0.0359 
+Epoch 576/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0330 
+Epoch 577/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9930 - loss: 0.0415 
+Epoch 578/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9917 - loss: 0.0378 
+Epoch 579/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9966 - loss: 0.0262 
+Epoch 580/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0291 
+Epoch 581/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9919 - loss: 0.0361 
+Epoch 582/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9898 - loss: 0.0340 
+Epoch 583/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9895 - loss: 0.0475 
+Epoch 584/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9985 - loss: 0.0232 
+Epoch 585/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9838 - loss: 0.0439 
+Epoch 586/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9950 - loss: 0.0278 
+Epoch 587/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9861 - loss: 0.0389 
+Epoch 588/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9944 - loss: 0.0296 
+Epoch 589/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9884 - loss: 0.0362 
+Epoch 590/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9899 - loss: 0.0325 
+Epoch 591/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0303 
+Epoch 592/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9897 - loss: 0.0315 
+Epoch 593/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9990 - loss: 0.0239 
+Epoch 594/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9975 - loss: 0.0319 
+Epoch 595/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0240 
+Epoch 596/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9836 - loss: 0.0395 
+Epoch 597/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0354 
+Epoch 598/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0256 
+Epoch 599/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0310 
+Epoch 600/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9854 - loss: 0.0473 
+Epoch 601/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0276 
+Epoch 602/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0276 
+Epoch 603/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9989 - loss: 0.0250 
+Epoch 604/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0342 
+Epoch 605/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9890 - loss: 0.0412 
+Epoch 606/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0264 
+Epoch 607/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9819 - loss: 0.0377 
+Epoch 608/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0329 
+Epoch 609/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9930 - loss: 0.0307 
+Epoch 610/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0252 
+Epoch 611/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9992 - loss: 0.0268 
+Epoch 612/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0265 
+Epoch 613/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9958 - loss: 0.0289 
+Epoch 614/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9935 - loss: 0.0247 
+Epoch 615/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0245 
+Epoch 616/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9904 - loss: 0.0349 
+Epoch 617/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9903 - loss: 0.0361 
+Epoch 618/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9763 - loss: 0.1619 
+Epoch 619/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9872 - loss: 0.1007 
+Epoch 620/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9943 - loss: 0.0327 
+Epoch 621/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0251 
+Epoch 622/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0295 
+Epoch 623/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9900 - loss: 0.0346 
+Epoch 624/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0260 
+Epoch 625/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9917 - loss: 0.0255 
+Epoch 626/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9924 - loss: 0.0350 
+Epoch 627/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9896 - loss: 0.0263 
+Epoch 628/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9937 - loss: 0.0272 
+Epoch 629/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9931 - loss: 0.0243 
+Epoch 630/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9994 - loss: 0.0281 
+Epoch 631/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9929 - loss: 0.0279 
+Epoch 632/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9985 - loss: 0.0204 
+Epoch 633/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9908 - loss: 0.0328 
+Epoch 634/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9925 - loss: 0.0361 
+Epoch 635/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0179 
+Epoch 636/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9966 - loss: 0.0232 
+Epoch 637/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9889 - loss: 0.0263 
+Epoch 638/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9964 - loss: 0.0194 
+Epoch 639/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9940 - loss: 0.0210 
+Epoch 640/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0274 
+Epoch 641/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9899 - loss: 0.0298 
+Epoch 642/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9915 - loss: 0.0306 
+Epoch 643/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0264 
+Epoch 644/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0173 
+Epoch 645/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9912 - loss: 0.0216 
+Epoch 646/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9992 - loss: 0.0178 
+Epoch 647/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9838 - loss: 0.0331 
+Epoch 648/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0250 
+Epoch 649/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9967 - loss: 0.0227 
+Epoch 650/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0231 
+Epoch 651/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9892 - loss: 0.0258 
+Epoch 652/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0198 
+Epoch 653/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9978 - loss: 0.0188 
+Epoch 654/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0221 
+Epoch 655/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0270 
+Epoch 656/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0207 
+Epoch 657/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9971 - loss: 0.0269 
+Epoch 658/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0169 
+Epoch 659/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0192 
+Epoch 660/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0243 
+Epoch 661/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9873 - loss: 0.0287 
+Epoch 662/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0255 
+Epoch 663/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9937 - loss: 0.0286 
+Epoch 664/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9880 - loss: 0.0406 
+Epoch 665/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9876 - loss: 0.0309 
+Epoch 666/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0283 
+Epoch 667/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0190 
+Epoch 668/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0195 
+Epoch 669/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0206 
+Epoch 670/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9956 - loss: 0.0226 
+Epoch 671/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9875 - loss: 0.0237 
+Epoch 672/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9942 - loss: 0.0248 
+Epoch 673/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0300 
+Epoch 674/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9892 - loss: 0.0300 
+Epoch 675/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0199 
+Epoch 676/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0164 
+Epoch 677/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0221 
+Epoch 678/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0286 
+Epoch 679/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0256 
+Epoch 680/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9899 - loss: 0.0225 
+Epoch 681/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9994 - loss: 0.0144 
+Epoch 682/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0183 
+Epoch 683/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0226 
+Epoch 684/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9985 - loss: 0.0183 
+Epoch 685/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9975 - loss: 0.0208 
+Epoch 686/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0226 
+Epoch 687/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9908 - loss: 0.0198 
+Epoch 688/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9994 - loss: 0.0167 
+Epoch 689/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9864 - loss: 0.0289 
+Epoch 690/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0154 
+Epoch 691/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9949 - loss: 0.0192 
+Epoch 692/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9913 - loss: 0.0235 
+Epoch 693/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0131 
+Epoch 694/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9984 - loss: 0.0133 
+Epoch 695/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0185 
+Epoch 696/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0145 
+Epoch 697/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9870 - loss: 0.0234 
+Epoch 698/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9900 - loss: 0.0280 
+Epoch 699/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9961 - loss: 0.0236 
+Epoch 700/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9892 - loss: 0.0235 
+Epoch 701/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9985 - loss: 0.0135 
+Epoch 702/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9907 - loss: 0.0215 
+Epoch 703/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0138 
+Epoch 704/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9989 - loss: 0.0161 
+Epoch 705/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9848 - loss: 0.0281 
+Epoch 706/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9896 - loss: 0.0277 
+Epoch 707/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9899 - loss: 0.0291 
+Epoch 708/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0269 
+Epoch 709/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0228 
+Epoch 710/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9989 - loss: 0.0128 
+Epoch 711/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0127 
+Epoch 712/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9956 - loss: 0.0148 
+Epoch 713/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9888 - loss: 0.0343 
+Epoch 714/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9981 - loss: 0.0114 
+Epoch 715/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9949 - loss: 0.0144 
+Epoch 716/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0196 
+Epoch 717/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0095 
+Epoch 718/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0203 
+Epoch 719/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9959 - loss: 0.0136 
+Epoch 720/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0187 
+Epoch 721/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0151 
+Epoch 722/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9911 - loss: 0.0227 
+Epoch 723/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0178 
+Epoch 724/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0151 
+Epoch 725/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9950 - loss: 0.0142 
+Epoch 726/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0151 
+Epoch 727/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9895 - loss: 0.0225 
+Epoch 728/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0198 
+Epoch 729/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9994 - loss: 0.0103 
+Epoch 730/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0157 
+Epoch 731/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9975 - loss: 0.0136 
+Epoch 732/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9940 - loss: 0.0194 
+Epoch 733/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9944 - loss: 0.0249 
+Epoch 734/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0175 
+Epoch 735/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9835 - loss: 0.0527 
+Epoch 736/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0252 
+Epoch 737/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0274 
+Epoch 738/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0100     
+Epoch 739/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0169 
+Epoch 740/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9975 - loss: 0.0178 
+Epoch 741/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0217 
+Epoch 742/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9948 - loss: 0.0206 
+Epoch 743/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0122 
+Epoch 744/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0122 
+Epoch 745/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0102     
+Epoch 746/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0131 
+Epoch 747/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0207 
+Epoch 748/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9994 - loss: 0.0114 
+Epoch 749/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0151 
+Epoch 750/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0178 
+Epoch 751/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0181 
+Epoch 752/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0185 
+Epoch 753/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0126 
+Epoch 754/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9997 - loss: 0.0094 
+Epoch 755/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0193 
+Epoch 756/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0149 
+Epoch 757/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9985 - loss: 0.0106 
+Epoch 758/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9993 - loss: 0.0156 
+Epoch 759/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9997 - loss: 0.0104 
+Epoch 760/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0138 
+Epoch 761/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9989 - loss: 0.0105 
+Epoch 762/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0112 
+Epoch 763/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0137 
+Epoch 764/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0120 
+Epoch 765/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9969 - loss: 0.0153 
+Epoch 766/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0132 
+Epoch 767/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0129 
+Epoch 768/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9947 - loss: 0.0192 
+Epoch 769/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0128 
+Epoch 770/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9996 - loss: 0.0133
+Epoch 771/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9997 - loss: 0.0118 
+Epoch 772/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0180 
+Epoch 773/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9989 - loss: 0.0081 
+Epoch 774/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9965 - loss: 0.0129 
+Epoch 775/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0172 
+Epoch 776/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9997 - loss: 0.0078 
+Epoch 777/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9962 - loss: 0.0135 
+Epoch 778/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9978 - loss: 0.0121 
+Epoch 779/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0146 
+Epoch 780/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0136 
+Epoch 781/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0100 
+Epoch 782/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9938 - loss: 0.0202 
+Epoch 783/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0183 
+Epoch 784/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0105 
+Epoch 785/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9923 - loss: 0.0171 
+Epoch 786/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9960 - loss: 0.0160 
+Epoch 787/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0121 
+Epoch 788/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9953 - loss: 0.0124 
+Epoch 789/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9911 - loss: 0.0180 
+Epoch 790/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0160 
+Epoch 791/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9987 - loss: 0.0094     
+Epoch 792/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9930 - loss: 0.0230 
+Epoch 793/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0219 
+Epoch 794/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9996 - loss: 0.0198 
+Epoch 795/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9972 - loss: 0.0112 
+Epoch 796/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0106 
+Epoch 797/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0100 
+Epoch 798/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9983 - loss: 0.0082     
+Epoch 799/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9825 - loss: 0.0317 
+Epoch 800/800
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0221 
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>&lt;keras.src.callbacks.history.History at 0x7961a4d14830&gt;</code></pre>
+</div>
+</div>
+<div id="8929f9d5" class="cell markdown" id="55PgRgP0rZ8A"
+data-papermill="{&quot;duration&quot;:0.115874,&quot;end_time&quot;:&quot;2025-12-20T22:41:45.195106&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:45.079232&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="testing-the-model"><strong>Testing the Model</strong></h1>
+</div>
+<div id="d2513e7c" class="cell code" data-execution_count="26"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:45.434312Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:45.433305Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:45.944573Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:45.943504Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:24,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926184616,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="VPqoEf0VmVx0" data-outputId="601969a1-6bfc-4a29-9100-41d6c12b6841"
+data-papermill="{&quot;duration&quot;:0.632528,&quot;end_time&quot;:&quot;2025-12-20T22:41:45.946579&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:45.314051&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>score, acc <span class="op">=</span> classifier.evaluate(X_train, y_train,</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>                            batch_size<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Train score:&#39;</span>, score)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Train accuracy:&#39;</span>, acc)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;*&#39;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>score, acc <span class="op">=</span> classifier.evaluate(X_test, y_test,</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>                            batch_size<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Test score:&#39;</span>, score)</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Test accuracy:&#39;</span>, acc)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>33/33 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9987 - loss: 0.0140  
+Train score: 0.01935773901641369
+Train accuracy: 0.9939393997192383
+********************
+9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9368 - loss: 0.2734  
+Test score: 0.38715583086013794
+Test accuracy: 0.9277108311653137
+</code></pre>
+</div>
+</div>
+<div id="5082dd6b" class="cell markdown" id="zLS1Qv2Yrfj4"
+data-papermill="{&quot;duration&quot;:0.232979,&quot;end_time&quot;:&quot;2025-12-20T22:41:46.296046&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:46.063067&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="confusion-matrix"><strong>Confusion Matrix</strong></h1>
+<h3 id="accuracy"><strong>Accuracy</strong></h3>
+<p>number of examples correctly predicted / total number of
+examples<br />
+<img
+src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c72ec21ef2505c2d376e96197637fc64f75e5891"
+alt="alt text" /></p>
+</div>
+<div id="d566d5ec" class="cell code" data-execution_count="27"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:46.538477Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:46.538115Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:46.716874Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:46.715974Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:7,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926184617,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="Tv7u8KsKNyrk" data-outputId="729f60e9-e912-4a9d-cb4e-f7a2b622f348"
+data-papermill="{&quot;duration&quot;:0.305352,&quot;end_time&quot;:&quot;2025-12-20T22:41:46.719657&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:46.414305&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb45"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predicting the Test set results</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>pred <span class="op">=</span> classifier.predict(X_test)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Y_pred (Probabilities):&quot;</span>, pred)</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;*****************&quot;</span>)</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert probabilities to Class IDs</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> np.argmax(pred, axis<span class="op">=</span><span class="dv">1</span>) </span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Y_pred (Class IDs):&quot;</span>, y_pred)</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;*****************&quot;</span>)</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="co"># --- CORRECTED SECTION ---</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="co"># y_test is already class IDs, so we just rename it or use it as is.</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>y_true <span class="op">=</span> y_test  <span class="co"># No np.argmax needed here!</span></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Y_true (Actual):&quot;</span>, y_true)</span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;*****************&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 28ms/step
+Y_pred (Probabilities): [[1.39357253e-05 3.11455007e-17 9.99832392e-01 1.29723368e-04
+  4.20573951e-06 1.98800863e-05]
+ [6.00626367e-26 9.99999940e-01 1.62168862e-13 5.39416542e-15
+  5.26690948e-11 5.04562505e-17]
+ [1.42772764e-01 1.60277996e-04 1.35511043e-03 3.04510747e-03
+  8.51858675e-01 8.08050565e-04]
+ [8.16962242e-01 1.22681243e-08 1.72733024e-01 7.56682770e-04
+  9.52949189e-03 1.84677392e-05]
+ [2.05550776e-09 5.25112766e-12 2.68575329e-10 1.05987854e-01
+  1.36760384e-12 8.94012094e-01]
+ [5.70941894e-13 3.38129171e-29 2.15278106e-07 6.21695876e-01
+  7.31785433e-16 3.78303856e-01]
+ [1.07449887e-05 9.99973714e-01 1.24571443e-05 2.55601269e-11
+  3.02150534e-06 1.33344022e-11]
+ [4.42772041e-08 1.73612849e-22 1.43003389e-01 1.97191816e-03
+  6.61635635e-10 8.55024576e-01]
+ [5.24838555e-08 9.99999940e-01 1.85715054e-11 2.76292322e-14
+  1.86875882e-15 1.64276779e-17]
+ [5.37984641e-36 9.99999940e-01 3.14270772e-14 7.22681396e-15
+  9.26766219e-09 1.25146874e-18]
+ [2.63635619e-12 6.08456305e-23 9.99999583e-01 2.72320364e-07
+  4.27398568e-11 1.70872809e-07]
+ [4.44856791e-15 1.25558093e-22 7.55771606e-16 9.99940813e-01
+  6.13579831e-19 5.91671705e-05]
+ [4.11465138e-08 1.67274181e-13 9.99999702e-01 1.27416669e-07
+  9.06852904e-09 9.12890954e-08]
+ [1.68803394e-01 1.84804012e-08 4.32694219e-02 5.21201873e-03
+  7.82687247e-01 2.80029089e-05]
+ [7.59930521e-11 1.93725747e-23 9.99999583e-01 3.01276089e-08
+  2.75939775e-11 3.27514499e-07]
+ [5.28569490e-06 1.25411004e-14 9.99977648e-01 6.83898452e-06
+  5.00446231e-06 5.23951212e-06]
+ [4.54101562e-02 7.01101162e-20 1.27339707e-04 1.78535525e-02
+  2.84416601e-05 9.36580539e-01]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00 9.99999940e-01
+  0.00000000e+00 8.96547582e-17]
+ [1.70080419e-20 2.36481102e-36 2.08440043e-21 9.99998629e-01
+  1.44074274e-26 1.32402999e-06]
+ [3.24619077e-02 1.12180860e-04 9.13025178e-06 8.67920458e-01
+  9.94929299e-02 3.40575411e-06]
+ [1.89104539e-04 5.91903818e-16 9.99045908e-01 7.97887842e-05
+  3.68201790e-06 6.81477541e-04]
+ [2.44292220e-20 6.39412907e-34 1.33559995e-11 9.99890745e-01
+  6.07761476e-23 1.09237837e-04]
+ [2.69264206e-06 5.26405301e-16 9.99913871e-01 7.70135375e-05
+  5.51842368e-06 8.46342232e-07]
+ [1.59292434e-16 1.57491654e-34 1.95250800e-06 9.71124172e-01
+  1.72263620e-18 2.88737770e-02]
+ [1.62618594e-08 4.39881043e-18 9.99997199e-01 2.49428308e-06
+  1.45720676e-07 9.63663851e-08]
+ [3.05410220e-33 9.75302009e-06 3.84811396e-27 9.99990165e-01
+  5.46564891e-25 1.65513019e-18]
+ [2.55519317e-09 3.82369368e-21 9.99983847e-01 1.48758254e-05
+  8.11124252e-08 1.10744179e-06]
+ [8.51469589e-12 3.06393386e-18 9.99999821e-01 6.01693557e-08
+  3.50470555e-11 5.28097699e-09]
+ [7.50189601e-03 1.48608838e-12 9.91668403e-01 2.13965759e-04
+  6.14509569e-04 1.15241744e-06]
+ [3.15243112e-23 5.64664878e-18 5.56923866e-15 3.45602762e-15
+  1.68027888e-21 9.99999940e-01]
+ [1.20473154e-09 9.98175561e-01 1.32320301e-11 1.82438875e-03
+  6.07956974e-09 1.17300581e-12]
+ [1.04356525e-06 4.19472659e-20 9.99725819e-01 2.15786567e-04
+  7.30870397e-07 5.66228446e-05]
+ [3.53553683e-26 1.54896651e-22 2.07411462e-22 9.99999940e-01
+  3.67845285e-26 3.75407296e-08]
+ [2.87058013e-19 1.80955841e-15 6.82365465e-15 4.44999151e-02
+  9.78497755e-18 9.55500126e-01]
+ [1.01521500e-13 2.82351345e-26 1.94579841e-09 2.24270418e-01
+  2.73995980e-22 7.75729656e-01]
+ [2.80165828e-08 5.03797759e-09 2.23029204e-08 9.08942819e-01
+  9.81582730e-07 9.10560414e-02]
+ [2.55516220e-19 4.75170251e-28 1.50544874e-24 9.99999821e-01
+  3.11838343e-28 1.27839272e-07]
+ [1.45583840e-07 6.00563175e-21 9.99957025e-01 1.82287949e-05
+  5.47278560e-08 2.45195861e-05]
+ [3.31620391e-11 1.23501673e-23 9.99990880e-01 3.37569622e-06
+  1.87827271e-11 5.75999047e-06]
+ [2.43212243e-13 3.46786303e-21 9.99999940e-01 3.22291838e-09
+  1.09703115e-11 1.13120402e-09]
+ [8.47677171e-01 1.68767969e-15 9.77318268e-04 3.80347687e-04
+  3.44038336e-03 1.47524714e-01]
+ [4.88128957e-18 3.91642643e-25 4.11464032e-21 9.99999940e-01
+  1.61251373e-23 5.89652493e-10]
+ [7.99028681e-25 2.93551110e-37 5.32314017e-27 9.99999940e-01
+  4.29781129e-32 3.08416931e-10]
+ [7.31942397e-21 9.99998868e-01 1.18295044e-11 1.08798190e-06
+  1.97025417e-11 1.12889280e-08]
+ [2.56230799e-03 2.49276050e-13 9.92589474e-01 1.43262165e-04
+  6.62662133e-05 4.63856338e-03]
+ [1.94580761e-13 2.12573146e-15 4.47135733e-15 9.99999940e-01
+  4.61603945e-15 3.75433054e-08]
+ [6.91395417e-06 1.20331652e-14 9.94252145e-01 5.57566108e-03
+  1.61573218e-04 3.73415787e-06]
+ [1.40573898e-33 9.99999940e-01 6.23375168e-16 1.01997084e-10
+  5.34726263e-10 2.52489437e-18]
+ [7.29302337e-06 1.04091406e-11 9.99793053e-01 7.42080829e-07
+  1.75211415e-10 1.98894020e-04]
+ [9.98205781e-01 8.20988699e-09 5.34309947e-04 3.14794761e-07
+  6.33301170e-05 1.19629421e-03]
+ [1.88470073e-02 4.71906831e-16 1.75962225e-02 9.29360688e-01
+  3.41797322e-02 1.62792621e-05]
+ [1.90463112e-08 1.09810384e-16 9.99568522e-01 2.02467534e-04
+  5.01848163e-09 2.29013502e-04]
+ [1.94893968e-09 2.90397725e-06 1.35313423e-08 9.85958755e-01
+  1.38556799e-02 1.82669770e-04]
+ [4.74890857e-37 9.99999821e-01 5.98724556e-21 8.37444318e-08
+  4.43162353e-14 3.64543681e-22]
+ [3.18322738e-04 2.15034838e-16 1.04216906e-06 1.46284556e-05
+  8.20710611e-09 9.99665976e-01]
+ [1.83575235e-08 2.47613947e-22 9.99973595e-01 2.59451426e-05
+  1.87300117e-07 1.04961792e-07]
+ [2.04314698e-09 9.31251431e-18 9.99900043e-01 9.95109222e-05
+  8.32195610e-08 2.47678884e-07]
+ [2.74320059e-02 1.37741485e-10 9.49546278e-01 1.54838071e-03
+  2.14629881e-02 1.04252094e-05]
+ [1.88841156e-08 2.41186031e-17 9.99765158e-01 2.31557133e-04
+  3.18502839e-06 6.76451961e-08]
+ [6.37894217e-08 6.05871285e-17 9.99927461e-01 6.89045410e-05
+  3.33259209e-06 1.62318841e-07]
+ [3.36375162e-02 3.91572528e-03 1.55009868e-04 3.75651894e-07
+  9.62291002e-01 3.57939854e-07]
+ [5.12220481e-07 5.26658369e-18 9.99373376e-01 6.12735050e-04
+  1.32090436e-05 1.85451356e-07]
+ [1.19672890e-07 2.89756803e-17 8.10646201e-13 9.99999583e-01
+  2.07019474e-13 2.20210197e-07]
+ [2.44475962e-24 9.99999940e-01 1.56925289e-11 7.99993820e-14
+  2.63745248e-09 1.37252321e-14]
+ [9.96471167e-01 8.45657269e-08 1.29534717e-04 1.21093581e-05
+  3.38671566e-03 4.36720597e-07]
+ [1.53289893e-05 1.03602559e-15 9.90224302e-01 9.58898291e-03
+  1.12601156e-04 5.87843278e-05]
+ [1.26021051e-08 6.05327918e-18 9.99988258e-01 1.10263118e-05
+  4.00660838e-07 3.00609315e-07]
+ [8.82576346e-01 8.35949630e-02 2.90393475e-02 3.21928746e-06
+  4.77639074e-03 9.69748908e-06]
+ [5.37733769e-09 2.11656969e-18 1.17421663e-11 9.33910906e-01
+  6.24609143e-14 6.60890564e-02]
+ [1.13004409e-28 9.26079512e-01 2.02227254e-23 7.39206150e-02
+  3.04347437e-18 7.90588210e-21]
+ [3.63265917e-06 4.81960878e-18 9.99955595e-01 3.20216968e-05
+  1.74376692e-06 6.96819325e-06]
+ [1.02711563e-11 9.99996126e-01 2.99912836e-06 5.42735579e-11
+  8.03517764e-07 1.08166844e-11]
+ [1.48873103e-09 6.38940637e-11 8.29615317e-07 3.38034006e-05
+  5.06918113e-05 9.99914587e-01]
+ [7.89442151e-19 1.58564076e-02 3.73383307e-17 9.84143615e-01
+  1.83654508e-10 3.61775776e-15]
+ [2.34004151e-17 9.99972880e-01 5.90824742e-12 2.09203949e-06
+  2.49712994e-05 8.00143101e-14]
+ [5.10961275e-15 3.77360431e-30 4.05055184e-10 9.76720572e-01
+  1.90887581e-18 2.32793652e-02]
+ [9.07829150e-13 9.41335293e-06 6.11790654e-08 5.06327702e-10
+  3.59638331e-14 9.99990523e-01]
+ [3.83675080e-12 3.19808221e-29 2.74327840e-03 6.24096356e-02
+  4.81709128e-13 9.34846997e-01]
+ [1.83847815e-11 7.02275343e-23 9.99997914e-01 1.86191312e-06
+  5.14564003e-10 1.30459682e-07]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00 9.99999940e-01
+  0.00000000e+00 8.37986051e-23]
+ [8.28437557e-16 5.79182755e-27 9.99999523e-01 5.13003556e-07
+  8.87700354e-14 3.20574038e-08]
+ [5.18901921e-10 3.00256287e-20 9.99996662e-01 3.12103248e-06
+  5.53188695e-09 2.88894938e-07]
+ [2.12045957e-14 1.39243897e-25 9.99999642e-01 2.72396761e-07
+  2.99802717e-13 1.24474909e-07]]
+*****************
+Y_pred (Class IDs): [2 1 4 0 5 3 1 5 1 1 2 3 2 4 2 2 5 3 3 3 2 3 2 3 2 3 2 2 2 5 1 2 3 5 5 3 3
+ 2 2 2 0 3 3 1 2 3 2 1 2 0 3 2 3 1 5 2 2 2 2 2 4 2 3 1 0 2 2 0 3 1 2 1 5 3
+ 1 3 5 5 2 3 2 2 2]
+*****************
+Y_true (Actual): id
+317    2
+217    1
+181    4
+285    0
+180    5
+      ..
+333    2
+17     3
+361    2
+313    2
+362    2
+Name: type, Length: 83, dtype: int64
+*****************
+</code></pre>
+</div>
+</div>
+<div id="99da2c7e" class="cell code" data-execution_count="28"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:46.957370Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:46.956045Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:46.964928Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:46.964007Z&quot;}"
+id="kf2vqlsamx7r"
+data-papermill="{&quot;duration&quot;:0.129854,&quot;end_time&quot;:&quot;2025-12-20T22:41:46.966997&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:46.837143&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Making the Confusion Matrix</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_true, y_pred)</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>target_names <span class="op">=</span> [<span class="st">&#39;P&#39;</span>, <span class="st">&#39;R&#39;</span>, <span class="st">&#39;SO&#39;</span>, <span class="st">&#39;SW&#39;</span>, <span class="st">&#39;T&#39;</span>, <span class="st">&#39;W&#39;</span>]</span></code></pre></div>
+</div>
+<div id="af00da64" class="cell code" data-execution_count="29"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:47.203628Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:47.203234Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:47.806349Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:47.805211Z&quot;}"
+id="EQPEuDuBnkgN"
+data-papermill="{&quot;duration&quot;:0.724908,&quot;end_time&quot;:&quot;2025-12-20T22:41:47.808529&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:47.083621&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+</div>
+<div id="80c45984" class="cell code" data-execution_count="30"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:48.048268Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:48.047625Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:48.382946Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:48.381990Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:17,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926187847,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="ZE0yRVvRm4ng" data-outputId="a620c22f-788a-4a5c-8af0-9eaa10458a0e"
+data-papermill="{&quot;duration&quot;:0.459062,&quot;end_time&quot;:&quot;2025-12-20T22:41:48.384895&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:47.925833&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> sns.heatmap(pd.DataFrame(cm), annot<span class="op">=</span><span class="va">True</span>,xticklabels<span class="op">=</span>target_names, yticklabels<span class="op">=</span>target_names, cmap<span class="op">=</span><span class="st">&quot;YlGnBu&quot;</span> ,fmt<span class="op">=</span><span class="st">&#39;g&#39;</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Confusion matrix&#39;</span>, y<span class="op">=</span><span class="fl">1.1</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Actual label&#39;</span>)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Predicted label&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="30">
+<pre><code>Text(0.5, 23.52222222222222, &#39;Predicted label&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/ddc52f564f606938f86427e38af70538665a04ea.png" /></p>
+</div>
+</div>
+<div id="927427d5" class="cell markdown" id="vA-IrzYPrkah"
+data-papermill="{&quot;duration&quot;:0.120307,&quot;end_time&quot;:&quot;2025-12-20T22:41:48.624998&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:48.504691&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="classification-report"><strong>Classification
+Report</strong></h1>
+<h3 id="true-positive-rate"><strong>True Positive Rate</strong></h3>
+<p>number of samples actually and predicted as <code>Positive</code> /
+total number of samples actually <code>Positive</code><br />
+Also called <strong>Sensitivity or Recall</strong>.<br />
+<img
+src="https://wikimedia.org/api/rest_v1/media/math/render/svg/64d5540cbadeb83f864d7a731b7ab43cccd0f353"
+alt="alt text" /></p>
+<h3 id="positive-predictive-value"><strong>Positive Predictive
+Value</strong></h3>
+<p>number of samples actually and predicted as <code>Positive</code> /
+total number of samples predicted as <code>Positive</code><br />
+Also called <strong>Precision</strong>.<br />
+<img
+src="https://wikimedia.org/api/rest_v1/media/math/render/svg/699fcdb880b7f6a92742bc0845b8b60b59806a98"
+alt="alt text" /></p>
+<h3 id="f1-score"><strong>F1 score</strong></h3>
+<p>Harmonic Mean of Precision and Recall.<br />
+<img
+src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5663ca95d471868169c4e4ea57c936f1b6f4a588"
+alt="alt text" /></p>
+</div>
+<div id="f69a7ac9" class="cell code" data-execution_count="31"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:48.868494Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:48.867712Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:48.884893Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:48.883839Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:6,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926187848,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="h9PnAQtCm7wC" data-outputId="e39f3ca2-7ddc-4dcb-9bf4-9877a8757681"
+data-papermill="{&quot;duration&quot;:0.142122,&quot;end_time&quot;:&quot;2025-12-20T22:41:48.886883&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:48.744761&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import classification_report</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_true,y_pred, target_names <span class="op">=</span> target_names))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>              precision    recall  f1-score   support
+
+           P       1.00      0.83      0.91         6
+           R       0.92      1.00      0.96        11
+          SO       0.97      1.00      0.98        31
+          SW       0.86      0.90      0.88        20
+           T       0.67      0.67      0.67         3
+           W       1.00      0.83      0.91        12
+
+    accuracy                           0.93        83
+   macro avg       0.90      0.87      0.88        83
+weighted avg       0.93      0.93      0.93        83
+
+</code></pre>
+</div>
+</div>
+<div id="6119c742" class="cell markdown" id="m4WoHrjxrooT"
+data-papermill="{&quot;duration&quot;:0.118465,&quot;end_time&quot;:&quot;2025-12-20T22:41:49.127713&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:49.009248&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<p>#<strong>ROC curve</strong></p>
+</div>
+<div id="00da4370" class="cell code" data-execution_count="32"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:49.365665Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:49.365276Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:50.272719Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:50.271685Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:6034,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926231085,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="PxrEaVsSRRXu" data-outputId="2dd7340f-8e1b-45f9-b2ab-8d29f42261a6"
+data-papermill="{&quot;duration&quot;:1.029535,&quot;end_time&quot;:&quot;2025-12-20T22:41:50.274644&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:49.245109&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> roc_curve, auc</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> cycle</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.utils <span class="im">import</span> to_categorical</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> to_categorical(y_test, num_classes<span class="op">=</span><span class="dv">6</span>)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>pred <span class="op">=</span> classifier.predict(X_test)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>fpr <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>tpr <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>roc_auc <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>    fpr[i], tpr[i], _ <span class="op">=</span> roc_curve(y_test[:, i], pred[:, i])</span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>    roc_auc[i] <span class="op">=</span> auc(fpr[i], tpr[i])</span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot of a ROC curve for a specific class</span></span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>):</span>
+<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a>    plt.figure()</span>
+<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>    plt.plot(fpr[i], tpr[i], label<span class="op">=</span><span class="st">&#39;ROC curve (area = </span><span class="sc">%0.2f</span><span class="st">)&#39;</span> <span class="op">%</span> roc_auc[i])</span>
+<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a>    plt.plot([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="dv">0</span>, <span class="dv">1</span>], <span class="st">&#39;k--&#39;</span>)</span>
+<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a>    plt.xlim([<span class="fl">0.0</span>, <span class="fl">1.0</span>])</span>
+<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a>    plt.ylim([<span class="fl">0.0</span>, <span class="fl">1.05</span>])</span>
+<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">&#39;False Positive Rate&#39;</span>)</span>
+<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">&#39;True Positive Rate&#39;</span>)</span>
+<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">&#39;Receiver operating characteristic example&#39;</span>)</span>
+<span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a>    plt.legend(loc<span class="op">=</span><span class="st">&quot;lower right&quot;</span>)</span>
+<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 10ms/step
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/9a2bafd114f70bcb91e8cc1fdd78e96f656e2efb.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/9a2bafd114f70bcb91e8cc1fdd78e96f656e2efb.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/8de0ce5ea9b0de6b6ece98b3de58c3c1cbb7f7d6.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/43874de1127ee69c4a5799595eefe5ebb8b81ac9.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/3d285d2005829ce4ef1c3850bd42c252287a26e0.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/f29aec83e172ba64a2d750e572f96e77a39f0920.png" /></p>
+</div>
+</div>
+<div id="62fd9e43" class="cell code" data-execution_count="33"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:50.534115Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:50.533712Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:41:50.762849Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:41:50.761877Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:1298,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1682926233415,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="6t01_ocrm-zD" data-outputId="28337a2c-56a9-46a0-a2f2-d1ed755c5513"
+data-papermill="{&quot;duration&quot;:0.364795,&quot;end_time&quot;:&quot;2025-12-20T22:41:50.764686&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:50.399891&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb55"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> roc_curve, auc</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> label_binarize</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> cycle</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Convert y_test (integers) into a 6-column binary matrix</span></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Change classes=[0,1,2,3,4,5] if your class IDs are different</span></span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>y_test_bin <span class="op">=</span> label_binarize(y_test, classes<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>])</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Setup variables</span></span>
+<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>fpr <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>tpr <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>roc_auc <span class="op">=</span> <span class="bu">dict</span>()</span>
+<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a>lw <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a>n_classes <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Calculate ROC for each class</span></span>
+<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n_classes):</span>
+<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Use y_test_bin instead of y_test</span></span>
+<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a>    fpr[i], tpr[i], _ <span class="op">=</span> roc_curve(y_test_bin[:, i], pred[:, i])</span>
+<span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a>    roc_auc[i] <span class="op">=</span> auc(fpr[i], tpr[i])</span>
+<span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-24"><a href="#cb55-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Plot</span></span>
+<span id="cb55-25"><a href="#cb55-25" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> cycle([<span class="st">&#39;blue&#39;</span>, <span class="st">&#39;green&#39;</span>, <span class="st">&#39;red&#39;</span>, <span class="st">&#39;darkorange&#39;</span>, <span class="st">&#39;olive&#39;</span>, <span class="st">&#39;purple&#39;</span>])</span>
+<span id="cb55-26"><a href="#cb55-26" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>)) <span class="co"># Optional: make the plot larger</span></span>
+<span id="cb55-27"><a href="#cb55-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-28"><a href="#cb55-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, color <span class="kw">in</span> <span class="bu">zip</span>(<span class="bu">range</span>(n_classes), colors):</span>
+<span id="cb55-29"><a href="#cb55-29" aria-hidden="true" tabindex="-1"></a>    plt.plot(fpr[i], tpr[i], color<span class="op">=</span>color, lw<span class="op">=</span>lw,</span>
+<span id="cb55-30"><a href="#cb55-30" aria-hidden="true" tabindex="-1"></a>             label<span class="op">=</span><span class="st">&#39;Class </span><span class="sc">{0}</span><span class="st"> (AUC = </span><span class="sc">{1:0.4f}</span><span class="st">)&#39;</span>.<span class="bu">format</span>(i, roc_auc[i]))</span>
+<span id="cb55-31"><a href="#cb55-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-32"><a href="#cb55-32" aria-hidden="true" tabindex="-1"></a>plt.plot([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="dv">0</span>, <span class="dv">1</span>], <span class="st">&#39;k--&#39;</span>, lw<span class="op">=</span>lw)</span>
+<span id="cb55-33"><a href="#cb55-33" aria-hidden="true" tabindex="-1"></a>plt.xlim([<span class="op">-</span><span class="fl">0.05</span>, <span class="fl">1.0</span>])</span>
+<span id="cb55-34"><a href="#cb55-34" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="fl">0.0</span>, <span class="fl">1.05</span>])</span>
+<span id="cb55-35"><a href="#cb55-35" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;False Positive Rate&#39;</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb55-36"><a href="#cb55-36" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;True Positive Rate&#39;</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb55-37"><a href="#cb55-37" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Receiver Operating Characteristic (Multi-Class)&#39;</span>)</span>
+<span id="cb55-38"><a href="#cb55-38" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">&quot;lower right&quot;</span>)</span>
+<span id="cb55-39"><a href="#cb55-39" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_b03e1e8a037c422eb912fb2fee613216/764eec8e80346ef0d4efa999f8b379baf82b25d3.png" /></p>
+</div>
+</div>
+<div id="3a8a2d82" class="cell markdown" id="VquM03p9oKOS"
+data-papermill="{&quot;duration&quot;:0.125501,&quot;end_time&quot;:&quot;2025-12-20T22:41:51.014418&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:50.888917&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="finetuing-the-network"><strong>Finetuing the
+Network</strong></h1>
+</div>
+<div id="753abfe5" class="cell code" data-execution_count="34"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-20T22:41:51.266402Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-20T22:41:51.266029Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-20T22:48:56.954367Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-20T22:48:56.953323Z&quot;}"
+id="3Gzn1ezQnZfv"
+data-papermill="{&quot;duration&quot;:425.941002,&quot;end_time&quot;:&quot;2025-12-20T22:48:57.081305&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-20T22:41:51.140303&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb56"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;from scikeras.wrappers import KerasClassifier</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="co">from sklearn.model_selection import GridSearchCV</span></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="co">from keras.models import Sequential</span></span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="co">from keras.layers import Dense, Input</span></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co">def build_classifier(optimizer=&#39;adam&#39;):</span></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier = Sequential()</span></span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a><span class="co">    # Input Layer</span></span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.add(Input(shape=(10,))) </span></span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a><span class="co">    # Hidden Layers</span></span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.add(Dense(units=8, kernel_initializer=&#39;uniform&#39;, activation=&#39;relu&#39;))</span></span>
+<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.add(Dense(units=16, kernel_initializer=&#39;uniform&#39;, activation=&#39;relu&#39;))</span></span>
+<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.add(Dense(units=32, kernel_initializer=&#39;uniform&#39;, activation=&#39;relu&#39;))</span></span>
+<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a><span class="co">    # Output Layer</span></span>
+<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.add(Dense(units=6, kernel_initializer=&#39;uniform&#39;, activation=&#39;softmax&#39;))</span></span>
+<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a><span class="co">    # FIX IS HERE: Change loss to &#39;sparse_categorical_crossentropy&#39;</span></span>
+<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a><span class="co">    classifier.compile(optimizer=optimizer, </span></span>
+<span id="cb56-22"><a href="#cb56-22" aria-hidden="true" tabindex="-1"></a><span class="co">                       loss=&#39;sparse_categorical_crossentropy&#39;, </span></span>
+<span id="cb56-23"><a href="#cb56-23" aria-hidden="true" tabindex="-1"></a><span class="co">                       metrics=[&#39;accuracy&#39;])</span></span>
+<span id="cb56-24"><a href="#cb56-24" aria-hidden="true" tabindex="-1"></a><span class="co">    return classifier</span></span>
+<span id="cb56-25"><a href="#cb56-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-26"><a href="#cb56-26" aria-hidden="true" tabindex="-1"></a><span class="co">classifier = KerasClassifier(model=build_classifier, verbose=0)</span></span>
+<span id="cb56-27"><a href="#cb56-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-28"><a href="#cb56-28" aria-hidden="true" tabindex="-1"></a><span class="co">parameters = {</span></span>
+<span id="cb56-29"><a href="#cb56-29" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;batch_size&#39;: [16, 32],</span></span>
+<span id="cb56-30"><a href="#cb56-30" aria-hidden="true" tabindex="-1"></a><span class="co">    # Note: 800-1000 epochs with CV=10 is extremely slow. </span></span>
+<span id="cb56-31"><a href="#cb56-31" aria-hidden="true" tabindex="-1"></a><span class="co">    # Consider reducing for testing (e.g., cv=3, epochs=[50, 100])</span></span>
+<span id="cb56-32"><a href="#cb56-32" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;epochs&#39;: [800, 1000], </span></span>
+<span id="cb56-33"><a href="#cb56-33" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;model__optimizer&#39;: [&#39;adam&#39;, &#39;rmsprop&#39;]</span></span>
+<span id="cb56-34"><a href="#cb56-34" aria-hidden="true" tabindex="-1"></a><span class="co">}</span></span>
+<span id="cb56-35"><a href="#cb56-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-36"><a href="#cb56-36" aria-hidden="true" tabindex="-1"></a><span class="co">grid_search = GridSearchCV(estimator=classifier,</span></span>
+<span id="cb56-37"><a href="#cb56-37" aria-hidden="true" tabindex="-1"></a><span class="co">                           param_grid=parameters,</span></span>
+<span id="cb56-38"><a href="#cb56-38" aria-hidden="true" tabindex="-1"></a><span class="co">                           scoring=&#39;accuracy&#39;,</span></span>
+<span id="cb56-39"><a href="#cb56-39" aria-hidden="true" tabindex="-1"></a><span class="co">                           cv=10)</span></span>
+<span id="cb56-40"><a href="#cb56-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-41"><a href="#cb56-41" aria-hidden="true" tabindex="-1"></a><span class="co">print(&quot;Training started...&quot;)</span></span>
+<span id="cb56-42"><a href="#cb56-42" aria-hidden="true" tabindex="-1"></a><span class="co">grid_search = grid_search.fit(X_train, y_train)</span></span>
+<span id="cb56-43"><a href="#cb56-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-44"><a href="#cb56-44" aria-hidden="true" tabindex="-1"></a><span class="co">best_parameters = grid_search.best_params_</span></span>
+<span id="cb56-45"><a href="#cb56-45" aria-hidden="true" tabindex="-1"></a><span class="co">best_accuracy = grid_search.best_score_</span></span>
+<span id="cb56-46"><a href="#cb56-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-47"><a href="#cb56-47" aria-hidden="true" tabindex="-1"></a><span class="co">print(&quot;Best Parameters:&quot;, best_parameters)</span></span>
+<span id="cb56-48"><a href="#cb56-48" aria-hidden="true" tabindex="-1"></a><span class="co">print(&quot;Best Accuracy:&quot;, best_accuracy)&#39;&#39;&#39;</span></span>
+<span id="cb56-49"><a href="#cb56-49" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb56-50"><a href="#cb56-50" aria-hidden="true" tabindex="-1"></a>tf.config.run_functions_eagerly(<span class="va">True</span>)</span>
+<span id="cb56-51"><a href="#cb56-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-52"><a href="#cb56-52" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb56-53"><a href="#cb56-53" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Sequential</span>
+<span id="cb56-54"><a href="#cb56-54" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Dense, Input</span>
+<span id="cb56-55"><a href="#cb56-55" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.optimizers <span class="im">import</span> Adam, RMSprop</span>
+<span id="cb56-56"><a href="#cb56-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-57"><a href="#cb56-57" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> np.asarray(X_train).astype(<span class="st">&quot;float32&quot;</span>)</span>
+<span id="cb56-58"><a href="#cb56-58" aria-hidden="true" tabindex="-1"></a>y_train <span class="op">=</span> np.asarray(y_train).astype(<span class="st">&quot;int32&quot;</span>)</span>
+<span id="cb56-59"><a href="#cb56-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-60"><a href="#cb56-60" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> build_model(optimizer_name):</span>
+<span id="cb56-61"><a href="#cb56-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> optimizer_name <span class="op">==</span> <span class="st">&#39;adam&#39;</span>:</span>
+<span id="cb56-62"><a href="#cb56-62" aria-hidden="true" tabindex="-1"></a>        optimizer <span class="op">=</span> Adam()</span>
+<span id="cb56-63"><a href="#cb56-63" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> optimizer_name <span class="op">==</span> <span class="st">&#39;rmsprop&#39;</span>:</span>
+<span id="cb56-64"><a href="#cb56-64" aria-hidden="true" tabindex="-1"></a>        optimizer <span class="op">=</span> RMSprop()</span>
+<span id="cb56-65"><a href="#cb56-65" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb56-66"><a href="#cb56-66" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> Sequential()</span>
+<span id="cb56-67"><a href="#cb56-67" aria-hidden="true" tabindex="-1"></a>    model.add(Input(shape<span class="op">=</span>(<span class="dv">10</span>,)))</span>
+<span id="cb56-68"><a href="#cb56-68" aria-hidden="true" tabindex="-1"></a>    model.add(Dense(<span class="dv">8</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb56-69"><a href="#cb56-69" aria-hidden="true" tabindex="-1"></a>    model.add(Dense(<span class="dv">16</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb56-70"><a href="#cb56-70" aria-hidden="true" tabindex="-1"></a>    model.add(Dense(<span class="dv">32</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb56-71"><a href="#cb56-71" aria-hidden="true" tabindex="-1"></a>    model.add(Dense(<span class="dv">6</span>, activation<span class="op">=</span><span class="st">&#39;softmax&#39;</span>))</span>
+<span id="cb56-72"><a href="#cb56-72" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb56-73"><a href="#cb56-73" aria-hidden="true" tabindex="-1"></a>    model.<span class="bu">compile</span>(</span>
+<span id="cb56-74"><a href="#cb56-74" aria-hidden="true" tabindex="-1"></a>        optimizer<span class="op">=</span>optimizer,</span>
+<span id="cb56-75"><a href="#cb56-75" aria-hidden="true" tabindex="-1"></a>        loss<span class="op">=</span><span class="st">&#39;sparse_categorical_crossentropy&#39;</span>,</span>
+<span id="cb56-76"><a href="#cb56-76" aria-hidden="true" tabindex="-1"></a>        metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>]</span>
+<span id="cb56-77"><a href="#cb56-77" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb56-78"><a href="#cb56-78" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> model</span>
+<span id="cb56-79"><a href="#cb56-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-80"><a href="#cb56-80" aria-hidden="true" tabindex="-1"></a>optimizers <span class="op">=</span> [<span class="st">&#39;adam&#39;</span>, <span class="st">&#39;rmsprop&#39;</span>]</span>
+<span id="cb56-81"><a href="#cb56-81" aria-hidden="true" tabindex="-1"></a>batch_sizes <span class="op">=</span> [<span class="dv">16</span>, <span class="dv">32</span>]</span>
+<span id="cb56-82"><a href="#cb56-82" aria-hidden="true" tabindex="-1"></a>epochs_list <span class="op">=</span> [<span class="dv">50</span>, <span class="dv">100</span>]</span>
+<span id="cb56-83"><a href="#cb56-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-84"><a href="#cb56-84" aria-hidden="true" tabindex="-1"></a>best_acc <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb56-85"><a href="#cb56-85" aria-hidden="true" tabindex="-1"></a>best_params <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb56-86"><a href="#cb56-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-87"><a href="#cb56-87" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> opt <span class="kw">in</span> optimizers:</span>
+<span id="cb56-88"><a href="#cb56-88" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bs <span class="kw">in</span> batch_sizes:</span>
+<span id="cb56-89"><a href="#cb56-89" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> ep <span class="kw">in</span> epochs_list:</span>
+<span id="cb56-90"><a href="#cb56-90" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;Training → opt=</span><span class="sc">{</span>opt<span class="sc">}</span><span class="ss">, batch=</span><span class="sc">{</span>bs<span class="sc">}</span><span class="ss">, epochs=</span><span class="sc">{</span>ep<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb56-91"><a href="#cb56-91" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb56-92"><a href="#cb56-92" aria-hidden="true" tabindex="-1"></a>            model <span class="op">=</span> build_model(opt)  <span class="co"># 🔥 NEW optimizer every time</span></span>
+<span id="cb56-93"><a href="#cb56-93" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb56-94"><a href="#cb56-94" aria-hidden="true" tabindex="-1"></a>            history <span class="op">=</span> model.fit(</span>
+<span id="cb56-95"><a href="#cb56-95" aria-hidden="true" tabindex="-1"></a>                X_train,</span>
+<span id="cb56-96"><a href="#cb56-96" aria-hidden="true" tabindex="-1"></a>                y_train,</span>
+<span id="cb56-97"><a href="#cb56-97" aria-hidden="true" tabindex="-1"></a>                batch_size<span class="op">=</span>bs,</span>
+<span id="cb56-98"><a href="#cb56-98" aria-hidden="true" tabindex="-1"></a>                epochs<span class="op">=</span>ep,</span>
+<span id="cb56-99"><a href="#cb56-99" aria-hidden="true" tabindex="-1"></a>                validation_split<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb56-100"><a href="#cb56-100" aria-hidden="true" tabindex="-1"></a>                verbose<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb56-101"><a href="#cb56-101" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb56-102"><a href="#cb56-102" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb56-103"><a href="#cb56-103" aria-hidden="true" tabindex="-1"></a>            acc <span class="op">=</span> <span class="bu">max</span>(history.history[<span class="st">&#39;val_accuracy&#39;</span>])</span>
+<span id="cb56-104"><a href="#cb56-104" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> acc <span class="op">&gt;</span> best_acc:</span>
+<span id="cb56-105"><a href="#cb56-105" aria-hidden="true" tabindex="-1"></a>                best_acc <span class="op">=</span> acc</span>
+<span id="cb56-106"><a href="#cb56-106" aria-hidden="true" tabindex="-1"></a>                best_params <span class="op">=</span> (opt, bs, ep)</span>
+<span id="cb56-107"><a href="#cb56-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-108"><a href="#cb56-108" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Best Params:&quot;</span>, best_params)</span>
+<span id="cb56-109"><a href="#cb56-109" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Best Validation Accuracy:&quot;</span>, best_acc)</span>
+<span id="cb56-110"><a href="#cb56-110" aria-hidden="true" tabindex="-1"></a> </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Training → opt=adam, batch=16, epochs=50
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/tensorflow/python/data/ops/structured_function.py:258: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Training → opt=adam, batch=16, epochs=100
+Training → opt=adam, batch=32, epochs=50
+Training → opt=adam, batch=32, epochs=100
+Training → opt=rmsprop, batch=16, epochs=50
+Training → opt=rmsprop, batch=16, epochs=100
+Training → opt=rmsprop, batch=32, epochs=50
+Training → opt=rmsprop, batch=32, epochs=100
+Best Params: (&#39;adam&#39;, 32, 100)
+Best Validation Accuracy: 0.8484848737716675
+</code></pre>
+</div>
+</div>
+</body>
+</html>

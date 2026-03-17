@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c7a74ddaacaf4b6e90a23e3ed70e2a5b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="experiment-5" class="cell markdown">
+<h1><strong>Experiment 5</strong></h1>
+</section>
+<div class="cell markdown">
+<p><strong>Aim:</strong> Design a CNN architecture to implement the
+image classification task over an image dataset. Perform the
+Hyper-parameter tuning and record the results.</p>
+</div>
+<div class="cell markdown">
+<p>Pratham Goyal A2345924079 4CSE-2eve</p>
+</div>
+<div id="dc42cfbc" class="cell code" data-execution_count="1"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:28:52.329706Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:28:52.328771Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:01.708614Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:01.707597Z&quot;}"
+data-papermill="{&quot;duration&quot;:9.389233,&quot;end_time&quot;:&quot;2026-02-08T11:29:01.710955&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:28:52.321722&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install wandb</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wandb</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>load_dotenv(<span class="st">&#39;/kaggle/input/environment-variable/.env&#39;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;API key found in environment? </span><span class="sc">{</span>os<span class="sc">.</span>getenv(<span class="st">&#39;WANDB_API_KEY&#39;</span>) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># wandb.login()</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> wandb.login():</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Successfully logged in to Weights &amp; Biases!&quot;</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Failed to log in to Weights &amp; Biases. Check your API key in the .env file.&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Requirement already satisfied: wandb in /usr/local/lib/python3.12/dist-packages (0.22.2)
+Requirement already satisfied: click&gt;=8.0.1 in /usr/local/lib/python3.12/dist-packages (from wandb) (8.3.1)
+Requirement already satisfied: gitpython!=3.1.29,&gt;=1.0.0 in /usr/local/lib/python3.12/dist-packages (from wandb) (3.1.45)
+Requirement already satisfied: packaging in /usr/local/lib/python3.12/dist-packages (from wandb) (26.0rc2)
+Requirement already satisfied: platformdirs in /usr/local/lib/python3.12/dist-packages (from wandb) (4.5.1)
+Requirement already satisfied: protobuf!=4.21.0,!=5.28.0,&lt;7,&gt;=3.19.0 in /usr/local/lib/python3.12/dist-packages (from wandb) (5.29.5)
+Requirement already satisfied: pydantic&lt;3 in /usr/local/lib/python3.12/dist-packages (from wandb) (2.12.5)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.12/dist-packages (from wandb) (6.0.3)
+Requirement already satisfied: requests&lt;3,&gt;=2.0.0 in /usr/local/lib/python3.12/dist-packages (from wandb) (2.32.5)
+Requirement already satisfied: sentry-sdk&gt;=2.0.0 in /usr/local/lib/python3.12/dist-packages (from wandb) (2.42.1)
+Requirement already satisfied: typing-extensions&lt;5,&gt;=4.8 in /usr/local/lib/python3.12/dist-packages (from wandb) (4.15.0)
+Requirement already satisfied: gitdb&lt;5,&gt;=4.0.1 in /usr/local/lib/python3.12/dist-packages (from gitpython!=3.1.29,&gt;=1.0.0-&gt;wandb) (4.0.12)
+Requirement already satisfied: annotated-types&gt;=0.6.0 in /usr/local/lib/python3.12/dist-packages (from pydantic&lt;3-&gt;wandb) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /usr/local/lib/python3.12/dist-packages (from pydantic&lt;3-&gt;wandb) (2.41.5)
+Requirement already satisfied: typing-inspection&gt;=0.4.2 in /usr/local/lib/python3.12/dist-packages (from pydantic&lt;3-&gt;wandb) (0.4.2)
+Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.12/dist-packages (from requests&lt;3,&gt;=2.0.0-&gt;wandb) (3.4.4)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.12/dist-packages (from requests&lt;3,&gt;=2.0.0-&gt;wandb) (3.11)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests&lt;3,&gt;=2.0.0-&gt;wandb) (2.6.3)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests&lt;3,&gt;=2.0.0-&gt;wandb) (2026.1.4)
+Requirement already satisfied: smmap&lt;6,&gt;=3.0.1 in /usr/local/lib/python3.12/dist-packages (from gitdb&lt;5,&gt;=4.0.1-&gt;gitpython!=3.1.29,&gt;=1.0.0-&gt;wandb) (5.0.2)
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The &#39;repr&#39; attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. &#39;repr&#39; is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The &#39;frozen&#39; attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. &#39;frozen&#39; is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>API key found in environment? True
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>wandb: Currently logged in as: prathamgoyal7411 (v8god-01) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Successfully logged in to Weights &amp; Biases!
+</code></pre>
+</div>
+</div>
+<div id="6f284c49" class="cell markdown" id="iJ0ZKrDxffoG"
+data-papermill="{&quot;duration&quot;:4.939e-3,&quot;end_time&quot;:&quot;2026-02-08T11:29:01.721363&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:01.716424&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="-plant-disease-classification-with-pytorch">🌿 Plant Disease
+Classification with PyTorch</h1>
+<p>End-to-end PyTorch pipeline for multi-class leaf disease detection
+using transfer learning (ResNet18). This notebook covers data loading,
+visualization, model training, evaluation, and inference with clean
+explanations and code comments.</p>
+</div>
+<div id="79ddc956" class="cell markdown" id="cDB5kSMDHWBR"
+data-papermill="{&quot;duration&quot;:4.814e-3,&quot;end_time&quot;:&quot;2026-02-08T11:29:01.731103&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:01.726289&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="1-setup-and-imports">1. Setup and Imports</h2>
+<ul>
+<li>Core: <code>torch</code>, <code>torchvision</code></li>
+<li>Training utilities: <code>optim</code>, <code>nn</code>,
+<code>DataLoader</code></li>
+<li>Metrics and plots: <code>sklearn</code>,
+<code>matplotlib</code></li>
+<li>Reproducibility: seeds for NumPy and PyTorch</li>
+</ul>
+</div>
+<div id="03741431" class="cell code" data-execution_count="2"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:01.742700Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:01.742345Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:17.448122Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:17.446670Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1768907915358,&quot;user&quot;:{&quot;displayName&quot;:&quot;Nihal Gupta&quot;,&quot;userId&quot;:&quot;07957401060417507861&quot;},&quot;user_tz&quot;:-330}"
+id="JuKSi3EJyGb-" data-outputId="d941146c-5197-4118-afe8-fd6510c2704d"
+data-papermill="{&quot;duration&quot;:15.714484,&quot;end_time&quot;:&quot;2026-02-08T11:29:17.450434&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:01.735950&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os, random, time</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.optim <span class="im">as</span> optim</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> DataLoader</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> datasets, transforms, models</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report, confusion_matrix</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Reproducibility</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>SEED <span class="op">=</span> <span class="dv">42</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>random.seed(SEED)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>np.random.seed(SEED)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>torch.manual_seed(SEED)</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>torch.cuda.manual_seed_all(SEED)</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>device <span class="op">=</span> torch.device(<span class="st">&quot;cuda&quot;</span> <span class="cf">if</span> torch.cuda.is_available() <span class="cf">else</span> <span class="st">&quot;cpu&quot;</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Using device: </span><span class="sc">{</span>device<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Using device: cpu
+</code></pre>
+</div>
+</div>
+<div id="4588f398" class="cell markdown" id="Ce3cLHaLHWBU"
+data-papermill="{&quot;duration&quot;:5.004e-3,&quot;end_time&quot;:&quot;2026-02-08T11:29:17.460753&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:17.455749&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="2-data-paths-transforms-and-loaders">2. Data Paths, Transforms,
+and Loaders</h2>
+<ul>
+<li>Directory structure: <code>train/</code>, <code>val/</code>,
+<code>test/</code></li>
+<li>Augmentations on train set (flips, color jitter, small
+rotations)</li>
+<li>Normalization uses ImageNet stats (good for pretrained
+backbones)</li>
+<li>Dataloaders for batching and shuffling</li>
+</ul>
+</div>
+<div id="6648daaf" class="cell code" data-execution_count="3"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:17.472902Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:17.472336Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:17.476649Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:17.475730Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:24807,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1768907777155,&quot;user&quot;:{&quot;displayName&quot;:&quot;Nihal Gupta&quot;,&quot;userId&quot;:&quot;07957401060417507861&quot;},&quot;user_tz&quot;:-330}"
+id="qCYdBalmHjd7" data-outputId="12371e64-c7c1-42c2-b1b1-c9a14fc00e96"
+data-papermill="{&quot;duration&quot;:1.3078e-2,&quot;end_time&quot;:&quot;2026-02-08T11:29:17.478764&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:17.465686&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#from google.colab import drive</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#drive.mount(&#39;/content/drive&#39;)</span></span></code></pre></div>
+</div>
+<div id="6c9e17ea" class="cell code" data-execution_count="4"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:17.490501Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:17.490154Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:17.627130Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:17.625919Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:100,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1768907925390,&quot;user&quot;:{&quot;displayName&quot;:&quot;Nihal Gupta&quot;,&quot;userId&quot;:&quot;07957401060417507861&quot;},&quot;user_tz&quot;:-330}"
+id="_HWQ0sUjHWBV" data-outputId="ca1462be-4f82-42f8-9a41-9763e095d159"
+data-papermill="{&quot;duration&quot;:0.145557,&quot;end_time&quot;:&quot;2026-02-08T11:29:17.629496&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:17.483939&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pwd</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>/kaggle/working
+</code></pre>
+</div>
+</div>
+<div id="5da2b29b" class="cell code" data-execution_count="5"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:17.642294Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:17.641894Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:20.921996Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:20.920771Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:10441,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1768907970901,&quot;user&quot;:{&quot;displayName&quot;:&quot;Nihal Gupta&quot;,&quot;userId&quot;:&quot;07957401060417507861&quot;},&quot;user_tz&quot;:-330}"
+id="PyYRaHdLavO2" data-outputId="2322c0f8-f276-4c65-ed46-b764492c5ba6"
+data-papermill="{&quot;duration&quot;:3.289274,&quot;end_time&quot;:&quot;2026-02-08T11:29:20.924121&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:17.634847&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Update the base directory if your data lives elsewhere</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>data_root <span class="op">=</span> <span class="st">&quot;/kaggle/input/plant-1/Data/plant_village_dataset&quot;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> os.path.join(data_root, <span class="st">&quot;train&quot;</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>val_dir   <span class="op">=</span> os.path.join(data_root, <span class="st">&quot;val&quot;</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>test_dir  <span class="op">=</span> os.path.join(data_root, <span class="st">&quot;test&quot;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>img_size <span class="op">=</span> <span class="dv">128</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>batch_size <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>num_workers <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>train_tfms <span class="op">=</span> transforms.Compose([</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    transforms.Resize((img_size, img_size)),</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    transforms.RandomHorizontalFlip(),</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    transforms.RandomVerticalFlip(),</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    transforms.ColorJitter(brightness<span class="op">=</span><span class="fl">0.2</span>, contrast<span class="op">=</span><span class="fl">0.2</span>, saturation<span class="op">=</span><span class="fl">0.2</span>),</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    transforms.RandomRotation(<span class="dv">10</span>),</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>    transforms.ToTensor(),</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>    transforms.Normalize(mean<span class="op">=</span>[<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], std<span class="op">=</span>[<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>eval_tfms <span class="op">=</span> transforms.Compose([</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    transforms.Resize((img_size, img_size)),</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    transforms.ToTensor(),</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>    transforms.Normalize(mean<span class="op">=</span>[<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], std<span class="op">=</span>[<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>train_ds <span class="op">=</span> datasets.ImageFolder(train_dir, transform<span class="op">=</span>train_tfms)</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>val_ds   <span class="op">=</span> datasets.ImageFolder(val_dir, transform<span class="op">=</span>eval_tfms)</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>test_ds  <span class="op">=</span> datasets.ImageFolder(test_dir, transform<span class="op">=</span>eval_tfms)</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>class_names <span class="op">=</span> train_ds.classes</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>num_classes <span class="op">=</span> <span class="bu">len</span>(class_names)</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Classes: </span><span class="sc">{</span>class_names<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>train_loader <span class="op">=</span> DataLoader(train_ds, batch_size<span class="op">=</span>batch_size, shuffle<span class="op">=</span><span class="va">True</span>,  num_workers<span class="op">=</span>num_workers, pin_memory<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>val_loader   <span class="op">=</span> DataLoader(val_ds,   batch_size<span class="op">=</span>batch_size, shuffle<span class="op">=</span><span class="va">False</span>, num_workers<span class="op">=</span>num_workers, pin_memory<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>test_loader  <span class="op">=</span> DataLoader(test_ds,  batch_size<span class="op">=</span>batch_size, shuffle<span class="op">=</span><span class="va">False</span>, num_workers<span class="op">=</span>num_workers, pin_memory<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Train/Val/Test sizes: </span><span class="sc">{</span><span class="bu">len</span>(train_ds)<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="bu">len</span>(val_ds)<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="bu">len</span>(test_ds)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Classes: [&#39;Apple_Frogeye_Spot&#39;, &#39;Apple___Apple_scab&#39;, &#39;Apple___Cedar_apple_rust&#39;, &#39;Apple___healthy&#39;]
+Train/Val/Test sizes: 3002, 635, 546
+</code></pre>
+</div>
+</div>
+<div id="394c2b22" class="cell markdown" id="ikKJcxAaHWBW"
+data-papermill="{&quot;duration&quot;:5.31e-3,&quot;end_time&quot;:&quot;2026-02-08T11:29:20.934685&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:20.929375&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="3-quick-data-peek">3. Quick Data Peek</h2>
+<p>Visualize a few samples with labels to sanity-check the pipeline.</p>
+</div>
+<div id="fd3e8f13" class="cell code" data-execution_count="6"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:20.946713Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:20.946363Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:22.166687Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:22.165444Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684226202195,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="AheZPiNC6ZwZ" data-outputId="c80b6918-d5c2-47ab-c622-8ea68c323f20"
+data-papermill="{&quot;duration&quot;:1.23681,&quot;end_time&quot;:&quot;2026-02-08T11:29:22.176689&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:20.939879&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> imshow_batch(batch, labels):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    inv_norm <span class="op">=</span> transforms.Normalize(</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>        mean<span class="op">=</span>[<span class="op">-</span>m<span class="op">/</span>s <span class="cf">for</span> m, s <span class="kw">in</span> <span class="bu">zip</span>([<span class="fl">0.485</span>,<span class="fl">0.456</span>,<span class="fl">0.406</span>],[<span class="fl">0.229</span>,<span class="fl">0.224</span>,<span class="fl">0.225</span>])],</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>        std<span class="op">=</span>[<span class="dv">1</span><span class="op">/</span>s <span class="cf">for</span> s <span class="kw">in</span> [<span class="fl">0.229</span>,<span class="fl">0.224</span>,<span class="fl">0.225</span>]]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    imgs <span class="op">=</span> inv_norm(batch).clamp(<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    grid <span class="op">=</span> torchvision.utils.make_grid(imgs, nrow<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">8</span>))</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    plt.imshow(np.transpose(grid.numpy(), (<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">0</span>)))</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">&quot; / &quot;</span>.join([class_names[l] <span class="cf">for</span> l <span class="kw">in</span> labels[:<span class="dv">4</span>]]))</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    plt.axis(<span class="st">&#39;off&#39;</span>)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>sample_imgs, sample_lbls <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(train_loader))</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>imshow_batch(sample_imgs[:<span class="dv">16</span>], sample_lbls[:<span class="dv">16</span>])</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:666: UserWarning: &#39;pin_memory&#39; argument is set as true but no accelerator is found, then device pinned memory won&#39;t be used.
+  warnings.warn(warn_msg)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_f60073c80f7447f383500748e8f5330e/87d1906ffa8173a69ca7ff2a07db230b73a17d68.png" /></p>
+</div>
+</div>
+<div id="b471671a" class="cell markdown" id="BiJvRIxN5P9D"
+data-papermill="{&quot;duration&quot;:1.5387e-2,&quot;end_time&quot;:&quot;2026-02-08T11:29:22.206185&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:22.190798&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="4-model-transfer-learning-with-resnet18">4. Model: Transfer
+Learning with ResNet18</h2>
+<ul>
+<li>Load pretrained weights</li>
+<li>Replace the final layer with a custom head for our
+<code>num_classes</code></li>
+<li>Use dropout for regularization</li>
+</ul>
+</div>
+<div id="7edb71b9" class="cell code" data-execution_count="7"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:22.237768Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:22.237360Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T11:29:22.883321Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T11:29:22.882078Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:3133,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684226205323,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="vTEBdXgBmBn-" data-outputId="83965612-3a90-40a5-b6d2-e11f450d42d2"
+data-papermill="{&quot;duration&quot;:0.664463,&quot;end_time&quot;:&quot;2026-02-08T11:29:22.885301&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:22.220838&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>weights <span class="op">=</span> models.ResNet18_Weights.DEFAULT</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> models.resnet18(weights<span class="op">=</span>weights)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>in_features <span class="op">=</span> model.fc.in_features</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>model.fc <span class="op">=</span> nn.Sequential(</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    nn.Dropout(p<span class="op">=</span><span class="fl">0.3</span>),</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    nn.Linear(in_features, num_classes)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> model.to(device)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.fc)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Downloading: &quot;https://download.pytorch.org/models/resnet18-f37072fd.pth&quot; to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>100%|██████████| 44.7M/44.7M [00:00&lt;00:00, 144MB/s]</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Sequential(
+  (0): Dropout(p=0.3, inplace=False)
+  (1): Linear(in_features=512, out_features=4, bias=True)
+)
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>
+</code></pre>
+</div>
+</div>
+<div id="08a15fb7" class="cell markdown" id="3EuUhICY2dGq"
+data-papermill="{&quot;duration&quot;:1.5704e-2,&quot;end_time&quot;:&quot;2026-02-08T11:29:22.915733&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:22.900029&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="5-training-configuration">5. Training Configuration</h2>
+<ul>
+<li>Loss: CrossEntropy</li>
+<li>Optimizer: Adam</li>
+<li>Scheduler: StepLR to decay learning rate</li>
+<li>Track loss and accuracy for train/val</li>
+</ul>
+</div>
+<div id="809c3a6a" class="cell code" data-execution_count="8"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T11:29:22.946944Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T11:29:22.946501Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T12:00:09.420439Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T12:00:09.419333Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:2229204,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684228434523,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="es_cvLHSmIbF" data-outputId="9903c961-344e-4589-b9ca-c4a265cb8e09"
+data-papermill="{&quot;duration&quot;:1846.506266,&quot;end_time&quot;:&quot;2026-02-08T12:00:09.436378&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T11:29:22.930112&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.CrossEntropyLoss()</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> optim.Adam(model.parameters(), lr<span class="op">=</span><span class="fl">1e-3</span>, weight_decay<span class="op">=</span><span class="fl">1e-4</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>scheduler <span class="op">=</span> optim.lr_scheduler.StepLR(optimizer, step_size<span class="op">=</span><span class="dv">5</span>, gamma<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>num_epochs <span class="op">=</span> <span class="dv">12</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>best_val_acc <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>BATCH_SIZE <span class="op">=</span> train_loader.batch_size   <span class="co"># safest</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>LR <span class="op">=</span> <span class="fl">1e-3</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>history <span class="op">=</span> {<span class="st">&quot;train_loss&quot;</span>: [], <span class="st">&quot;val_loss&quot;</span>: [], <span class="st">&quot;train_acc&quot;</span>: [], <span class="st">&quot;val_acc&quot;</span>: []}</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>wandb.init(</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>    project<span class="op">=</span><span class="st">&quot;exercise-5&quot;</span>,</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">&quot;Adam-run&quot;</span>,</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    config<span class="op">=</span>{</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;epochs&quot;</span>: num_epochs,</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;batch_size&quot;</span>: BATCH_SIZE,</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;learning_rate&quot;</span>: LR,</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;optimizer&quot;</span>: <span class="st">&quot;Adam&quot;</span>,</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;model&quot;</span>: <span class="st">&quot;MyModel&quot;</span></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>wandb.watch(model, log<span class="op">=</span><span class="st">&quot;all&quot;</span>, log_freq<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_epoch(loader, train_mode<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>    model.train(train_mode)</span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>    epoch_loss, correct, total <span class="op">=</span> <span class="fl">0.0</span>, <span class="dv">0</span>, <span class="dv">0</span></span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> imgs, labels <span class="kw">in</span> loader:</span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>        imgs, labels <span class="op">=</span> imgs.to(device), labels.to(device)</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> torch.set_grad_enabled(train_mode):</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>            outputs <span class="op">=</span> model(imgs)</span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>            loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> train_mode:</span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a>                optimizer.zero_grad()</span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a>                loss.backward()</span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>                optimizer.step()</span>
+<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a>        epoch_loss <span class="op">+=</span> loss.item() <span class="op">*</span> imgs.size(<span class="dv">0</span>)</span>
+<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a>        preds <span class="op">=</span> outputs.argmax(<span class="dv">1</span>)</span>
+<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>        correct <span class="op">+=</span> (preds <span class="op">==</span> labels).<span class="bu">sum</span>().item()</span>
+<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a>        total <span class="op">+=</span> labels.size(<span class="dv">0</span>)</span>
+<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> epoch_loss <span class="op">/</span> total, correct <span class="op">/</span> total</span>
+<span id="cb21-41"><a href="#cb21-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> time.time()</span>
+<span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(num_epochs):</span>
+<span id="cb21-44"><a href="#cb21-44" aria-hidden="true" tabindex="-1"></a>    train_loss, train_acc <span class="op">=</span> run_epoch(train_loader, train_mode<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb21-45"><a href="#cb21-45" aria-hidden="true" tabindex="-1"></a>    val_loss, val_acc <span class="op">=</span> run_epoch(val_loader, train_mode<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb21-46"><a href="#cb21-46" aria-hidden="true" tabindex="-1"></a>    scheduler.step()</span>
+<span id="cb21-47"><a href="#cb21-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a>    wandb.log({</span>
+<span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;train_loss&quot;</span>: train_loss,</span>
+<span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;train_accuracy&quot;</span>: train_acc,</span>
+<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;val_loss&quot;</span>: val_loss,</span>
+<span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;val_accuracy&quot;</span>: val_acc,</span>
+<span id="cb21-53"><a href="#cb21-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;epoch&quot;</span>: epoch</span>
+<span id="cb21-54"><a href="#cb21-54" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb21-55"><a href="#cb21-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-56"><a href="#cb21-56" aria-hidden="true" tabindex="-1"></a>    history[<span class="st">&quot;train_loss&quot;</span>].append(train_loss)</span>
+<span id="cb21-57"><a href="#cb21-57" aria-hidden="true" tabindex="-1"></a>    history[<span class="st">&quot;val_loss&quot;</span>].append(val_loss)</span>
+<span id="cb21-58"><a href="#cb21-58" aria-hidden="true" tabindex="-1"></a>    history[<span class="st">&quot;train_acc&quot;</span>].append(train_acc)</span>
+<span id="cb21-59"><a href="#cb21-59" aria-hidden="true" tabindex="-1"></a>    history[<span class="st">&quot;val_acc&quot;</span>].append(val_acc)</span>
+<span id="cb21-60"><a href="#cb21-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-61"><a href="#cb21-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> val_acc <span class="op">&gt;</span> best_val_acc:</span>
+<span id="cb21-62"><a href="#cb21-62" aria-hidden="true" tabindex="-1"></a>        best_val_acc <span class="op">=</span> val_acc</span>
+<span id="cb21-63"><a href="#cb21-63" aria-hidden="true" tabindex="-1"></a>        torch.save(model.state_dict(), <span class="st">&quot;best_resnet18.pth&quot;</span>)</span>
+<span id="cb21-64"><a href="#cb21-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-65"><a href="#cb21-65" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Epoch </span><span class="sc">{</span>epoch<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>num_epochs<span class="sc">}</span><span class="ss"> | Train Loss: </span><span class="sc">{</span>train_loss<span class="sc">:.4f}</span><span class="ss"> Acc: </span><span class="sc">{</span>train_acc<span class="sc">:.3f}</span><span class="ss"> | Val Loss: </span><span class="sc">{</span>val_loss<span class="sc">:.4f}</span><span class="ss"> Acc: </span><span class="sc">{</span>val_acc<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-66"><a href="#cb21-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-67"><a href="#cb21-67" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Training finished in </span><span class="sc">{</span>(time.time()<span class="op">-</span>start)<span class="op">/</span><span class="dv">60</span><span class="sc">:.1f}</span><span class="ss"> min. Best val acc: </span><span class="sc">{</span>best_val_acc<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-68"><a href="#cb21-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-69"><a href="#cb21-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Load best weights</span></span>
+<span id="cb21-70"><a href="#cb21-70" aria-hidden="true" tabindex="-1"></a>model.load_state_dict(torch.load(<span class="st">&quot;best_resnet18.pth&quot;</span>, map_location<span class="op">=</span>device))</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>wandb: setting up run t2eackyk
+wandb: Tracking run with wandb version 0.22.2
+wandb: Run data is saved locally in /kaggle/working/wandb/run-20260208_112922-t2eackyk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Adam-run
+wandb: ⭐️ View project at https://wandb.ai/v8god-01/exercise-5
+wandb: 🚀 View run at https://wandb.ai/v8god-01/exercise-5/runs/t2eackyk
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/12 | Train Loss: 0.3615 Acc: 0.875 | Val Loss: 0.1061 Acc: 0.962
+Epoch 2/12 | Train Loss: 0.1748 Acc: 0.936 | Val Loss: 0.0837 Acc: 0.967
+Epoch 3/12 | Train Loss: 0.1395 Acc: 0.951 | Val Loss: 0.0602 Acc: 0.980
+Epoch 4/12 | Train Loss: 0.1146 Acc: 0.961 | Val Loss: 0.1677 Acc: 0.943
+Epoch 5/12 | Train Loss: 0.0922 Acc: 0.971 | Val Loss: 0.1025 Acc: 0.970
+Epoch 6/12 | Train Loss: 0.0794 Acc: 0.975 | Val Loss: 0.0227 Acc: 0.989
+Epoch 7/12 | Train Loss: 0.0284 Acc: 0.991 | Val Loss: 0.0184 Acc: 0.994
+Epoch 8/12 | Train Loss: 0.0294 Acc: 0.991 | Val Loss: 0.0526 Acc: 0.981
+Epoch 9/12 | Train Loss: 0.0297 Acc: 0.989 | Val Loss: 0.0266 Acc: 0.994
+Epoch 10/12 | Train Loss: 0.0352 Acc: 0.988 | Val Loss: 0.0170 Acc: 0.995
+Epoch 11/12 | Train Loss: 0.0138 Acc: 0.996 | Val Loss: 0.0158 Acc: 0.995
+Epoch 12/12 | Train Loss: 0.0130 Acc: 0.996 | Val Loss: 0.0236 Acc: 0.995
+Training finished in 30.7 min. Best val acc: 0.995
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>&lt;All keys matched successfully&gt;</code></pre>
+</div>
+</div>
+<div id="c587282d" class="cell markdown" id="YcVJwaJOmL-i"
+data-papermill="{&quot;duration&quot;:1.5338e-2,&quot;end_time&quot;:&quot;2026-02-08T12:00:09.467316&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:09.451978&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="6-curves-loss--accuracy">6. Curves: Loss &amp; Accuracy</h2>
+</div>
+<div id="de9148be" class="cell code" data-execution_count="9"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T12:00:09.501339Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T12:00:09.500234Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T12:00:09.882384Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T12:00:09.881362Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:9,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684228434524,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="ULc2T2mgKTLA" data-outputId="0fd5c342-b61d-4ac2-95fc-9811415c29bf"
+data-papermill="{&quot;duration&quot;:0.401697,&quot;end_time&quot;:&quot;2026-02-08T12:00:09.884402&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:09.482705&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>epochs <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(history[<span class="st">&quot;train_loss&quot;</span>])<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">5</span>))</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, history[<span class="st">&quot;train_loss&quot;</span>], label<span class="op">=</span><span class="st">&quot;Train&quot;</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, history[<span class="st">&quot;val_loss&quot;</span>], label<span class="op">=</span><span class="st">&quot;Val&quot;</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Loss&quot;</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Epoch&quot;</span>)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;CrossEntropy&quot;</span>)</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, history[<span class="st">&quot;train_acc&quot;</span>], label<span class="op">=</span><span class="st">&quot;Train&quot;</span>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>plt.plot(epochs, history[<span class="st">&quot;val_acc&quot;</span>], label<span class="op">=</span><span class="st">&quot;Val&quot;</span>)</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Accuracy&quot;</span>)</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Epoch&quot;</span>)</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Acc&quot;</span>)</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_f60073c80f7447f383500748e8f5330e/ec30fe31df7aad34d43ef0f8255b1aed75c7f6ef.png" /></p>
+</div>
+</div>
+<div id="f5541735" class="cell markdown" id="bpJ96F4b2jCD"
+data-papermill="{&quot;duration&quot;:1.6962e-2,&quot;end_time&quot;:&quot;2026-02-08T12:00:09.918507&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:09.901545&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="7-test-evaluation">7. Test Evaluation</h2>
+<ul>
+<li>Overall accuracy</li>
+<li>Confusion matrix</li>
+<li>Per-class precision/recall/F1</li>
+</ul>
+</div>
+<div id="97b77118" class="cell code" data-execution_count="10"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T12:00:09.954128Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T12:00:09.953353Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T12:00:19.871084Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T12:00:19.869822Z&quot;}"
+id="StfAuMLuKfCi" data-outputId="07b24bb7-56a5-476f-e6f2-5a7622f141d6"
+data-papermill="{&quot;duration&quot;:9.937921,&quot;end_time&quot;:&quot;2026-02-08T12:00:19.873152&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:09.935231&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>all_preds, all_labels <span class="op">=</span> [], []</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> imgs, labels <span class="kw">in</span> test_loader:</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>        imgs <span class="op">=</span> imgs.to(device)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(imgs)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>        preds <span class="op">=</span> outputs.argmax(<span class="dv">1</span>).cpu().numpy()</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>        all_preds.extend(<span class="bu">list</span>(preds))</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>        all_labels.extend(<span class="bu">list</span>(labels.numpy()))</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>test_acc <span class="op">=</span> (np.array(all_preds) <span class="op">==</span> np.array(all_labels)).mean()</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test Accuracy: </span><span class="sc">{</span>test_acc<span class="op">*</span><span class="dv">100</span><span class="sc">:.2f}</span><span class="ss">%&quot;</span>)</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(all_labels, all_preds)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">5</span>))</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">&quot;d&quot;</span>, cmap<span class="op">=</span><span class="st">&quot;YlGnBu&quot;</span>, xticklabels<span class="op">=</span>class_names, yticklabels<span class="op">=</span>class_names)</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Predicted&quot;</span>)</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Actual&quot;</span>)</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Confusion Matrix&quot;</span>)</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(all_labels, all_preds, target_names<span class="op">=</span>class_names))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Test Accuracy: 98.90%
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_f60073c80f7447f383500748e8f5330e/5aabec9cc52c92b34f1444dab719516a7fb6baa7.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>                          precision    recall  f1-score   support
+
+      Apple_Frogeye_Spot       1.00      1.00      1.00       103
+      Apple___Apple_scab       0.98      1.00      0.99       134
+Apple___Cedar_apple_rust       1.00      0.94      0.97        49
+         Apple___healthy       0.99      0.99      0.99       260
+
+                accuracy                           0.99       546
+               macro avg       0.99      0.98      0.99       546
+            weighted avg       0.99      0.99      0.99       546
+
+</code></pre>
+</div>
+</div>
+<div id="4413f0a2" class="cell markdown" id="sWu3BUkb2sJY"
+data-papermill="{&quot;duration&quot;:1.761e-2,&quot;end_time&quot;:&quot;2026-02-08T12:00:19.908663&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:19.891053&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="8-sample-predictions">8. Sample Predictions</h2>
+<p>Visual check on a small batch from the test set.</p>
+</div>
+<div id="bae67071" class="cell code" data-execution_count="11"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T12:00:19.946863Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T12:00:19.946432Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T12:00:21.408993Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T12:00:21.407888Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:248180,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684228686244,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="H9UL05zbKfGR" data-outputId="67b1ab90-791f-45a6-da12-f92fb1028a75"
+data-papermill="{&quot;duration&quot;:1.486923,&quot;end_time&quot;:&quot;2026-02-08T12:00:21.413929&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:19.927006&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_predictions(loader, n<span class="op">=</span><span class="dv">8</span>):</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    imgs, labels <span class="op">=</span> <span class="bu">next</span>(<span class="bu">iter</span>(loader))</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    imgs <span class="op">=</span> imgs.to(device)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>        preds <span class="op">=</span> model(imgs).argmax(<span class="dv">1</span>)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    inv <span class="op">=</span> transforms.Normalize(</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>        mean<span class="op">=</span>[<span class="op">-</span>m<span class="op">/</span>s <span class="cf">for</span> m, s <span class="kw">in</span> <span class="bu">zip</span>([<span class="fl">0.485</span>,<span class="fl">0.456</span>,<span class="fl">0.406</span>],[<span class="fl">0.229</span>,<span class="fl">0.224</span>,<span class="fl">0.225</span>])],</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>        std<span class="op">=</span>[<span class="dv">1</span><span class="op">/</span>s <span class="cf">for</span> s <span class="kw">in</span> [<span class="fl">0.229</span>,<span class="fl">0.224</span>,<span class="fl">0.225</span>]]</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>    imgs <span class="op">=</span> inv(imgs.cpu()).clamp(<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>        plt.subplot(<span class="dv">2</span>, n<span class="op">//</span><span class="dv">2</span>, i<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>        plt.imshow(np.transpose(imgs[i].numpy(), (<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">0</span>)))</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>        plt.title(<span class="ss">f&quot;GT: </span><span class="sc">{</span>class_names[labels[i]]<span class="sc">}</span><span class="ch">\n</span><span class="ss">Pred: </span><span class="sc">{</span>class_names[preds[i]]<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>        plt.axis(<span class="st">&#39;off&#39;</span>)</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>show_predictions(test_loader)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:666: UserWarning: &#39;pin_memory&#39; argument is set as true but no accelerator is found, then device pinned memory won&#39;t be used.
+  warnings.warn(warn_msg)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_f60073c80f7447f383500748e8f5330e/024c5f33a03b12417fb3c0cf1ed5a2dca7db3ca7.png" /></p>
+</div>
+</div>
+<div id="29f8ea4a" class="cell markdown" id="UxV3h4hcUByx"
+data-papermill="{&quot;duration&quot;:2.2916e-2,&quot;end_time&quot;:&quot;2026-02-08T12:00:21.460380&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:21.437464&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="9-save--load-the-best-model">9. Save &amp; Load the Best
+Model</h2>
+<p>Persist the trained weights for reuse.</p>
+</div>
+<div id="951f7552" class="cell code" data-execution_count="12"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2026-02-08T12:00:21.510100Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-02-08T12:00:21.509086Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-02-08T12:00:23.423492Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-02-08T12:00:23.422532Z&quot;}"
+id="N5DU3US2a2O5" data-outputId="caab6c61-2ea4-4c72-f626-8be8f089b8fa"
+data-papermill="{&quot;duration&quot;:1.941612,&quot;end_time&quot;:&quot;2026-02-08T12:00:23.425481&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:21.483869&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Already saved as best_resnet18.pth; this shows how to load</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>reloaded_model <span class="op">=</span> models.resnet18(weights<span class="op">=</span>weights)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>reloaded_model.fc <span class="op">=</span> nn.Sequential(</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    nn.Dropout(p<span class="op">=</span><span class="fl">0.3</span>),</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>    nn.Linear(in_features, num_classes)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>reloaded_model.load_state_dict(torch.load(<span class="st">&quot;best_resnet18.pth&quot;</span>, map_location<span class="op">=</span>device))</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>reloaded_model <span class="op">=</span> reloaded_model.to(device)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>reloaded_model.<span class="bu">eval</span>()</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Model reloaded and ready for inference.&quot;</span>)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>wandb.finish()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>wandb: updating run metadata
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Model reloaded and ready for inference.
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>wandb: uploading wandb-summary.json
+wandb: 
+wandb: Run history:
+wandb:          epoch ▁▂▂▃▄▄▅▅▆▇▇█
+wandb: train_accuracy ▁▅▅▆▇▇███▇██
+wandb:     train_loss █▄▄▃▃▂▁▁▁▁▁▁
+wandb:   val_accuracy ▄▄▆▁▅▇█▆████
+wandb:       val_loss ▅▄▃█▅▁▁▃▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:          epoch 11
+wandb: train_accuracy 0.996
+wandb:     train_loss 0.01299
+wandb:   val_accuracy 0.99528
+wandb:       val_loss 0.02358
+wandb: 
+wandb: 🚀 View run Adam-run at: https://wandb.ai/v8god-01/exercise-5/runs/t2eackyk
+wandb: ⭐️ View project at: https://wandb.ai/v8god-01/exercise-5
+wandb: Synced 5 W&amp;B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260208_112922-t2eackyk/logs
+</code></pre>
+</div>
+</div>
+<div id="62442360" class="cell code" id="a4BknlM-HWBa"
+data-papermill="{&quot;duration&quot;:2.3359e-2,&quot;end_time&quot;:&quot;2026-02-08T12:00:23.474876&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2026-02-08T12:00:23.451517&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>

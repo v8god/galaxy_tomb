@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ae817c8be48d41dba31b81dd06498f8d</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="exercise-3" class="cell markdown">
+<h1><strong>Exercise 3</strong></h1>
+</section>
+<div class="cell markdown">
+<p><strong>Aim:</strong> Build an Artificial Neural Network to implement
+Multi-Class Classification task using the Back-propagation algorithm and
+test the same using appropriate data sets.</p>
+</div>
+<div class="cell markdown">
+<p>Pratham Goyal A2345924079 4CSE-2eve</p>
+</div>
+<div id="3be266d8" class="cell markdown" id="iJ0ZKrDxffoG"
+data-papermill="{&quot;duration&quot;:7.39e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:20.622248&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:20.614858&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="importing-necessary-libraries"><strong>Importing Necessary
+Libraries</strong></h1>
+</div>
+<div id="28bc05e4" class="cell code" data-execution_count="1"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:20.636280Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:20.635907Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:21.648896Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:21.647957Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:842,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212181783,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="JuKSi3EJyGb-"
+data-papermill="{&quot;duration&quot;:1.022282,&quot;end_time&quot;:&quot;2025-12-23T11:09:21.651047&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:20.628765&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div>
+</div>
+<div id="0d2eea7b" class="cell markdown" id="92epT7aZgF74"
+data-papermill="{&quot;duration&quot;:6.001e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:21.663319&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:21.657318&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="loading-the-combined-cycle-power-plant-dataset"><strong>Loading
+the Combined Cycle Power Plant Dataset</strong></h1>
+<p>The dataset contains 9568 data points collected from a Combined Cycle
+Power Plant over 6 years (2006-2011), when the power plant was set to
+work with full load. Features consist of <strong>hourly average ambient
+variables Temperature (AT)</strong>, <strong>Ambient Pressure
+(AP)</strong>, <strong>Relative Humidity (RH)</strong> and
+<strong>Exhaust Vacuum (V)</strong> to predict the net <strong>hourly
+electrical energy output (PE)</strong> of the plant.</p>
+<ul>
+<li><strong>For more information visit below link:</strong> Link: <a
+href="https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant"
+class="uri">https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant</a></li>
+</ul>
+</div>
+<div id="ed4b607d" class="cell code" data-execution_count="2"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:21.677724Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:21.677285Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:26.771774Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:26.770632Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.104315,&quot;end_time&quot;:&quot;2025-12-23T11:09:26.774458&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:21.670143&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install openpyxl</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Requirement already satisfied: openpyxl in /usr/local/lib/python3.12/dist-packages (3.1.5)
+Requirement already satisfied: et-xmlfile in /usr/local/lib/python3.12/dist-packages (from openpyxl) (2.0.0)
+</code></pre>
+</div>
+</div>
+<div id="14bb195a" class="cell code" data-execution_count="3"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:26.791065Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:26.790684Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.012347Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.011377Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:3182,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184960,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="mslwX-u6eqdi" data-outputId="a206ad01-c607-40ff-f8c1-7a76746d74b6"
+data-papermill="{&quot;duration&quot;:1.233216,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.014300&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:26.781084&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data <span class="op">=</span> pd.read_excel(<span class="st">&#39;/kaggle/input/folds52/Folds5x2_pp.xlsx&#39;</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Powerplant_data.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AT</th>
+      <th>V</th>
+      <th>AP</th>
+      <th>RH</th>
+      <th>PE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>14.96</td>
+      <td>41.76</td>
+      <td>1024.07</td>
+      <td>73.17</td>
+      <td>463.26</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>25.18</td>
+      <td>62.96</td>
+      <td>1020.04</td>
+      <td>59.08</td>
+      <td>444.37</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5.11</td>
+      <td>39.40</td>
+      <td>1012.16</td>
+      <td>92.14</td>
+      <td>488.56</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20.86</td>
+      <td>57.32</td>
+      <td>1010.24</td>
+      <td>76.64</td>
+      <td>446.48</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10.82</td>
+      <td>37.50</td>
+      <td>1009.23</td>
+      <td>96.62</td>
+      <td>473.90</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="fb014403" class="cell markdown" id="TgacS0JggQgr"
+data-papermill="{&quot;duration&quot;:6.286e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.026924&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.020638&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="accessing-the-column-names-in-the-dataset"><strong>Accessing the
+Column Names in the Dataset</strong></h1>
+</div>
+<div id="8218bdd0" class="cell code" data-execution_count="4"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.041606Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.040482Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.046738Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.045889Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:16,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184960,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="hqRcQ0jffWS6" data-outputId="68bea117-e332-44e1-fe43-53689ea8cb55"
+data-papermill="{&quot;duration&quot;:1.5499e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.048558&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.033059&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>Index([&#39;AT&#39;, &#39;V&#39;, &#39;AP&#39;, &#39;RH&#39;, &#39;PE&#39;], dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<div id="369a8b83" class="cell markdown" id="WbWc384ZgkNk"
+data-papermill="{&quot;duration&quot;:6.14e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.061081&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.054941&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="finding-the-shape-of-the-dataset"><strong>Finding the Shape of
+the Dataset</strong></h1>
+</div>
+<div id="3e879eed" class="cell code" data-execution_count="5"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.075520Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.075195Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.081132Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.080202Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:15,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184961,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="v3r-6BsCfO6O" data-outputId="2c1d71e8-a351-4f94-b882-2ecbc7db780e"
+data-papermill="{&quot;duration&quot;:1.519e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.082858&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.067668&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>(9568, 5)</code></pre>
+</div>
+</div>
+<div id="14f3fa17" class="cell code" data-execution_count="6"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.098131Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.097250Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.121797Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.120763Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:14,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184961,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="DR5iJOoggqVl" data-outputId="d83fa7e3-d6a9-413b-cd3e-0f0e71ef6383"
+data-papermill="{&quot;duration&quot;:3.4467e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.123936&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.089469&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 9568 entries, 0 to 9567
+Data columns (total 5 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   AT      9568 non-null   float64
+ 1   V       9568 non-null   float64
+ 2   AP      9568 non-null   float64
+ 3   RH      9568 non-null   float64
+ 4   PE      9568 non-null   float64
+dtypes: float64(5)
+memory usage: 373.9 KB
+</code></pre>
+</div>
+</div>
+<div id="53fceb9a" class="cell markdown" id="MOi7okQ_tQrB"
+data-papermill="{&quot;duration&quot;:6.284e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.136846&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.130562&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="checking-missing-values"><strong>Checking Missing
+Values</strong></h1>
+</div>
+<div id="559ed394" class="cell code" data-execution_count="7"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.151162Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.150793Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.157655Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.156956Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:12,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184961,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="3XbsLJg0tN-L" data-outputId="9fc2efbd-0da9-4a01-885d-796092dbd682"
+data-papermill="{&quot;duration&quot;:1.6178e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.159342&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.143164&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<pre><code>AT    0
+V     0
+AP    0
+RH    0
+PE    0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="d0823b4c" class="cell markdown" id="gL5klaMFg4U0"
+data-papermill="{&quot;duration&quot;:6.499e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.172463&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.165964&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="number-of-unique-items-in-each-column"><strong>Number of Unique
+Items in Each Column</strong></h1>
+</div>
+<div id="cf25e84c" class="cell code" data-execution_count="8"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.186980Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.186624Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.196612Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.195878Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:12,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184962,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="yNjlTn9yhJtA" data-outputId="c01cd1b6-82be-48e5-b150-a9a69594279b"
+data-papermill="{&quot;duration&quot;:1.9569e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.198333&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.178764&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Powerplant_data.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<pre><code>AT    2773
+V      634
+AP    2517
+RH    4546
+PE    4836
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="b573645d" class="cell markdown" id="RBhC2pV6kG-m"
+data-papermill="{&quot;duration&quot;:6.389e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.211405&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.205016&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="seperating-label-from-data"><strong>Seperating Label from
+Data</strong></h1>
+</div>
+<div id="4c4d186a" class="cell code" data-execution_count="9"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.226109Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.225731Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.230537Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.229788Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:9,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212184962,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="CU-h5H-vilid"
+data-papermill="{&quot;duration&quot;:1.4377e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.232164&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.217787&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> Powerplant_data.iloc[:, :<span class="op">-</span><span class="dv">1</span>].values</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> Powerplant_data.iloc[:, <span class="op">-</span><span class="dv">1</span>].values</span></code></pre></div>
+</div>
+<div id="a5bd42e7" class="cell markdown" id="yH-AFtD6VZUG"
+data-papermill="{&quot;duration&quot;:6.595e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.245386&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.238791&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h3 id="or">or</h3>
+</div>
+<div id="0c063104" class="cell code" data-execution_count="10"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.259832Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.259519Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:28.263322Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:28.262536Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:5,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212185712,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="0SEu3sjWVaMl"
+data-papermill="{&quot;duration&quot;:1.3184e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.265100&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.251916&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># y = Powerplant_data[&#39;PE&#39;]</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># X = Powerplant_data.drop([&#39;PE&#39;],axis=1)</span></span></code></pre></div>
+</div>
+<div id="66190ea8" class="cell markdown" id="OB8cY_fNk2KG"
+data-papermill="{&quot;duration&quot;:6.369e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:28.278107&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.271738&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="splitting-the-data-into-training-and-testing"><strong>Splitting
+the Data into Training and Testing</strong></h1>
+</div>
+<div id="997fe250" class="cell code" data-execution_count="11"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:28.292569Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:28.292269Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:30.041547Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:30.040559Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:1052,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212186760,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="ONhh9fw5kunZ"
+data-papermill="{&quot;duration&quot;:1.759138,&quot;end_time&quot;:&quot;2025-12-23T11:09:30.043742&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:28.284604&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size <span class="op">=</span> <span class="fl">0.2</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>X_train, X_val, y_train, y_val <span class="op">=</span> train_test_split(X_train,y_train, test_size <span class="op">=</span> <span class="fl">0.2</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div id="35c3eb78" class="cell code" data-execution_count="12"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:30.059639Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:30.059132Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:30.065146Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:30.064128Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:8,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212186761,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="n7QUNsrflJyd" data-outputId="53471f08-3542-4d89-caa1-40fe7f8aa228"
+data-papermill="{&quot;duration&quot;:1.6345e-2,&quot;end_time&quot;:&quot;2025-12-23T11:09:30.066989&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:30.050644&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the X_train&quot;</span>, X_train.shape)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the X_test&quot;</span>, X_test.shape)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the X_val&quot;</span>, X_val.shape)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the y_train&quot;</span>, y_train.shape)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the y_test&quot;</span>, y_test.shape)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Shape of the y_val&quot;</span>, y_val.shape)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of the X_train (6123, 4)
+Shape of the X_test (1914, 4)
+Shape of the X_val (1531, 4)
+Shape of the y_train (6123,)
+Shape of the y_test (1914,)
+Shape of the y_val (1531,)
+</code></pre>
+</div>
+</div>
+<div id="c286a945" class="cell markdown" id="N-18bjO3rOHB"
+data-papermill="{&quot;duration&quot;:6.635e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:30.080496&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:30.073861&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="building-the-ann-model-using-keras"><strong>Building the ANN
+Model using KERAS</strong></h1>
+</div>
+<div id="15b5a403" class="cell code" data-execution_count="13"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:30.095874Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:30.095508Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:48.141492Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:48.140251Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:2247,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212189002,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="lYWxtWt4lwsa"
+data-papermill="{&quot;duration&quot;:18.056278,&quot;end_time&quot;:&quot;2025-12-23T11:09:48.143873&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:30.087595&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sequential model to initialise our ann and dense module to build the layers</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.models <span class="im">import</span> Sequential</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.layers <span class="im">import</span> Dense</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>2025-12-23 11:09:32.381434: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1766488172.631152      17 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1766488172.701100      17 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1766488173.312880      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766488173.312935      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766488173.312938      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1766488173.312941      17 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+</code></pre>
+</div>
+</div>
+<div id="b48c50bd" class="cell code" data-execution_count="14"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:48.160118Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:48.159487Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:09:48.265862Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:09:48.265004Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:6,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212189003,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="5SHVdj9Xl6se"
+data-papermill="{&quot;duration&quot;:0.116525,&quot;end_time&quot;:&quot;2025-12-23T11:09:48.267968&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:48.151443&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> Sequential()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the input layer and the first hidden layer</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(units <span class="op">=</span> <span class="dv">8</span>, kernel_initializer <span class="op">=</span> <span class="st">&#39;uniform&#39;</span>, activation <span class="op">=</span> <span class="st">&#39;relu&#39;</span>, input_dim <span class="op">=</span> <span class="dv">4</span>))</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the second hidden layer</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(units <span class="op">=</span> <span class="dv">16</span>, kernel_initializer <span class="op">=</span> <span class="st">&#39;uniform&#39;</span>, activation <span class="op">=</span> <span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the third hidden layer</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(units <span class="op">=</span> <span class="dv">32</span>, kernel_initializer <span class="op">=</span> <span class="st">&#39;uniform&#39;</span>, activation <span class="op">=</span> <span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the output layer</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>classifier.add(Dense(units <span class="op">=</span> <span class="dv">1</span>, kernel_initializer <span class="op">=</span> <span class="st">&#39;uniform&#39;</span>))</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/keras/src/layers/core/dense.py:93: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-12-23 11:09:48.172753: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+</code></pre>
+</div>
+</div>
+<div id="0a6e8bb4" class="cell markdown" id="MDjrKcLnrSw0"
+data-papermill="{&quot;duration&quot;:6.763e-3,&quot;end_time&quot;:&quot;2025-12-23T11:09:48.281741&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:48.274978&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="compiling-and-fitting-the-model"><strong>Compiling and Fitting
+the Model</strong></h1>
+</div>
+<div id="ae2baae6" class="cell code" data-execution_count="15"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:09:48.296878Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:09:48.296516Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:24.947237Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:24.945905Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:75894,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212264892,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="RRtVuxFumFcS" data-outputId="ca7156ce-3a8f-42b4-8659-87db04c49ff5"
+data-papermill="{&quot;duration&quot;:96.66097,&quot;end_time&quot;:&quot;2025-12-23T11:11:24.949403&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:09:48.288433&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>classifier.<span class="bu">compile</span>(optimizer <span class="op">=</span> <span class="st">&#39;adam&#39;</span>, loss <span class="op">=</span> <span class="st">&#39;mean_squared_error&#39;</span>, metrics <span class="op">=</span> [<span class="st">&#39;MeanSquaredLogarithmicError&#39;</span>])</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Fitting the ANN to the Training set</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> classifier.fit(X_train, y_train, batch_size <span class="op">=</span> <span class="dv">32</span>, epochs <span class="op">=</span> <span class="dv">200</span>,validation_data<span class="op">=</span>(X_val, y_val),</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>              shuffle<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 2s 3ms/step - MeanSquaredLogarithmicError: 18.9501 - loss: 157991.0000 - val_MeanSquaredLogarithmicError: 0.0020 - val_loss: 414.6450
+Epoch 2/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0018 - loss: 382.7112 - val_MeanSquaredLogarithmicError: 0.0019 - val_loss: 391.1224
+Epoch 3/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0018 - loss: 366.4398 - val_MeanSquaredLogarithmicError: 0.0016 - val_loss: 345.1256
+Epoch 4/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0016 - loss: 331.8121 - val_MeanSquaredLogarithmicError: 0.0015 - val_loss: 315.2206
+Epoch 5/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0014 - loss: 297.3622 - val_MeanSquaredLogarithmicError: 0.0012 - val_loss: 260.8536
+Epoch 6/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0012 - loss: 240.8232 - val_MeanSquaredLogarithmicError: 0.0011 - val_loss: 221.1020
+Epoch 7/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 0.0010 - loss: 216.6959 - val_MeanSquaredLogarithmicError: 8.8807e-04 - val_loss: 185.9170
+Epoch 8/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 8.1377e-04 - loss: 170.8239 - val_MeanSquaredLogarithmicError: 7.4506e-04 - val_loss: 155.5863
+Epoch 9/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 6.9282e-04 - loss: 145.0773 - val_MeanSquaredLogarithmicError: 6.0307e-04 - val_loss: 126.3210
+Epoch 10/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 5.5389e-04 - loss: 116.0083 - val_MeanSquaredLogarithmicError: 4.9004e-04 - val_loss: 103.3072
+Epoch 11/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 4.5914e-04 - loss: 96.1069 - val_MeanSquaredLogarithmicError: 4.0763e-04 - val_loss: 86.1815
+Epoch 12/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 3.7732e-04 - loss: 79.0091 - val_MeanSquaredLogarithmicError: 3.3900e-04 - val_loss: 71.4147
+Epoch 13/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 3.3157e-04 - loss: 69.1730 - val_MeanSquaredLogarithmicError: 2.8780e-04 - val_loss: 60.5540
+Epoch 14/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 2.8512e-04 - loss: 59.6830 - val_MeanSquaredLogarithmicError: 2.5856e-04 - val_loss: 54.7204
+Epoch 15/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 2.3993e-04 - loss: 50.1024 - val_MeanSquaredLogarithmicError: 2.3044e-04 - val_loss: 48.1636
+Epoch 16/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 2.2127e-04 - loss: 46.3166 - val_MeanSquaredLogarithmicError: 1.9589e-04 - val_loss: 41.2254
+Epoch 17/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.9665e-04 - loss: 41.1275 - val_MeanSquaredLogarithmicError: 1.7840e-04 - val_loss: 37.5606
+Epoch 18/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.7043e-04 - loss: 35.6544 - val_MeanSquaredLogarithmicError: 1.7137e-04 - val_loss: 36.2339
+Epoch 19/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.7290e-04 - loss: 36.2257 - val_MeanSquaredLogarithmicError: 1.5638e-04 - val_loss: 32.9843
+Epoch 20/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5713e-04 - loss: 32.8841 - val_MeanSquaredLogarithmicError: 1.5467e-04 - val_loss: 32.5166
+Epoch 21/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5561e-04 - loss: 32.6656 - val_MeanSquaredLogarithmicError: 1.4761e-04 - val_loss: 31.1941
+Epoch 22/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - MeanSquaredLogarithmicError: 1.4796e-04 - loss: 30.9979 - val_MeanSquaredLogarithmicError: 1.4544e-04 - val_loss: 30.7312
+Epoch 23/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4419e-04 - loss: 30.1664 - val_MeanSquaredLogarithmicError: 2.0136e-04 - val_loss: 42.3794
+Epoch 24/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4277e-04 - loss: 29.8963 - val_MeanSquaredLogarithmicError: 1.3989e-04 - val_loss: 29.5261
+Epoch 25/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4008e-04 - loss: 29.4229 - val_MeanSquaredLogarithmicError: 1.5601e-04 - val_loss: 32.9264
+Epoch 26/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3959e-04 - loss: 29.2205 - val_MeanSquaredLogarithmicError: 1.3554e-04 - val_loss: 28.5708
+Epoch 27/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4911e-04 - loss: 31.0665 - val_MeanSquaredLogarithmicError: 1.3406e-04 - val_loss: 28.2531
+Epoch 28/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3906e-04 - loss: 29.0238 - val_MeanSquaredLogarithmicError: 1.3599e-04 - val_loss: 28.5894
+Epoch 29/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3546e-04 - loss: 28.3593 - val_MeanSquaredLogarithmicError: 1.3529e-04 - val_loss: 28.5198
+Epoch 30/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3549e-04 - loss: 28.3690 - val_MeanSquaredLogarithmicError: 1.3112e-04 - val_loss: 27.5906
+Epoch 31/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3478e-04 - loss: 28.0716 - val_MeanSquaredLogarithmicError: 1.3258e-04 - val_loss: 27.8668
+Epoch 32/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3141e-04 - loss: 27.4523 - val_MeanSquaredLogarithmicError: 1.2973e-04 - val_loss: 27.3079
+Epoch 33/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3248e-04 - loss: 27.6579 - val_MeanSquaredLogarithmicError: 1.3030e-04 - val_loss: 27.4300
+Epoch 34/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3771e-04 - loss: 28.7690 - val_MeanSquaredLogarithmicError: 1.3266e-04 - val_loss: 27.8570
+Epoch 35/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3677e-04 - loss: 28.5357 - val_MeanSquaredLogarithmicError: 1.3833e-04 - val_loss: 29.0093
+Epoch 36/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3992e-04 - loss: 29.2692 - val_MeanSquaredLogarithmicError: 1.6969e-04 - val_loss: 35.6415
+Epoch 37/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3936e-04 - loss: 29.0888 - val_MeanSquaredLogarithmicError: 1.3470e-04 - val_loss: 28.3273
+Epoch 38/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4227e-04 - loss: 29.7200 - val_MeanSquaredLogarithmicError: 1.5947e-04 - val_loss: 33.3763
+Epoch 39/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3411e-04 - loss: 28.0451 - val_MeanSquaredLogarithmicError: 1.3622e-04 - val_loss: 28.6525
+Epoch 40/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4868e-04 - loss: 31.0602 - val_MeanSquaredLogarithmicError: 1.3529e-04 - val_loss: 28.4698
+Epoch 41/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4700e-04 - loss: 30.7299 - val_MeanSquaredLogarithmicError: 1.2659e-04 - val_loss: 26.5966
+Epoch 42/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2623e-04 - loss: 26.3555 - val_MeanSquaredLogarithmicError: 1.5236e-04 - val_loss: 32.0021
+Epoch 43/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3951e-04 - loss: 29.0604 - val_MeanSquaredLogarithmicError: 1.2898e-04 - val_loss: 27.0628
+Epoch 44/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3700e-04 - loss: 28.5874 - val_MeanSquaredLogarithmicError: 1.3475e-04 - val_loss: 28.2430
+Epoch 45/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4439e-04 - loss: 30.2017 - val_MeanSquaredLogarithmicError: 1.3046e-04 - val_loss: 27.3590
+Epoch 46/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2855e-04 - loss: 26.8524 - val_MeanSquaredLogarithmicError: 1.3460e-04 - val_loss: 28.2781
+Epoch 47/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3420e-04 - loss: 28.1422 - val_MeanSquaredLogarithmicError: 1.3159e-04 - val_loss: 27.6658
+Epoch 48/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3756e-04 - loss: 28.8013 - val_MeanSquaredLogarithmicError: 1.2735e-04 - val_loss: 26.7605
+Epoch 49/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3317e-04 - loss: 27.7823 - val_MeanSquaredLogarithmicError: 1.2623e-04 - val_loss: 26.5084
+Epoch 50/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3086e-04 - loss: 27.3476 - val_MeanSquaredLogarithmicError: 1.3946e-04 - val_loss: 29.2042
+Epoch 51/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3851e-04 - loss: 28.8804 - val_MeanSquaredLogarithmicError: 1.2600e-04 - val_loss: 26.4627
+Epoch 52/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3453e-04 - loss: 28.0976 - val_MeanSquaredLogarithmicError: 1.5408e-04 - val_loss: 32.2373
+Epoch 53/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4115e-04 - loss: 29.4809 - val_MeanSquaredLogarithmicError: 1.3136e-04 - val_loss: 27.5308
+Epoch 54/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3133e-04 - loss: 27.4986 - val_MeanSquaredLogarithmicError: 1.3734e-04 - val_loss: 28.8403
+Epoch 55/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3113e-04 - loss: 27.3299 - val_MeanSquaredLogarithmicError: 1.2688e-04 - val_loss: 26.6561
+Epoch 56/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2868e-04 - loss: 26.8181 - val_MeanSquaredLogarithmicError: 1.2658e-04 - val_loss: 26.5818
+Epoch 57/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2881e-04 - loss: 26.9373 - val_MeanSquaredLogarithmicError: 1.7366e-04 - val_loss: 36.3058
+Epoch 58/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3769e-04 - loss: 28.7588 - val_MeanSquaredLogarithmicError: 1.3353e-04 - val_loss: 27.9761
+Epoch 59/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4195e-04 - loss: 29.6178 - val_MeanSquaredLogarithmicError: 1.3923e-04 - val_loss: 29.2325
+Epoch 60/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3488e-04 - loss: 28.1929 - val_MeanSquaredLogarithmicError: 1.3148e-04 - val_loss: 27.5565
+Epoch 61/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3612e-04 - loss: 28.3263 - val_MeanSquaredLogarithmicError: 1.2817e-04 - val_loss: 26.8761
+Epoch 62/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3802e-04 - loss: 28.7661 - val_MeanSquaredLogarithmicError: 1.4035e-04 - val_loss: 29.3838
+Epoch 63/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3078e-04 - loss: 27.3053 - val_MeanSquaredLogarithmicError: 1.4166e-04 - val_loss: 29.7427
+Epoch 64/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - MeanSquaredLogarithmicError: 1.3762e-04 - loss: 28.6114 - val_MeanSquaredLogarithmicError: 1.3787e-04 - val_loss: 28.9436
+Epoch 65/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3513e-04 - loss: 28.1282 - val_MeanSquaredLogarithmicError: 1.2729e-04 - val_loss: 26.7260
+Epoch 66/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2690e-04 - loss: 26.4723 - val_MeanSquaredLogarithmicError: 2.4796e-04 - val_loss: 51.8743
+Epoch 67/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3482e-04 - loss: 27.9838 - val_MeanSquaredLogarithmicError: 2.1489e-04 - val_loss: 44.9363
+Epoch 68/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5169e-04 - loss: 31.6940 - val_MeanSquaredLogarithmicError: 1.3192e-04 - val_loss: 27.7199
+Epoch 69/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4649e-04 - loss: 30.4969 - val_MeanSquaredLogarithmicError: 1.6787e-04 - val_loss: 35.1151
+Epoch 70/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2773e-04 - loss: 26.7005 - val_MeanSquaredLogarithmicError: 1.3614e-04 - val_loss: 28.5810
+Epoch 71/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4032e-04 - loss: 29.2832 - val_MeanSquaredLogarithmicError: 1.4453e-04 - val_loss: 30.3080
+Epoch 72/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3356e-04 - loss: 27.9093 - val_MeanSquaredLogarithmicError: 1.2886e-04 - val_loss: 27.0146
+Epoch 73/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4451e-04 - loss: 30.1560 - val_MeanSquaredLogarithmicError: 1.2670e-04 - val_loss: 26.5767
+Epoch 74/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4422e-04 - loss: 30.0583 - val_MeanSquaredLogarithmicError: 1.3627e-04 - val_loss: 28.5367
+Epoch 75/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4289e-04 - loss: 29.8131 - val_MeanSquaredLogarithmicError: 1.3097e-04 - val_loss: 27.4449
+Epoch 76/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4339e-04 - loss: 29.9194 - val_MeanSquaredLogarithmicError: 2.5259e-04 - val_loss: 52.5291
+Epoch 77/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5157e-04 - loss: 31.6276 - val_MeanSquaredLogarithmicError: 1.3193e-04 - val_loss: 27.6430
+Epoch 78/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3807e-04 - loss: 28.7475 - val_MeanSquaredLogarithmicError: 1.8938e-04 - val_loss: 39.6164
+Epoch 79/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3537e-04 - loss: 28.3183 - val_MeanSquaredLogarithmicError: 1.2742e-04 - val_loss: 26.7155
+Epoch 80/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3485e-04 - loss: 27.9832 - val_MeanSquaredLogarithmicError: 1.2609e-04 - val_loss: 26.4564
+Epoch 81/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3629e-04 - loss: 28.2710 - val_MeanSquaredLogarithmicError: 1.2762e-04 - val_loss: 26.7738
+Epoch 82/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3648e-04 - loss: 28.4252 - val_MeanSquaredLogarithmicError: 1.3041e-04 - val_loss: 27.3261
+Epoch 83/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3196e-04 - loss: 27.5623 - val_MeanSquaredLogarithmicError: 1.2941e-04 - val_loss: 27.1808
+Epoch 84/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3796e-04 - loss: 28.7164 - val_MeanSquaredLogarithmicError: 1.2597e-04 - val_loss: 26.4338
+Epoch 85/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2381e-04 - loss: 25.7732 - val_MeanSquaredLogarithmicError: 1.4818e-04 - val_loss: 31.0049
+Epoch 86/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3024e-04 - loss: 27.1202 - val_MeanSquaredLogarithmicError: 1.2714e-04 - val_loss: 26.6840
+Epoch 87/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2357e-04 - loss: 25.8432 - val_MeanSquaredLogarithmicError: 1.4416e-04 - val_loss: 30.2458
+Epoch 88/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2478e-04 - loss: 26.1019 - val_MeanSquaredLogarithmicError: 1.3947e-04 - val_loss: 29.3244
+Epoch 89/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3279e-04 - loss: 27.7546 - val_MeanSquaredLogarithmicError: 1.2603e-04 - val_loss: 26.4497
+Epoch 90/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3466e-04 - loss: 28.0862 - val_MeanSquaredLogarithmicError: 1.2832e-04 - val_loss: 26.9585
+Epoch 91/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3120e-04 - loss: 27.3833 - val_MeanSquaredLogarithmicError: 1.5980e-04 - val_loss: 33.4111
+Epoch 92/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3418e-04 - loss: 28.0169 - val_MeanSquaredLogarithmicError: 1.2684e-04 - val_loss: 26.6026
+Epoch 93/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3074e-04 - loss: 27.3306 - val_MeanSquaredLogarithmicError: 1.3082e-04 - val_loss: 27.4639
+Epoch 94/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3403e-04 - loss: 27.9524 - val_MeanSquaredLogarithmicError: 1.4295e-04 - val_loss: 29.9887
+Epoch 95/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2786e-04 - loss: 26.7749 - val_MeanSquaredLogarithmicError: 1.2775e-04 - val_loss: 26.8185
+Epoch 96/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3047e-04 - loss: 27.1986 - val_MeanSquaredLogarithmicError: 1.2581e-04 - val_loss: 26.3970
+Epoch 97/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2651e-04 - loss: 26.4148 - val_MeanSquaredLogarithmicError: 1.2690e-04 - val_loss: 26.6366
+Epoch 98/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5046e-04 - loss: 31.2914 - val_MeanSquaredLogarithmicError: 1.6131e-04 - val_loss: 33.7428
+Epoch 99/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3617e-04 - loss: 28.3676 - val_MeanSquaredLogarithmicError: 1.4653e-04 - val_loss: 30.7735
+Epoch 100/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3365e-04 - loss: 27.9125 - val_MeanSquaredLogarithmicError: 1.5028e-04 - val_loss: 31.5403
+Epoch 101/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3395e-04 - loss: 27.8673 - val_MeanSquaredLogarithmicError: 1.2793e-04 - val_loss: 26.8417
+Epoch 102/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3500e-04 - loss: 28.0472 - val_MeanSquaredLogarithmicError: 1.2752e-04 - val_loss: 26.7294
+Epoch 103/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3890e-04 - loss: 28.9255 - val_MeanSquaredLogarithmicError: 1.5501e-04 - val_loss: 32.4660
+Epoch 104/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3212e-04 - loss: 27.5816 - val_MeanSquaredLogarithmicError: 1.4948e-04 - val_loss: 31.2739
+Epoch 105/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3649e-04 - loss: 28.4559 - val_MeanSquaredLogarithmicError: 1.2902e-04 - val_loss: 27.0382
+Epoch 106/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3368e-04 - loss: 27.9122 - val_MeanSquaredLogarithmicError: 1.3350e-04 - val_loss: 27.9647
+Epoch 107/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3458e-04 - loss: 28.0706 - val_MeanSquaredLogarithmicError: 1.3028e-04 - val_loss: 27.3042
+Epoch 108/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3631e-04 - loss: 28.4087 - val_MeanSquaredLogarithmicError: 1.7736e-04 - val_loss: 37.1388
+Epoch 109/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3444e-04 - loss: 28.0372 - val_MeanSquaredLogarithmicError: 1.3449e-04 - val_loss: 28.1672
+Epoch 110/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3963e-04 - loss: 29.1212 - val_MeanSquaredLogarithmicError: 1.3712e-04 - val_loss: 28.7099
+Epoch 111/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4089e-04 - loss: 29.3947 - val_MeanSquaredLogarithmicError: 1.2752e-04 - val_loss: 26.7412
+Epoch 112/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3705e-04 - loss: 28.5705 - val_MeanSquaredLogarithmicError: 1.5113e-04 - val_loss: 31.7212
+Epoch 113/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4668e-04 - loss: 30.5979 - val_MeanSquaredLogarithmicError: 1.3090e-04 - val_loss: 27.4879
+Epoch 114/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3392e-04 - loss: 27.9097 - val_MeanSquaredLogarithmicError: 1.6902e-04 - val_loss: 35.3361
+Epoch 115/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2352e-04 - loss: 25.7421 - val_MeanSquaredLogarithmicError: 1.2734e-04 - val_loss: 26.7339
+Epoch 116/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2920e-04 - loss: 26.9708 - val_MeanSquaredLogarithmicError: 1.2850e-04 - val_loss: 26.9360
+Epoch 117/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3462e-04 - loss: 28.0655 - val_MeanSquaredLogarithmicError: 1.9476e-04 - val_loss: 40.7041
+Epoch 118/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4047e-04 - loss: 29.4031 - val_MeanSquaredLogarithmicError: 1.3878e-04 - val_loss: 29.1221
+Epoch 119/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3617e-04 - loss: 28.3975 - val_MeanSquaredLogarithmicError: 1.7047e-04 - val_loss: 35.7016
+Epoch 120/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3209e-04 - loss: 27.6029 - val_MeanSquaredLogarithmicError: 1.3182e-04 - val_loss: 27.6820
+Epoch 121/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4605e-04 - loss: 30.4584 - val_MeanSquaredLogarithmicError: 1.3387e-04 - val_loss: 28.0972
+Epoch 122/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3250e-04 - loss: 27.6016 - val_MeanSquaredLogarithmicError: 1.2603e-04 - val_loss: 26.4498
+Epoch 123/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2908e-04 - loss: 26.9065 - val_MeanSquaredLogarithmicError: 1.3886e-04 - val_loss: 29.1585
+Epoch 124/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4134e-04 - loss: 29.4598 - val_MeanSquaredLogarithmicError: 1.2713e-04 - val_loss: 26.6562
+Epoch 125/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3695e-04 - loss: 28.5927 - val_MeanSquaredLogarithmicError: 1.2714e-04 - val_loss: 26.6938
+Epoch 126/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3405e-04 - loss: 27.8909 - val_MeanSquaredLogarithmicError: 1.2812e-04 - val_loss: 26.8594
+Epoch 127/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3542e-04 - loss: 28.1885 - val_MeanSquaredLogarithmicError: 1.2698e-04 - val_loss: 26.6291
+Epoch 128/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3395e-04 - loss: 27.9301 - val_MeanSquaredLogarithmicError: 1.3466e-04 - val_loss: 28.2015
+Epoch 129/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3150e-04 - loss: 27.4203 - val_MeanSquaredLogarithmicError: 1.6777e-04 - val_loss: 35.1437
+Epoch 130/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4084e-04 - loss: 29.3165 - val_MeanSquaredLogarithmicError: 1.7741e-04 - val_loss: 37.1755
+Epoch 131/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3799e-04 - loss: 28.8860 - val_MeanSquaredLogarithmicError: 1.5059e-04 - val_loss: 31.5882
+Epoch 132/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3436e-04 - loss: 28.0169 - val_MeanSquaredLogarithmicError: 1.4213e-04 - val_loss: 29.8297
+Epoch 133/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3640e-04 - loss: 28.4842 - val_MeanSquaredLogarithmicError: 1.2652e-04 - val_loss: 26.5382
+Epoch 134/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2615e-04 - loss: 26.3599 - val_MeanSquaredLogarithmicError: 1.3743e-04 - val_loss: 28.8691
+Epoch 135/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4309e-04 - loss: 29.8839 - val_MeanSquaredLogarithmicError: 1.3173e-04 - val_loss: 27.5991
+Epoch 136/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2868e-04 - loss: 26.8322 - val_MeanSquaredLogarithmicError: 1.2885e-04 - val_loss: 27.0145
+Epoch 137/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3189e-04 - loss: 27.4662 - val_MeanSquaredLogarithmicError: 1.5825e-04 - val_loss: 33.1758
+Epoch 138/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3281e-04 - loss: 27.5778 - val_MeanSquaredLogarithmicError: 1.2985e-04 - val_loss: 27.2121
+Epoch 139/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3495e-04 - loss: 28.1455 - val_MeanSquaredLogarithmicError: 1.2658e-04 - val_loss: 26.5426
+Epoch 140/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4273e-04 - loss: 29.8511 - val_MeanSquaredLogarithmicError: 1.3289e-04 - val_loss: 27.8930
+Epoch 141/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3734e-04 - loss: 28.6186 - val_MeanSquaredLogarithmicError: 1.2692e-04 - val_loss: 26.6205
+Epoch 142/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2943e-04 - loss: 27.0066 - val_MeanSquaredLogarithmicError: 1.5690e-04 - val_loss: 32.8246
+Epoch 143/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3371e-04 - loss: 27.9652 - val_MeanSquaredLogarithmicError: 1.3261e-04 - val_loss: 27.8447
+Epoch 144/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3368e-04 - loss: 27.8570 - val_MeanSquaredLogarithmicError: 1.3379e-04 - val_loss: 28.0916
+Epoch 145/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3209e-04 - loss: 27.4910 - val_MeanSquaredLogarithmicError: 1.8217e-04 - val_loss: 38.0792
+Epoch 146/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3086e-04 - loss: 27.3026 - val_MeanSquaredLogarithmicError: 1.2670e-04 - val_loss: 26.6055
+Epoch 147/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4008e-04 - loss: 29.2662 - val_MeanSquaredLogarithmicError: 1.2580e-04 - val_loss: 26.4062
+Epoch 148/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - MeanSquaredLogarithmicError: 1.2821e-04 - loss: 26.7587 - val_MeanSquaredLogarithmicError: 1.4692e-04 - val_loss: 30.7400
+Epoch 149/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3752e-04 - loss: 28.6830 - val_MeanSquaredLogarithmicError: 1.3074e-04 - val_loss: 27.4243
+Epoch 150/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3328e-04 - loss: 27.6700 - val_MeanSquaredLogarithmicError: 1.3503e-04 - val_loss: 28.2801
+Epoch 151/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3288e-04 - loss: 27.6760 - val_MeanSquaredLogarithmicError: 1.3455e-04 - val_loss: 28.1802
+Epoch 152/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3090e-04 - loss: 27.2799 - val_MeanSquaredLogarithmicError: 1.2590e-04 - val_loss: 26.4162
+Epoch 153/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3290e-04 - loss: 27.7367 - val_MeanSquaredLogarithmicError: 1.3703e-04 - val_loss: 28.6926
+Epoch 154/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3289e-04 - loss: 27.7730 - val_MeanSquaredLogarithmicError: 1.3040e-04 - val_loss: 27.3878
+Epoch 155/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2557e-04 - loss: 26.2292 - val_MeanSquaredLogarithmicError: 1.2719e-04 - val_loss: 26.7120
+Epoch 156/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4265e-04 - loss: 29.7721 - val_MeanSquaredLogarithmicError: 1.6318e-04 - val_loss: 34.1784
+Epoch 157/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3779e-04 - loss: 28.7861 - val_MeanSquaredLogarithmicError: 2.3695e-04 - val_loss: 49.5564
+Epoch 158/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.6094e-04 - loss: 33.6066 - val_MeanSquaredLogarithmicError: 1.2709e-04 - val_loss: 26.6730
+Epoch 159/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3171e-04 - loss: 27.5055 - val_MeanSquaredLogarithmicError: 1.2614e-04 - val_loss: 26.4530
+Epoch 160/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3166e-04 - loss: 27.4099 - val_MeanSquaredLogarithmicError: 1.2577e-04 - val_loss: 26.3818
+Epoch 161/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3425e-04 - loss: 28.0715 - val_MeanSquaredLogarithmicError: 1.2593e-04 - val_loss: 26.4301
+Epoch 162/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2806e-04 - loss: 26.7533 - val_MeanSquaredLogarithmicError: 1.2574e-04 - val_loss: 26.3851
+Epoch 163/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3990e-04 - loss: 29.1870 - val_MeanSquaredLogarithmicError: 1.3560e-04 - val_loss: 28.3971
+Epoch 164/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3873e-04 - loss: 28.8812 - val_MeanSquaredLogarithmicError: 1.3752e-04 - val_loss: 28.8492
+Epoch 165/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3333e-04 - loss: 27.8324 - val_MeanSquaredLogarithmicError: 1.4879e-04 - val_loss: 31.1300
+Epoch 166/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4077e-04 - loss: 29.3045 - val_MeanSquaredLogarithmicError: 1.2588e-04 - val_loss: 26.4278
+Epoch 167/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2670e-04 - loss: 26.3880 - val_MeanSquaredLogarithmicError: 1.6962e-04 - val_loss: 35.4713
+Epoch 168/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4048e-04 - loss: 29.2450 - val_MeanSquaredLogarithmicError: 1.3498e-04 - val_loss: 28.2686
+Epoch 169/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - MeanSquaredLogarithmicError: 1.3237e-04 - loss: 27.6196 - val_MeanSquaredLogarithmicError: 1.3818e-04 - val_loss: 29.0166
+Epoch 170/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3695e-04 - loss: 28.5348 - val_MeanSquaredLogarithmicError: 1.2687e-04 - val_loss: 26.6024
+Epoch 171/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2703e-04 - loss: 26.5034 - val_MeanSquaredLogarithmicError: 1.3063e-04 - val_loss: 27.4242
+Epoch 172/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4767e-04 - loss: 30.6632 - val_MeanSquaredLogarithmicError: 1.7235e-04 - val_loss: 36.0447
+Epoch 173/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.5152e-04 - loss: 31.6038 - val_MeanSquaredLogarithmicError: 1.4023e-04 - val_loss: 29.3487
+Epoch 174/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3638e-04 - loss: 28.4958 - val_MeanSquaredLogarithmicError: 1.3768e-04 - val_loss: 28.8258
+Epoch 175/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3750e-04 - loss: 28.7310 - val_MeanSquaredLogarithmicError: 1.7706e-04 - val_loss: 37.0234
+Epoch 176/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3788e-04 - loss: 28.7172 - val_MeanSquaredLogarithmicError: 1.5947e-04 - val_loss: 33.3918
+Epoch 177/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3298e-04 - loss: 27.7122 - val_MeanSquaredLogarithmicError: 1.2603e-04 - val_loss: 26.4411
+Epoch 178/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3543e-04 - loss: 28.2220 - val_MeanSquaredLogarithmicError: 1.2940e-04 - val_loss: 27.1178
+Epoch 179/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3663e-04 - loss: 28.3670 - val_MeanSquaredLogarithmicError: 1.5865e-04 - val_loss: 33.1814
+Epoch 180/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4527e-04 - loss: 30.2033 - val_MeanSquaredLogarithmicError: 1.2578e-04 - val_loss: 26.4063
+Epoch 181/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2995e-04 - loss: 27.0566 - val_MeanSquaredLogarithmicError: 1.2685e-04 - val_loss: 26.6051
+Epoch 182/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3316e-04 - loss: 27.7422 - val_MeanSquaredLogarithmicError: 1.3255e-04 - val_loss: 27.8371
+Epoch 183/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3617e-04 - loss: 28.3566 - val_MeanSquaredLogarithmicError: 1.6509e-04 - val_loss: 34.5833
+Epoch 184/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3735e-04 - loss: 28.6546 - val_MeanSquaredLogarithmicError: 1.3285e-04 - val_loss: 27.8291
+Epoch 185/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3228e-04 - loss: 27.5751 - val_MeanSquaredLogarithmicError: 1.5741e-04 - val_loss: 32.9106
+Epoch 186/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2892e-04 - loss: 26.8237 - val_MeanSquaredLogarithmicError: 1.6135e-04 - val_loss: 33.7416
+Epoch 187/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4329e-04 - loss: 29.8215 - val_MeanSquaredLogarithmicError: 1.2672e-04 - val_loss: 26.5769
+Epoch 188/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3112e-04 - loss: 27.3066 - val_MeanSquaredLogarithmicError: 1.2705e-04 - val_loss: 26.6409
+Epoch 189/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2789e-04 - loss: 26.7037 - val_MeanSquaredLogarithmicError: 1.8197e-04 - val_loss: 38.0861
+Epoch 190/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3535e-04 - loss: 28.2127 - val_MeanSquaredLogarithmicError: 1.2617e-04 - val_loss: 26.4855
+Epoch 191/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3394e-04 - loss: 27.9493 - val_MeanSquaredLogarithmicError: 1.3871e-04 - val_loss: 29.1282
+Epoch 192/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3128e-04 - loss: 27.4057 - val_MeanSquaredLogarithmicError: 1.2796e-04 - val_loss: 26.8876
+Epoch 193/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3864e-04 - loss: 28.9072 - val_MeanSquaredLogarithmicError: 1.2636e-04 - val_loss: 26.5325
+Epoch 194/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4658e-04 - loss: 30.5432 - val_MeanSquaredLogarithmicError: 1.3485e-04 - val_loss: 28.3152
+Epoch 195/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2875e-04 - loss: 26.9307 - val_MeanSquaredLogarithmicError: 1.2633e-04 - val_loss: 26.5158
+Epoch 196/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2979e-04 - loss: 27.0810 - val_MeanSquaredLogarithmicError: 1.3442e-04 - val_loss: 28.2008
+Epoch 197/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.4384e-04 - loss: 29.8676 - val_MeanSquaredLogarithmicError: 1.3832e-04 - val_loss: 29.0373
+Epoch 198/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3105e-04 - loss: 27.3065 - val_MeanSquaredLogarithmicError: 1.4019e-04 - val_loss: 29.3408
+Epoch 199/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.2560e-04 - loss: 26.2651 - val_MeanSquaredLogarithmicError: 1.9968e-04 - val_loss: 41.7494
+Epoch 200/200
+192/192 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - MeanSquaredLogarithmicError: 1.3790e-04 - loss: 28.6523 - val_MeanSquaredLogarithmicError: 1.2667e-04 - val_loss: 26.5677
+</code></pre>
+</div>
+</div>
+<div id="54ce8fc0" class="cell markdown" id="55PgRgP0rZ8A"
+data-papermill="{&quot;duration&quot;:9.021e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:25.129292&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:25.039082&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="testing-the-model"><strong>Testing the Model</strong></h1>
+</div>
+<div id="31efb7cf" class="cell code" data-execution_count="16"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:25.310536Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:25.310165Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:25.566419Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:25.565367Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:1064,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212265896,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="VPqoEf0VmVx0" data-outputId="a138b2c4-f4db-4e9a-c06d-f42bbfe322d9"
+data-papermill="{&quot;duration&quot;:0.348063,&quot;end_time&quot;:&quot;2025-12-23T11:11:25.568376&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:25.220313&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> classifier.predict(X_test)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>np.set_printoptions(precision<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(np.concatenate((y_pred.reshape(<span class="bu">len</span>(y_pred),<span class="dv">1</span>), y_test.reshape(<span class="bu">len</span>(y_test),<span class="dv">1</span>)),<span class="dv">1</span>))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>60/60 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step
+[[455.27 449.88]
+ [428.38 430.46]
+ [473.88 483.63]
+ ...
+ [434.68 435.47]
+ [468.92 464.79]
+ [435.12 429.93]]
+</code></pre>
+</div>
+</div>
+<div id="dbba79fa" class="cell markdown" id="yPzDW1yuWGfP"
+data-papermill="{&quot;duration&quot;:8.8536e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:25.753978&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:25.665442&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1 id="metric-values"><strong>Metric values</strong></h1>
+<p><strong>MAE (Mean Absolute Error) :-</strong></p>
+<p><span class="math display">$$MAE = (\frac{1}{n})\sum_{i=1}^{n}\left |
+y_{i} - \hat y_{i} \right |$$</span></p>
+<p><strong>MSE (Mean Square Error) :-</strong></p>
+<p><span class="math display">$$MSE = (\frac{1}{n})\sum_{i=1}^{n}\left (
+y_{i} - \hat y_{i} \right )^2$$</span></p>
+<p>where y = actual value in the data set ; <span
+class="math inline"><em>ŷ</em></span> = value computed by solving the
+regression equation</p>
+<p><strong>RMSE (Root Mean Square Error) :-</strong></p>
+<p><span class="math display">$$RMSE =
+\sqrt{(\frac{1}{n})\sum_{i=1}^{n}\left ( y_{i} - \hat y_{i} \right
+)^2}$$</span></p>
+</div>
+<div id="3590a452" class="cell code" data-execution_count="17"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:25.934944Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:25.934182Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:25.939707Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:25.938894Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:18,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212265897,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="csYqpviWXRY2"
+data-papermill="{&quot;duration&quot;:9.7887e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:25.941491&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:25.843604&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span></code></pre></div>
+</div>
+<div id="7bf690df" class="cell code" data-execution_count="18"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:26.230632Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:26.230290Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:26.699669Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:26.698805Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:18,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212265898,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="jVhrXBFOXRa-" data-outputId="051d8561-1948-494e-f505-3348850528cd"
+data-papermill="{&quot;duration&quot;:0.670965,&quot;end_time&quot;:&quot;2025-12-23T11:11:26.701736&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:26.030771&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.metrics</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>mae_no <span class="op">=</span> sklearn.metrics.mean_absolute_error(y_test,classifier.predict(X_test))</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>mse_no <span class="op">=</span> sklearn.metrics.mean_squared_error(y_test,classifier.predict(X_test))</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>rms <span class="op">=</span> sqrt(sklearn.metrics.mean_squared_error(y_test,classifier.predict(X_test)))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>60/60 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step  
+60/60 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step  
+60/60 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step  
+</code></pre>
+</div>
+</div>
+<div id="f316fa5a" class="cell code" data-execution_count="19"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:26.880909Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:26.880541Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:26.885757Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:26.884763Z&quot;}"
+data-executionInfo="{&quot;elapsed&quot;:14,&quot;status&quot;:&quot;ok&quot;,&quot;timestamp&quot;:1684212265900,&quot;user&quot;:{&quot;displayName&quot;:&quot;KARNATI MOHAN&quot;,&quot;userId&quot;:&quot;16604712269571437600&quot;},&quot;user_tz&quot;:-330}"
+id="OjxSyJCdXRdF" data-outputId="3880a46f-9281-4d60-fee3-afda8364c28a"
+data-papermill="{&quot;duration&quot;:9.8102e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:26.887761&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:26.789659&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Mean Absolute Error     :&#39;</span>,mae_no)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Mean Square Error       :&#39;</span>,mse_no)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Root Mean Square Error:&#39;</span>, rms)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Mean Absolute Error     : 3.968952157749028
+Mean Square Error       : 24.333709472220374
+Root Mean Square Error: 4.932920987834731
+</code></pre>
+</div>
+</div>
+<div id="c29a88e4" class="cell markdown"
+data-papermill="{&quot;duration&quot;:8.8394e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:27.065698&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:26.977304&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h1
+id="pytorch-neural-network-training-testing-and-visualization-with-weights--biases-wandb"><strong>PyTorch
+Neural Network: Training, Testing, and Visualization with Weights &amp;
+Biases (wandb)</strong></h1>
+<p>In this section, we will:</p>
+<ol>
+<li><strong>Build a neural network using PyTorch</strong> for the
+Combined Cycle Power Plant dataset.</li>
+<li><strong>Train and test the model</strong> using the training and
+test splits.</li>
+<li><strong>Visualize the training process</strong> (loss curves,
+metrics) using <a href="https://wandb.ai/">Weights &amp; Biases
+(wandb)</a>.</li>
+</ol>
+<h2 id="weights--biases-wandb-integration"><strong>Weights &amp; Biases
+(wandb) Integration</strong></h2>
+<p>Weights &amp; Biases is a tool for experiment tracking, model
+monitoring, and visualizing machine learning experiments.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Sign up</strong> at <a href="https://wandb.ai/">wandb.ai</a>
+if you don't have an account.</li>
+<li><strong>Install wandb</strong> in your environment.</li>
+<li><strong>Login</strong> using your API key (you'll be prompted in the
+notebook).</li>
+<li><strong>Integrate wandb</strong> into the PyTorch training loop to
+log loss, metrics, and visualize them live.</li>
+</ul>
+<p>Let's proceed step by step.</p>
+</div>
+<div id="da1cef5a" class="cell markdown"
+data-papermill="{&quot;duration&quot;:9.0271e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:27.245183&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:27.154912&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="1-install-and-login-to-wandb"><strong>1. Install and Login to
+wandb</strong></h2>
+<p>First, install the <code>wandb</code> library and log in to your
+account. You will be prompted to enter your API key (find it in your <a
+href="https://wandb.ai/settings">wandb account settings</a>).</p>
+</div>
+<div id="ab5194dc" class="cell code" data-execution_count="20"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:27.426668Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:27.426309Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:35.036996Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:35.035917Z&quot;}"
+data-papermill="{&quot;duration&quot;:7.703823,&quot;end_time&quot;:&quot;2025-12-23T11:11:35.039060&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:27.335237&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install wandb if not already installed</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install wandb <span class="op">--</span>quiet</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wandb</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>wandb.login(key<span class="op">=</span><span class="st">&#39;d0a53bcba8d536cd71814160d4fbfefd93cd1010&#39;</span>)  <span class="co"># This will prompt for your API key the first time</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The &#39;repr&#39; attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. &#39;repr&#39; is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The &#39;frozen&#39; attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. &#39;frozen&#39; is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+wandb: WARNING If you&#39;re specifying your api key in code, ensure this code is not shared publicly.
+wandb: WARNING Consider setting the WANDB_API_KEY environment variable, or running `wandb login` from the command line.
+wandb: No netrc file found, creating one.
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
+wandb: Currently logged in as: nihalkumar_2k21phdec01 (nihalkumar_2k21phdec01-delhi-technological-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>True</code></pre>
+</div>
+</div>
+<div id="db05404a" class="cell markdown"
+data-papermill="{&quot;duration&quot;:8.992e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:35.223296&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:35.133376&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="2-pytorch-model-definition-and-data-preparation"><strong>2.
+PyTorch Model Definition and Data Preparation</strong></h2>
+<p>We will now define a simple feedforward neural network using PyTorch,
+prepare the data as PyTorch tensors and DataLoaders, and set up the
+training and validation process.</p>
+</div>
+<div id="6d9d2d5e" class="cell code" data-execution_count="21"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:35.403464Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:35.403074Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:11:40.341724Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:11:40.340969Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.03096,&quot;end_time&quot;:&quot;2025-12-23T11:11:40.343734&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:35.312774&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.optim <span class="im">as</span> optim</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> TensorDataset, DataLoader</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert numpy arrays to torch tensors</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>X_train_tensor <span class="op">=</span> torch.tensor(X_train, dtype<span class="op">=</span>torch.float32)</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>y_train_tensor <span class="op">=</span> torch.tensor(y_train, dtype<span class="op">=</span>torch.float32).view(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>X_val_tensor <span class="op">=</span> torch.tensor(X_val, dtype<span class="op">=</span>torch.float32)</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>y_val_tensor <span class="op">=</span> torch.tensor(y_val, dtype<span class="op">=</span>torch.float32).view(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>X_test_tensor <span class="op">=</span> torch.tensor(X_test, dtype<span class="op">=</span>torch.float32)</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>y_test_tensor <span class="op">=</span> torch.tensor(y_test, dtype<span class="op">=</span>torch.float32).view(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create DataLoaders</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>batch_size <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>train_dataset <span class="op">=</span> TensorDataset(X_train_tensor, y_train_tensor)</span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>val_dataset <span class="op">=</span> TensorDataset(X_val_tensor, y_val_tensor)</span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>test_dataset <span class="op">=</span> TensorDataset(X_test_tensor, y_test_tensor)</span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>train_loader <span class="op">=</span> DataLoader(train_dataset, batch_size<span class="op">=</span>batch_size, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb36-21"><a href="#cb36-21" aria-hidden="true" tabindex="-1"></a>val_loader <span class="op">=</span> DataLoader(val_dataset, batch_size<span class="op">=</span>batch_size)</span>
+<span id="cb36-22"><a href="#cb36-22" aria-hidden="true" tabindex="-1"></a>test_loader <span class="op">=</span> DataLoader(test_dataset, batch_size<span class="op">=</span>batch_size)</span>
+<span id="cb36-23"><a href="#cb36-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-24"><a href="#cb36-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the neural network</span></span>
+<span id="cb36-25"><a href="#cb36-25" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PowerPlantNet(nn.Module):</span>
+<span id="cb36-26"><a href="#cb36-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb36-27"><a href="#cb36-27" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>(PowerPlantNet, <span class="va">self</span>).<span class="fu">__init__</span>()</span>
+<span id="cb36-28"><a href="#cb36-28" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.model <span class="op">=</span> nn.Sequential(</span>
+<span id="cb36-29"><a href="#cb36-29" aria-hidden="true" tabindex="-1"></a>            nn.Linear(<span class="dv">4</span>, <span class="dv">8</span>),</span>
+<span id="cb36-30"><a href="#cb36-30" aria-hidden="true" tabindex="-1"></a>            nn.ReLU(),</span>
+<span id="cb36-31"><a href="#cb36-31" aria-hidden="true" tabindex="-1"></a>            nn.Linear(<span class="dv">8</span>, <span class="dv">16</span>),</span>
+<span id="cb36-32"><a href="#cb36-32" aria-hidden="true" tabindex="-1"></a>            nn.ReLU(),</span>
+<span id="cb36-33"><a href="#cb36-33" aria-hidden="true" tabindex="-1"></a>            nn.Linear(<span class="dv">16</span>, <span class="dv">32</span>),</span>
+<span id="cb36-34"><a href="#cb36-34" aria-hidden="true" tabindex="-1"></a>            nn.ReLU(),</span>
+<span id="cb36-35"><a href="#cb36-35" aria-hidden="true" tabindex="-1"></a>            nn.Linear(<span class="dv">32</span>, <span class="dv">1</span>)</span>
+<span id="cb36-36"><a href="#cb36-36" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb36-37"><a href="#cb36-37" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb36-38"><a href="#cb36-38" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.model(x)</span>
+<span id="cb36-39"><a href="#cb36-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-40"><a href="#cb36-40" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> PowerPlantNet()</span></code></pre></div>
+</div>
+<div id="e25dc991" class="cell markdown"
+data-papermill="{&quot;duration&quot;:8.9298e-2,&quot;end_time&quot;:&quot;2025-12-23T11:11:40.521745&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:40.432447&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="3-training-and-validation-loop-with-wandb-logging"><strong>3.
+Training and Validation Loop with wandb Logging</strong></h2>
+<p>We will now train the model, validate it on the validation set, and
+log the loss and metrics to wandb for visualization.</p>
+</div>
+<div id="e2d55ccb" class="cell code" data-execution_count="22"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:11:40.700139Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:11:40.699740Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:13:01.744945Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:13:01.743972Z&quot;}"
+data-papermill="{&quot;duration&quot;:81.136801,&quot;end_time&quot;:&quot;2025-12-23T11:13:01.747036&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:11:40.610235&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize wandb run</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>wandb.init(project<span class="op">=</span><span class="st">&quot;powerplant-pytorch-regression&quot;</span>, name<span class="op">=</span><span class="st">&quot;pytorch_run&quot;</span>, reinit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define loss and optimizer</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.MSELoss()</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> optim.Adam(model.parameters(), lr<span class="op">=</span><span class="fl">0.001</span>)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Training loop</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>epochs <span class="op">=</span> <span class="dv">200</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(epochs):</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    model.train()</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>    train_loss <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> xb, yb <span class="kw">in</span> train_loader:</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(xb)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> criterion(outputs, yb)</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>        train_loss <span class="op">+=</span> loss.item() <span class="op">*</span> xb.size(<span class="dv">0</span>)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>    train_loss <span class="op">/=</span> <span class="bu">len</span>(train_loader.dataset)</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Validation</span></span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>    model.<span class="bu">eval</span>()</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>    val_loss <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> xb, yb <span class="kw">in</span> val_loader:</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>            outputs <span class="op">=</span> model(xb)</span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>            loss <span class="op">=</span> criterion(outputs, yb)</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>            val_loss <span class="op">+=</span> loss.item() <span class="op">*</span> xb.size(<span class="dv">0</span>)</span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>    val_loss <span class="op">/=</span> <span class="bu">len</span>(val_loader.dataset)</span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Log to wandb</span></span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a>    wandb.log({<span class="st">&quot;epoch&quot;</span>: epoch<span class="op">+</span><span class="dv">1</span>, <span class="st">&quot;train_loss&quot;</span>: train_loss, <span class="st">&quot;val_loss&quot;</span>: val_loss})</span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Epoch </span><span class="sc">{</span>epoch<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>epochs<span class="sc">}</span><span class="ss"> | Train Loss: </span><span class="sc">{</span>train_loss<span class="sc">:.4f}</span><span class="ss"> | Val Loss: </span><span class="sc">{</span>val_loss<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>wandb.finish()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>wandb: WARNING Using a boolean value for &#39;reinit&#39; is deprecated. Use &#39;return_previous&#39; or &#39;finish_previous&#39; instead.
+wandb: setting up run 9nqi8jp7
+wandb: Tracking run with wandb version 0.22.2
+wandb: Run data is saved locally in /kaggle/working/wandb/run-20251223_111140-9nqi8jp7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pytorch_run
+wandb: ⭐️ View project at https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression
+wandb: 🚀 View run at https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression/runs/9nqi8jp7
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/200 | Train Loss: 50878.8872 | Val Loss: 592.8957
+Epoch 2/200 | Train Loss: 521.3435 | Val Loss: 480.3299
+Epoch 3/200 | Train Loss: 381.6947 | Val Loss: 250.2274
+Epoch 4/200 | Train Loss: 123.4166 | Val Loss: 63.5264
+Epoch 5/200 | Train Loss: 52.6463 | Val Loss: 43.0561
+Epoch 6/200 | Train Loss: 39.3427 | Val Loss: 34.1347
+Epoch 7/200 | Train Loss: 34.5839 | Val Loss: 31.0746
+Epoch 8/200 | Train Loss: 29.7021 | Val Loss: 28.4798
+Epoch 9/200 | Train Loss: 28.4063 | Val Loss: 29.1934
+Epoch 10/200 | Train Loss: 27.2576 | Val Loss: 28.1671
+Epoch 11/200 | Train Loss: 26.8741 | Val Loss: 31.9698
+Epoch 12/200 | Train Loss: 26.1343 | Val Loss: 26.0401
+Epoch 13/200 | Train Loss: 25.6738 | Val Loss: 25.3467
+Epoch 14/200 | Train Loss: 25.3828 | Val Loss: 28.6893
+Epoch 15/200 | Train Loss: 25.5320 | Val Loss: 28.3758
+Epoch 16/200 | Train Loss: 25.6699 | Val Loss: 25.9317
+Epoch 17/200 | Train Loss: 25.1799 | Val Loss: 27.7752
+Epoch 18/200 | Train Loss: 26.2965 | Val Loss: 25.4973
+Epoch 19/200 | Train Loss: 25.2826 | Val Loss: 25.3377
+Epoch 20/200 | Train Loss: 26.0583 | Val Loss: 29.0168
+Epoch 21/200 | Train Loss: 25.2730 | Val Loss: 28.9598
+Epoch 22/200 | Train Loss: 26.4147 | Val Loss: 24.7504
+Epoch 23/200 | Train Loss: 25.4754 | Val Loss: 32.2229
+Epoch 24/200 | Train Loss: 25.1830 | Val Loss: 25.1105
+Epoch 25/200 | Train Loss: 27.4309 | Val Loss: 24.2068
+Epoch 26/200 | Train Loss: 26.1926 | Val Loss: 24.2068
+Epoch 27/200 | Train Loss: 25.3651 | Val Loss: 24.6448
+Epoch 28/200 | Train Loss: 25.2076 | Val Loss: 24.1524
+Epoch 29/200 | Train Loss: 25.0583 | Val Loss: 24.0938
+Epoch 30/200 | Train Loss: 26.1167 | Val Loss: 43.6277
+Epoch 31/200 | Train Loss: 26.7191 | Val Loss: 24.7982
+Epoch 32/200 | Train Loss: 26.3841 | Val Loss: 24.6216
+Epoch 33/200 | Train Loss: 25.8632 | Val Loss: 44.5420
+Epoch 34/200 | Train Loss: 26.2982 | Val Loss: 25.1955
+Epoch 35/200 | Train Loss: 25.6057 | Val Loss: 30.1669
+Epoch 36/200 | Train Loss: 26.8278 | Val Loss: 24.0754
+Epoch 37/200 | Train Loss: 26.4714 | Val Loss: 25.4053
+Epoch 38/200 | Train Loss: 26.3053 | Val Loss: 35.0396
+Epoch 39/200 | Train Loss: 28.1256 | Val Loss: 24.0400
+Epoch 40/200 | Train Loss: 25.2895 | Val Loss: 24.5113
+Epoch 41/200 | Train Loss: 27.4644 | Val Loss: 50.8318
+Epoch 42/200 | Train Loss: 25.9265 | Val Loss: 24.1966
+Epoch 43/200 | Train Loss: 26.5961 | Val Loss: 25.0790
+Epoch 44/200 | Train Loss: 26.2372 | Val Loss: 25.4172
+Epoch 45/200 | Train Loss: 26.2594 | Val Loss: 25.9443
+Epoch 46/200 | Train Loss: 27.0919 | Val Loss: 25.5987
+Epoch 47/200 | Train Loss: 26.4322 | Val Loss: 27.2826
+Epoch 48/200 | Train Loss: 24.8317 | Val Loss: 31.4370
+Epoch 49/200 | Train Loss: 27.0509 | Val Loss: 30.3102
+Epoch 50/200 | Train Loss: 25.8038 | Val Loss: 24.8359
+Epoch 51/200 | Train Loss: 25.6620 | Val Loss: 24.8695
+Epoch 52/200 | Train Loss: 27.5400 | Val Loss: 26.6934
+Epoch 53/200 | Train Loss: 26.6507 | Val Loss: 26.2419
+Epoch 54/200 | Train Loss: 25.9880 | Val Loss: 28.3949
+Epoch 55/200 | Train Loss: 27.2432 | Val Loss: 25.8653
+Epoch 56/200 | Train Loss: 25.7100 | Val Loss: 26.4440
+Epoch 57/200 | Train Loss: 27.8141 | Val Loss: 24.4600
+Epoch 58/200 | Train Loss: 27.0901 | Val Loss: 28.6084
+Epoch 59/200 | Train Loss: 26.5383 | Val Loss: 24.0945
+Epoch 60/200 | Train Loss: 26.6997 | Val Loss: 24.0982
+Epoch 61/200 | Train Loss: 24.5991 | Val Loss: 32.1945
+Epoch 62/200 | Train Loss: 26.0160 | Val Loss: 32.2488
+Epoch 63/200 | Train Loss: 27.6793 | Val Loss: 29.1410
+Epoch 64/200 | Train Loss: 27.1930 | Val Loss: 27.0025
+Epoch 65/200 | Train Loss: 26.0999 | Val Loss: 24.1803
+Epoch 66/200 | Train Loss: 26.8566 | Val Loss: 29.1194
+Epoch 67/200 | Train Loss: 25.6334 | Val Loss: 24.0259
+Epoch 68/200 | Train Loss: 28.3749 | Val Loss: 27.7540
+Epoch 69/200 | Train Loss: 25.2361 | Val Loss: 23.7598
+Epoch 70/200 | Train Loss: 25.0933 | Val Loss: 28.9241
+Epoch 71/200 | Train Loss: 26.2359 | Val Loss: 23.7659
+Epoch 72/200 | Train Loss: 25.1370 | Val Loss: 23.7440
+Epoch 73/200 | Train Loss: 26.0869 | Val Loss: 23.9885
+Epoch 74/200 | Train Loss: 24.4450 | Val Loss: 24.2022
+Epoch 75/200 | Train Loss: 24.8305 | Val Loss: 23.5265
+Epoch 76/200 | Train Loss: 24.5367 | Val Loss: 23.6116
+Epoch 77/200 | Train Loss: 25.7139 | Val Loss: 24.1377
+Epoch 78/200 | Train Loss: 26.8867 | Val Loss: 31.1860
+Epoch 79/200 | Train Loss: 24.8125 | Val Loss: 23.4101
+Epoch 80/200 | Train Loss: 24.7651 | Val Loss: 23.4826
+Epoch 81/200 | Train Loss: 25.8120 | Val Loss: 23.8808
+Epoch 82/200 | Train Loss: 25.2165 | Val Loss: 23.3760
+Epoch 83/200 | Train Loss: 26.3623 | Val Loss: 23.5329
+Epoch 84/200 | Train Loss: 26.6257 | Val Loss: 32.8408
+Epoch 85/200 | Train Loss: 25.0346 | Val Loss: 25.2722
+Epoch 86/200 | Train Loss: 25.4094 | Val Loss: 30.8283
+Epoch 87/200 | Train Loss: 26.2465 | Val Loss: 24.0252
+Epoch 88/200 | Train Loss: 25.8610 | Val Loss: 29.0152
+Epoch 89/200 | Train Loss: 26.0517 | Val Loss: 25.8728
+Epoch 90/200 | Train Loss: 26.4180 | Val Loss: 29.5252
+Epoch 91/200 | Train Loss: 25.3269 | Val Loss: 25.0245
+Epoch 92/200 | Train Loss: 24.4157 | Val Loss: 26.9866
+Epoch 93/200 | Train Loss: 25.0396 | Val Loss: 27.2176
+Epoch 94/200 | Train Loss: 25.5927 | Val Loss: 29.5667
+Epoch 95/200 | Train Loss: 27.4938 | Val Loss: 37.7105
+Epoch 96/200 | Train Loss: 24.8193 | Val Loss: 23.2070
+Epoch 97/200 | Train Loss: 25.0278 | Val Loss: 34.1096
+Epoch 98/200 | Train Loss: 25.8626 | Val Loss: 23.6832
+Epoch 99/200 | Train Loss: 24.1583 | Val Loss: 37.4716
+Epoch 100/200 | Train Loss: 26.1232 | Val Loss: 24.5386
+Epoch 101/200 | Train Loss: 25.2280 | Val Loss: 25.8590
+Epoch 102/200 | Train Loss: 26.3956 | Val Loss: 25.1090
+Epoch 103/200 | Train Loss: 25.9763 | Val Loss: 26.6382
+Epoch 104/200 | Train Loss: 25.0518 | Val Loss: 23.7462
+Epoch 105/200 | Train Loss: 25.3602 | Val Loss: 23.4388
+Epoch 106/200 | Train Loss: 25.4461 | Val Loss: 23.3458
+Epoch 107/200 | Train Loss: 27.3028 | Val Loss: 25.8993
+Epoch 108/200 | Train Loss: 24.0299 | Val Loss: 23.9138
+Epoch 109/200 | Train Loss: 26.3357 | Val Loss: 24.1590
+Epoch 110/200 | Train Loss: 25.7123 | Val Loss: 23.9932
+Epoch 111/200 | Train Loss: 25.2773 | Val Loss: 26.4094
+Epoch 112/200 | Train Loss: 24.6895 | Val Loss: 23.8320
+Epoch 113/200 | Train Loss: 25.0778 | Val Loss: 46.7160
+Epoch 114/200 | Train Loss: 25.1696 | Val Loss: 23.7851
+Epoch 115/200 | Train Loss: 24.9155 | Val Loss: 24.5718
+Epoch 116/200 | Train Loss: 25.9394 | Val Loss: 23.8569
+Epoch 117/200 | Train Loss: 24.7991 | Val Loss: 26.9399
+Epoch 118/200 | Train Loss: 25.6057 | Val Loss: 31.4664
+Epoch 119/200 | Train Loss: 25.0595 | Val Loss: 25.0697
+Epoch 120/200 | Train Loss: 25.3159 | Val Loss: 24.0720
+Epoch 121/200 | Train Loss: 24.5194 | Val Loss: 34.2059
+Epoch 122/200 | Train Loss: 26.2447 | Val Loss: 26.8235
+Epoch 123/200 | Train Loss: 24.6968 | Val Loss: 26.4044
+Epoch 124/200 | Train Loss: 24.5778 | Val Loss: 23.2912
+Epoch 125/200 | Train Loss: 24.3126 | Val Loss: 23.5957
+Epoch 126/200 | Train Loss: 24.1489 | Val Loss: 27.5414
+Epoch 127/200 | Train Loss: 26.1027 | Val Loss: 23.4420
+Epoch 128/200 | Train Loss: 27.3663 | Val Loss: 23.9662
+Epoch 129/200 | Train Loss: 25.1050 | Val Loss: 25.9852
+Epoch 130/200 | Train Loss: 24.1857 | Val Loss: 35.3667
+Epoch 131/200 | Train Loss: 26.3135 | Val Loss: 24.3483
+Epoch 132/200 | Train Loss: 24.0285 | Val Loss: 31.3521
+Epoch 133/200 | Train Loss: 24.9689 | Val Loss: 24.2027
+Epoch 134/200 | Train Loss: 25.6486 | Val Loss: 23.8108
+Epoch 135/200 | Train Loss: 25.8626 | Val Loss: 27.9113
+Epoch 136/200 | Train Loss: 24.8086 | Val Loss: 26.3518
+Epoch 137/200 | Train Loss: 24.4284 | Val Loss: 25.8106
+Epoch 138/200 | Train Loss: 25.9778 | Val Loss: 28.5940
+Epoch 139/200 | Train Loss: 28.3169 | Val Loss: 30.8653
+Epoch 140/200 | Train Loss: 23.9360 | Val Loss: 27.4108
+Epoch 141/200 | Train Loss: 25.6385 | Val Loss: 23.8005
+Epoch 142/200 | Train Loss: 26.6798 | Val Loss: 24.1919
+Epoch 143/200 | Train Loss: 24.9475 | Val Loss: 23.4023
+Epoch 144/200 | Train Loss: 24.8430 | Val Loss: 46.9247
+Epoch 145/200 | Train Loss: 27.6931 | Val Loss: 24.9390
+Epoch 146/200 | Train Loss: 24.0754 | Val Loss: 23.3115
+Epoch 147/200 | Train Loss: 23.7713 | Val Loss: 33.0422
+Epoch 148/200 | Train Loss: 25.9696 | Val Loss: 23.2214
+Epoch 149/200 | Train Loss: 24.7794 | Val Loss: 29.6711
+Epoch 150/200 | Train Loss: 24.1484 | Val Loss: 25.7684
+Epoch 151/200 | Train Loss: 24.7723 | Val Loss: 23.9280
+Epoch 152/200 | Train Loss: 25.2172 | Val Loss: 23.1936
+Epoch 153/200 | Train Loss: 24.7379 | Val Loss: 26.5988
+Epoch 154/200 | Train Loss: 27.0923 | Val Loss: 28.4082
+Epoch 155/200 | Train Loss: 26.6280 | Val Loss: 24.4587
+Epoch 156/200 | Train Loss: 25.7415 | Val Loss: 24.2411
+Epoch 157/200 | Train Loss: 25.1610 | Val Loss: 27.4173
+Epoch 158/200 | Train Loss: 26.5267 | Val Loss: 23.3347
+Epoch 159/200 | Train Loss: 25.6969 | Val Loss: 23.7342
+Epoch 160/200 | Train Loss: 24.7849 | Val Loss: 23.4972
+Epoch 161/200 | Train Loss: 24.3598 | Val Loss: 29.5728
+Epoch 162/200 | Train Loss: 24.5202 | Val Loss: 23.4539
+Epoch 163/200 | Train Loss: 26.4344 | Val Loss: 23.2577
+Epoch 164/200 | Train Loss: 24.6701 | Val Loss: 33.1413
+Epoch 165/200 | Train Loss: 26.1955 | Val Loss: 26.5673
+Epoch 166/200 | Train Loss: 24.5365 | Val Loss: 28.2342
+Epoch 167/200 | Train Loss: 24.5351 | Val Loss: 34.4711
+Epoch 168/200 | Train Loss: 25.2788 | Val Loss: 23.3778
+Epoch 169/200 | Train Loss: 25.6649 | Val Loss: 23.3254
+Epoch 170/200 | Train Loss: 25.3262 | Val Loss: 23.1209
+Epoch 171/200 | Train Loss: 25.4869 | Val Loss: 24.7780
+Epoch 172/200 | Train Loss: 25.5942 | Val Loss: 23.1038
+Epoch 173/200 | Train Loss: 25.7973 | Val Loss: 25.3688
+Epoch 174/200 | Train Loss: 24.0502 | Val Loss: 23.3080
+Epoch 175/200 | Train Loss: 25.4462 | Val Loss: 26.2255
+Epoch 176/200 | Train Loss: 25.5556 | Val Loss: 27.0199
+Epoch 177/200 | Train Loss: 24.0449 | Val Loss: 25.9692
+Epoch 178/200 | Train Loss: 27.7162 | Val Loss: 23.1873
+Epoch 179/200 | Train Loss: 25.0951 | Val Loss: 24.3140
+Epoch 180/200 | Train Loss: 24.4428 | Val Loss: 27.5376
+Epoch 181/200 | Train Loss: 25.2489 | Val Loss: 23.2724
+Epoch 182/200 | Train Loss: 23.9346 | Val Loss: 23.3033
+Epoch 183/200 | Train Loss: 27.0272 | Val Loss: 29.0604
+Epoch 184/200 | Train Loss: 25.2523 | Val Loss: 35.5476
+Epoch 185/200 | Train Loss: 26.1384 | Val Loss: 23.8303
+Epoch 186/200 | Train Loss: 24.1771 | Val Loss: 23.9375
+Epoch 187/200 | Train Loss: 24.9713 | Val Loss: 23.1652
+Epoch 188/200 | Train Loss: 24.9324 | Val Loss: 26.1110
+Epoch 189/200 | Train Loss: 24.5577 | Val Loss: 28.1658
+Epoch 190/200 | Train Loss: 25.7705 | Val Loss: 30.0678
+Epoch 191/200 | Train Loss: 25.7591 | Val Loss: 26.7542
+Epoch 192/200 | Train Loss: 24.9286 | Val Loss: 25.2411
+Epoch 193/200 | Train Loss: 26.2440 | Val Loss: 24.8793
+Epoch 194/200 | Train Loss: 25.3304 | Val Loss: 28.9420
+Epoch 195/200 | Train Loss: 25.1327 | Val Loss: 24.2539
+Epoch 196/200 | Train Loss: 24.6075 | Val Loss: 28.0881
+Epoch 197/200 | Train Loss: 26.9316 | Val Loss: 32.7502
+Epoch 198/200 | Train Loss: 24.7591 | Val Loss: 24.4683
+Epoch 199/200 | Train Loss: 25.2043 | Val Loss: 23.2219
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>wandb: updating run metadata
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Epoch 200/200 | Train Loss: 26.0733 | Val Loss: 33.9077
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>wandb: 
+wandb: Run history:
+wandb:      epoch ▁▁▁▁▁▁▂▂▂▂▂▂▂▂▃▃▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▅▆▆▇▇███
+wandb: train_loss █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   val_loss ▃▂▂▁▁▁▇▂▂▁▂▂▃▂▂▁▁▁▁▁▂▁▅▁▁▁▄▁▁▂▂▂▃█▂▂▃▁▂▁
+wandb: 
+wandb: Run summary:
+wandb:      epoch 200
+wandb: train_loss 26.07332
+wandb:   val_loss 33.90774
+wandb: 
+wandb: 🚀 View run pytorch_run at: https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression/runs/9nqi8jp7
+wandb: ⭐️ View project at: https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression
+wandb: Synced 5 W&amp;B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251223_111140-9nqi8jp7/logs
+</code></pre>
+</div>
+</div>
+<div id="75ef69ed" class="cell markdown"
+data-papermill="{&quot;duration&quot;:0.102291,&quot;end_time&quot;:&quot;2025-12-23T11:13:01.952186&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:13:01.849895&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<h2 id="4-testing-and-metrics-visualization-with-wandb"><strong>4.
+Testing and Metrics Visualization with wandb</strong></h2>
+<p>After training, we will evaluate the model on the test set and log
+the test loss and regression metrics (MAE, MSE, RMSE) to wandb for
+visualization.</p>
+</div>
+<div id="6d767199" class="cell code" data-execution_count="23"
+data-execution="{&quot;iopub.execute_input&quot;:&quot;2025-12-23T11:13:02.161093Z&quot;,&quot;iopub.status.busy&quot;:&quot;2025-12-23T11:13:02.160255Z&quot;,&quot;iopub.status.idle&quot;:&quot;2025-12-23T11:13:07.723481Z&quot;,&quot;shell.execute_reply&quot;:&quot;2025-12-23T11:13:07.722390Z&quot;}"
+data-papermill="{&quot;duration&quot;:5.670005,&quot;end_time&quot;:&quot;2025-12-23T11:13:07.725461&quot;,&quot;exception&quot;:false,&quot;start_time&quot;:&quot;2025-12-23T11:13:02.055456&quot;,&quot;status&quot;:&quot;completed&quot;}"
+data-tags="[]">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_error, mean_squared_error</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluate on test set</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>test_preds <span class="op">=</span> []</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>test_targets <span class="op">=</span> []</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> xb, yb <span class="kw">in</span> test_loader:</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(xb)</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>        test_preds.append(outputs.numpy())</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>        test_targets.append(yb.numpy())</span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>test_preds <span class="op">=</span> np.vstack(test_preds)</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>test_targets <span class="op">=</span> np.vstack(test_targets)</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>mae <span class="op">=</span> mean_absolute_error(test_targets, test_preds)</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>mse <span class="op">=</span> mean_squared_error(test_targets, test_preds)</span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>rmse <span class="op">=</span> np.sqrt(mse)</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test MAE: </span><span class="sc">{</span>mae<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test MSE: </span><span class="sc">{</span>mse<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test RMSE: </span><span class="sc">{</span>rmse<span class="sc">:.4f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Log test metrics to wandb</span></span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a>wandb.init(project<span class="op">=</span><span class="st">&quot;powerplant-pytorch-regression&quot;</span>, name<span class="op">=</span><span class="st">&quot;pytorch_test_metrics&quot;</span>, reinit<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a>wandb.log({<span class="st">&quot;test_mae&quot;</span>: mae, <span class="st">&quot;test_mse&quot;</span>: mse, <span class="st">&quot;test_rmse&quot;</span>: rmse})</span>
+<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a>wandb.finish()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Test MAE: 4.6143
+Test MSE: 32.4850
+Test RMSE: 5.6996
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>wandb: Tracking run with wandb version 0.22.2
+wandb: Run data is saved locally in /kaggle/working/wandb/run-20251223_111302-8otojvj4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pytorch_test_metrics
+wandb: ⭐️ View project at https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression
+wandb: 🚀 View run at https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression/runs/8otojvj4
+wandb: updating run metadata
+wandb: uploading history steps 0-0, summary
+wandb: 
+wandb: Run history:
+wandb:  test_mae ▁
+wandb:  test_mse ▁
+wandb: test_rmse ▁
+wandb: 
+wandb: Run summary:
+wandb:  test_mae 4.61432
+wandb:  test_mse 32.48496
+wandb: test_rmse 5.69956
+wandb: 
+wandb: 🚀 View run pytorch_test_metrics at: https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression/runs/8otojvj4
+wandb: ⭐️ View project at: https://wandb.ai/nihalkumar_2k21phdec01-delhi-technological-university/powerplant-pytorch-regression
+wandb: Synced 5 W&amp;B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20251223_111302-8otojvj4/logs
+</code></pre>
+</div>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0357a45f23a943f08700f7f9af191ee6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
